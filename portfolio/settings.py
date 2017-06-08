@@ -44,7 +44,7 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'journal',
+    'portfolio',
     'storages',
 )
 
@@ -60,7 +60,7 @@ MIDDLEWARE_CLASSES = (
     'whitenoise.middleware.WhiteNoiseMiddleware',
 )
 
-ROOT_URLCONF = 'journal.urls'
+ROOT_URLCONF = 'portfolio.urls'
 
 TEMPLATES = [
     {
@@ -119,7 +119,7 @@ if not DEBUG:
 
     # Extra places for collectstatic to find static files.
     # STATICFILES_DIRS = (
-    #     os.path.join(BASE_DIR, 'journal/static'),
+    #     os.path.join(BASE_DIR, 'portfolio/static'),
     # )
 
     # Tell the staticfiles app to use S3Boto storage when writing the collected static files (when
