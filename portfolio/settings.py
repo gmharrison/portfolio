@@ -12,11 +12,12 @@ https://docs.djangoproject.com/en/1.8/ref/settings/
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 import os
 import dj_database_url
+from s3utils import *
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 SECRET_KEY = os.environ['SECRET_KEY'] = 'SECRET_KEY'
-S3_BUCKET_NAME = 'gmharrisonportfolio'
+AWS_STORAGE_BUCKET_NAME = 'gmharrisonportfolio'
 AWS_ACCESS_KEY_ID = os.environ['AWS_ACCESS_KEY_ID'] = 'AWS_ACCESS_KEY_ID'
 AWS_SECRET_ACCESS_KEY = os.environ['AWS_SECRET_ACCESS_KEY'] = 'AWS_SECRET_ACCESS_KEY'
 AWS_S3_CUSTOM_DOMAIN = "gmharrisonportfolio.s3.amazonaws.com"
@@ -115,7 +116,7 @@ if not DEBUG:
 
     PROJECT_ROOT = os.path.dirname(os.path.abspath(__file__))
 
-    STATIC_URL = 'https://' + S3_BUCKET_NAME + '.s3.amazonaws.com/'
+    STATIC_URL = 'https://' + AWS_STORAGE_BUCKET_NAME + '.s3.amazonaws.com/'
     STATIC_ROOT = STATIC_URL
 
     # Extra places for collectstatic to find static files.
