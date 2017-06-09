@@ -143,7 +143,7 @@ if DEBUG:
 
     # Extra places for collectstatic to find static files.
     STATICFILES_DIRS = (
-        os.path.join(BASE_DIR, 'portfolio/assets'),
+        os.path.join(BASE_DIR, 'portfolio/static'),
     )
 
     WEBPACK_LOADER = {
