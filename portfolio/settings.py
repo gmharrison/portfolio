@@ -16,10 +16,10 @@ from s3utils import *
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
-SECRET_KEY = os.environ['SECRET_KEY'] = 'SECRET_KEY'
+SECRET_KEY = os.environ['SECRET_KEY']
 AWS_STORAGE_BUCKET_NAME = 'gmharrisonportfolio'
-AWS_ACCESS_KEY_ID = os.environ['AWS_ACCESS_KEY_ID'] = 'AWS_ACCESS_KEY_ID'
-AWS_SECRET_ACCESS_KEY = os.environ['AWS_SECRET_ACCESS_KEY'] = 'AWS_SECRET_ACCESS_KEY'
+AWS_ACCESS_KEY_ID = os.environ['AWS_ACCESS_KEY_ID']
+AWS_SECRET_ACCESS_KEY = os.environ['AWS_SECRET_ACCESS_KEY']
 AWS_S3_CUSTOM_DOMAIN = "gmharrisonportfolio.s3.amazonaws.com"
 
 
