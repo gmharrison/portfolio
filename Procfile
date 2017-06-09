@@ -1,1 +1,1 @@
-web: python manage.py collectstatic --noinput; gunicorn portfolio.wsgi --log-file -
+web: python manage.py collectstatic --noinput; npm install; npm run heroku-postbuild; gunicorn portfolio.wsgi --log-file -;
