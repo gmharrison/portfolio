@@ -6,7 +6,7 @@ __pycache__/
 *.DS_Store
 *.babelrc
 *.sqlite3
-*node_modules/
+*.node_modules/
 
 # C extensions
 *.so
