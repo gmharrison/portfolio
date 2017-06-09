@@ -115,7 +115,7 @@ if not DEBUG:
 
     PROJECT_ROOT = os.path.dirname(os.path.abspath(__file__))
 
-    STATIC_URL = 'https://' + AWS_STORAGE_BUCKET_NAME + '.s3.amazonaws.com/'
+    STATIC_URL = 'https://' + S3_BUCKET_NAME + '.s3.amazonaws.com/'
     STATIC_ROOT = STATIC_URL
 
     # Extra places for collectstatic to find static files.
