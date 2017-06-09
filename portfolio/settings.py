@@ -156,7 +156,7 @@ if DEBUG:
 
     WEBPACK_LOADER = {
         'DEFAULT': {
-            'BUNDLE_DIR_NAME': 'bundles/',
+            'BUNDLE_DIR_NAME': 'webpack_bundles/',
             'STATS_FILE': os.path.join(BASE_DIR, 'webpack-stats.json'),
         }
     }

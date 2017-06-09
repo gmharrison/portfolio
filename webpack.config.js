@@ -13,7 +13,7 @@ module.exports = {
     
     output: {
         //where you want your compiled bundle to be stored
-        path: path.resolve('./portfolio/static/bundles/'),
+        path: path.resolve('./portfolio/static/webpack_bundles/'),
         //naming convention webpack should use for your files
         filename: '[name]-[hash].js', 
     },
