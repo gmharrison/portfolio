@@ -7,6 +7,7 @@ __pycache__/
 *.babelrc
 *.sqlite3
 *node_modules/
+*static_output/
 
 # C extensions
 *.so

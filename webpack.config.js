@@ -1,7 +1,10 @@
 //require our dependencies
+var WebpackCleanupPlugin = require('webpack-cleanup-plugin');
 var path = require('path');
 var webpack = require('webpack');
 var BundleTracker = require('webpack-bundle-tracker');
+var ExtractTextPlugin = require('extract-text-webpack-plugin');
+
 
 module.exports = {
     //the base directory (absolute path) for resolving the entry option
@@ -26,7 +29,9 @@ module.exports = {
             $: 'jquery',
             jQuery: 'jquery',
             'window.jQuery': 'jquery' 
-        })
+        }),
+        new ExtractTextPlugin("[name].css"),
+        new WebpackCleanupPlugin()
     ],
     
     module: {
@@ -43,7 +48,11 @@ module.exports = {
                     //specify that we will be dealing with React code
                     presets: ['react'] 
                 }
-            }
+            },
+            {
+                test: /\.css$/,
+                loader: ExtractTextPlugin.extract({ fallback: 'style-loader', use: 'css-loader'})
+            },
         ]
     },
     

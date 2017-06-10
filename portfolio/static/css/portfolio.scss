@@ -1,0 +1,9 @@
+@import 'modules/functions';
+@import 'modules/mixins';
+@import 'components/tabs';
+@import 'components/containers';
+
+.background-gradient {
+  @include linear-gradient(to bottom, #f9dfdd, white);
+  height: 100%;
+}
