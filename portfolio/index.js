@@ -1,7 +1,15 @@
 import './static/css/portfolio.css'
+import Squiggle from '-!babel-loader!svg-react-loader!./static/img/squiggle.svg?name=Squiggle';
 
-var React = require('react')
-var ReactDOM = require('react-dom')
+var React = require('react');
+var ReactDOM = require('react-dom');
+
+export class MySvg extends React.Component {
+  render() {
+        return <Squiggle className='squiggle' />;
+  }
+}
+
 
 var tabList = [
     { 'id': 1, 'name': 'About', 'url': '/about' },
@@ -59,6 +67,7 @@ var Content = React.createClass({
             <div className="content col-md-10">
                 {this.props.currentTab === 1 ?
                 <div className="about">
+                    <Squiggle />
                     <p>hello this is dog</p>
                 </div>
                 :null}

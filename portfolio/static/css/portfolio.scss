@@ -6,4 +6,5 @@
 .background-gradient {
   @include linear-gradient(to bottom, #f9dfdd, white);
   height: 100%;
+  overflow: hidden;
 }

@@ -31,7 +31,7 @@ module.exports = {
             'window.jQuery': 'jquery' 
         }),
         new ExtractTextPlugin("[name].css"),
-        new WebpackCleanupPlugin()
+        new WebpackCleanupPlugin(),
     ],
     
     module: {
@@ -53,6 +53,9 @@ module.exports = {
                 test: /\.css$/,
                 loader: ExtractTextPlugin.extract({ fallback: 'style-loader', use: 'css-loader'})
             },
+            {
+              test: /\.svg$/, loader: 'babel-loader?presets[]=es2015,presets[]=react!svg-react-loader'
+            }
         ]
     },
     
