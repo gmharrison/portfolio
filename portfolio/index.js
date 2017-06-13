@@ -1,7 +1,10 @@
 import './static/css/portfolio.css'
 import Squiggle from '-!babel-loader!svg-react-loader!./static/img/squiggle.svg?name=Squiggle';
+
+
 var React = require('react');
 var ReactDOM = require('react-dom');
+
 
 export class MySvg extends React.Component {
   render() {

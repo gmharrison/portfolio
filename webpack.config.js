@@ -19,7 +19,6 @@ module.exports = {
         path: path.resolve('./portfolio/static/webpack_bundles/'),
         //naming convention webpack should use for your files
         filename: '[name]-[hash].js',
-        // publicPath: 'https://gmharrisonportfolio.s3.amazonaws.com/'
     },
     
     plugins: [
