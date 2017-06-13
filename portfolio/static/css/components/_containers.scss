@@ -20,13 +20,20 @@
   }
 }
 
-.about {
-  background-image: url('/img/durer.png');
+.image-container {
   background-size: cover;
   display: block;
   text-align: center;
   height: 400px;
   border: 1px solid darkblue;
+
+  &.about {
+    background-image: url('/img/durer.png');
+  }
+
+  &.contact {
+    background-image: url('/img/caravaggio.png');
+  }
 }
 
 .title-container {

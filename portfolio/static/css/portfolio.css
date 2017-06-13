@@ -30,13 +30,16 @@ li {
     text-transform: uppercase;
     margin-bottom: -15px; }
 
-.about {
-  background-image: url("/img/durer.png");
+.image-container {
   background-size: cover;
   display: block;
   text-align: center;
   height: 400px;
   border: 1px solid darkblue; }
+  .image-container.about {
+    background-image: url("/img/durer.png"); }
+  .image-container.contact {
+    background-image: url("/img/caravaggio.png"); }
 
 .title-container {
   position: absolute;
@@ -51,6 +54,29 @@ li {
     font-size: 10px;
     font-family: 'Overpass', italic;
     margin-bottom: 0; }
+
+form {
+  margin-bottom: 0; }
+
+label textarea {
+  font-weight: 100;
+  font-size: 12px;
+  padding: 10px;
+  height: 100px;
+  border-radius: 4px;
+  display: block;
+  border: none;
+  background-color: #f7f8ff; }
+
+.submit-button {
+  background: #f05f5b;
+  border-radius: 4px;
+  border: none;
+  color: white;
+  text-transform: uppercase;
+  padding: 5px 10px;
+  margin-top: 10px;
+  display: block; }
 
 .background-gradient {
   height: 100%;

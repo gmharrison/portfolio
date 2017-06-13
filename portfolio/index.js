@@ -1,10 +1,9 @@
 import './static/css/portfolio.css'
 import Squiggle from '-!babel-loader!svg-react-loader!./static/img/squiggle.svg?name=Squiggle';
-
+import { EssayForm } from './static/js/forms';
 
 var React = require('react');
 var ReactDOM = require('react-dom');
-
 
 export class MySvg extends React.Component {
   render() {
@@ -14,7 +13,8 @@ export class MySvg extends React.Component {
 
 var tabList = [
     { 'id': 1, 'name': 'About', 'url': '/about' },
-    { 'id': 2, 'name': 'Work', 'url': '/work' }
+    { 'id': 2, 'name': 'Work', 'url': '/work' },
+    { 'id': 3, 'name': 'Contact', 'url': '/contact' }
 ];
 
 var Tab = React.createClass({
@@ -67,7 +67,7 @@ var Content = React.createClass({
         return(
             <div className="content col-md-8 col-md-offset-2">
                 {this.props.currentTab === 1 ?
-                    <div className="about">
+                    <div className="about image-container">
                         <div className="title-container">
                             <p className="work-title">Knight, Death, and the Devil, Albrecht Dürer, 1513</p>
                         </div>
@@ -81,8 +81,21 @@ var Content = React.createClass({
                 :null}
 
                 {this.props.currentTab === 2 ?
-                <div className="work">
+                <div className="work image-container">
                     <p>hello this is cat</p>
+                </div>
+                :null}
+
+                {this.props.currentTab === 3 ?
+                <div className="contact image-container">
+                    <div className="title-container">
+                            <p className="work-title">Judith Beheading Holofernes, Caravaggio, 1599</p>
+                        </div>
+                        <div className="text-container contact-input">
+                            <p className="header">Contact Me</p>
+                            <div className="squiggle-container"><Squiggle /></div>
+                            <EssayForm />
+                        </div>
                 </div>
                 :null}
             </div>

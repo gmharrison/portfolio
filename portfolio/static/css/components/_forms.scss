@@ -1,0 +1,26 @@
+form {
+  margin-bottom: 0;
+}
+label {
+  textarea {
+    font-weight: 100;
+    font-size: 12px;
+    padding: 10px;
+    height: 100px;
+    border-radius: 4px;
+    display: block;
+    border: none;
+    background-color: #f7f8ff;
+  }
+}
+
+.submit-button {
+  background: #f05f5b;
+  border-radius: 4px;
+  border: none;
+  color: white;
+  text-transform: uppercase;
+  padding: 5px 10px;
+  margin-top: 10px;
+  display: block;
+}
