@@ -1,6 +1,5 @@
 import './static/css/portfolio.css'
 import Squiggle from '-!babel-loader!svg-react-loader!./static/img/squiggle.svg?name=Squiggle';
-
 var React = require('react');
 var ReactDOM = require('react-dom');
 
@@ -9,7 +8,6 @@ export class MySvg extends React.Component {
         return <Squiggle className='squiggle' />;
   }
 }
-
 
 var tabList = [
     { 'id': 1, 'name': 'About', 'url': '/about' },
@@ -64,12 +62,19 @@ var Tabs = React.createClass({
 var Content = React.createClass({
     render: function(){
         return(
-            <div className="content col-md-10">
+            <div className="content col-md-8 col-md-offset-2">
                 {this.props.currentTab === 1 ?
-                <div className="about">
-                    <Squiggle />
-                    <p>hello this is dog</p>
-                </div>
+                    <div className="about">
+                        <div className="title-container">
+                            <p className="work-title">Knight, Death, and the Devil, Albrecht Dürer, 1513</p>
+                        </div>
+                        <div className="text-container">
+                            <p className="header">About</p>
+                            <div className="squiggle-container"><Squiggle /></div>
+                            <p>Gabrielle is a designer, developer, and proud cacti parent who is passionate about
+                            art history and thick denim jeans.</p>
+                        </div>
+                    </div>
                 :null}
 
                 {this.props.currentTab === 2 ?

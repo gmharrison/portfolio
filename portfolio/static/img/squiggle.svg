@@ -1,12 +1,12 @@
 
 <svg version="1.1" id="Layer_1" x="0px" y="0px"
-	 viewBox="0 0 300 100" style="enable-background:new 0 0 300 100;">
+	 viewBox="0 0 200 100" style="enable-background:new 0 0 300 100;">
 <g>
 	<path class="st3" style="fill:none;stroke:#F05F5B;stroke-width:11;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;" d="M171-5"/>
 </g>
 <g>
-	<path class="st4" style="fill:none;stroke:#F05F5B;stroke-width:6;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;" d="M18.5,49.5c9.5,0,9.5,8,18.9,8c9.5,0,9.5-8,18.9-8c9.5,0,9.5,8,18.9,8c9.5,0,9.5-8,18.9-8c9.5,0,9.5,8,18.9,8
-		c9.5,0,9.5-8,18.9-8c9.5,0,9.5,8,18.9,8c9.5,0,9.5-8,18.9-8c9.5,0,9.5,8,18.9,8c9.5,0,9.5-8,18.9-8c9.5,0,9.5,8,18.9,8
-		c9.5,0,9.5-8,18.9-8c9.5,0,9.5,8,18.9,8c9.5,0,9.5-8,18.9-8"/>
+	<path class="st4" style="animation:shift .8s linear infinite;fill:none;stroke:#F05F5B;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;" d="M-24,50c13.2,0,13.2,8,26.5,8c13.2,0,13.2-8,26.5-8c13.2,0,13.2,8,26.5,8c13.2,0,13.2-8,26.5-8
+		c13.2,0,13.2,8,26.5,8c13.2,0,13.2-8,26.5-8c13.2,0,13.2,8,26.5,8c13.2,0,13.2-8,26.5-8c13.3,0,13.3,8,26.5,8c13.3,0,13.3-8,26.5-8
+		c13.3,0,13.3,8,26.5,8c13.3,0,13.3-8,26.5-8c13.3,0,13.3,8,26.5,8c13.3,0,13.3-8,26.5-8"/>
 </g>
 </svg>

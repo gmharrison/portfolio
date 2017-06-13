@@ -18,7 +18,8 @@ module.exports = {
         //where you want your compiled bundle to be stored
         path: path.resolve('./portfolio/static/webpack_bundles/'),
         //naming convention webpack should use for your files
-        filename: '[name]-[hash].js', 
+        filename: '[name]-[hash].js',
+        publicPath: '/'
     },
     
     plugins: [
@@ -55,6 +56,13 @@ module.exports = {
             },
             {
               test: /\.svg$/, loader: 'babel-loader?presets[]=es2015,presets[]=react!svg-react-loader'
+            },
+            {
+                test: /\.(jpe?g|png|gif|svg)$/i,
+                loaders: [
+                    'file-loader?hash=sha512&digest=hex&name=[hash].[ext]',
+                    'image-webpack-loader?bypassOnDebug&optimizationLevel=7&interlaced=false'
+                ]
             }
         ]
     },

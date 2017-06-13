@@ -4,7 +4,22 @@
 @import 'components/containers';
 
 .background-gradient {
-  @include linear-gradient(to bottom, #f9dfdd, white);
+
   height: 100%;
   overflow: hidden;
+}
+
+.st4 {
+  @keyframes shift {
+    from {
+      transform: translateX(-10%);
+    }
+    to {
+      transform: translateX(-40%);
+    }
+  }
+}
+
+.squiggle-container {
+  width: 100px;
 }
