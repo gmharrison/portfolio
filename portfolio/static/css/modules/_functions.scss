@@ -31,3 +31,33 @@
 
   @return 90deg - $value;
 }
+
+.squiggle {
+  @keyframes shift {
+    from {
+      transform: translateX(-10%);
+    }
+    to {
+      transform: translateX(-40%);
+    }
+  }
+}
+
+.vertSquiggle {
+  @keyframes vertshift {
+    from {
+      transform: translateY(-10%);
+    }
+    to {
+      transform: translateY(-40%);
+    }
+  }
+}
+
+@keyframes shiftTop {
+    50% {
+        -webkit-transform: translateY(4px);
+        transform: translateY(4px);
+    }
+
+}

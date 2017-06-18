@@ -1,5 +1,7 @@
 var React = require('react');
 var ReactDOM = require('react-dom');
+import DjangoCSRFToken from 'django-react-csrftoken'
+
 
 export class EssayForm extends React.Component {
   constructor(props) {
@@ -24,10 +26,11 @@ export class EssayForm extends React.Component {
   render() {
     return (
       <form onSubmit={this.handleSubmit}>
+        <p>Contact</p>
         <label>
           <textarea value={this.state.value} onChange={this.handleChange} />
         </label>
-        <input className="submit-button" type="submit" value="Submit" />
+        <input className="submit-button" type="submit" value="SEND" />
       </form>
     );
   }

@@ -1,8 +1,26 @@
-nav {
+.nav-tabs {
   padding: 30px 0;
+  border: none;
 
   ul {
     padding-left: 0;
+  }
+
+  li {
+    padding: 0;
+
+    a {
+      border: none;
+    }
+  }
+
+  > li.active a, li.active a:hover, li.active a:focus {
+    border: none;
+  }
+
+  > li a:hover, > li a:active, > li a:focus {
+    background: none;
+    border: none;
   }
 }
 
@@ -14,6 +32,6 @@ li {
   font-family: 'Overpass', sans-serif;
 
   a {
-    color: #f05f5b;
+    color: $pink;
   }
 }

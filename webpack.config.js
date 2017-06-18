@@ -4,7 +4,10 @@ var path = require('path');
 var webpack = require('webpack');
 var BundleTracker = require('webpack-bundle-tracker');
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
-
+const extractSass = new ExtractTextPlugin({
+    filename: "[name].[contenthash].css",
+    disable: process.env.NODE_ENV === "development"
+});
 
 module.exports = {
     //the base directory (absolute path) for resolving the entry option
@@ -20,7 +23,6 @@ module.exports = {
         //naming convention webpack should use for your files
         filename: '[name]-[hash].js',
     },
-    
     plugins: [
         //tells webpack where to store data about your webpack_bundles.
         new BundleTracker({filename: './webpack-stats.json'}), 
@@ -30,8 +32,9 @@ module.exports = {
             jQuery: 'jquery',
             'window.jQuery': 'jquery' 
         }),
-        new ExtractTextPlugin("[name].css"),
+        new ExtractTextPlugin("[name].scss"),
         new WebpackCleanupPlugin(),
+        extractSass
     ],
     
     module: {
@@ -50,17 +53,26 @@ module.exports = {
                 }
             },
             {
-                test: /\.css$/,
-                loader: ExtractTextPlugin.extract({ fallback: 'style-loader', use: 'css-loader'})
+              test: /\.scss$/,
+              use: extractSass.extract({
+                    use: [{
+                        loader: "css-loader"
+                    }, {
+                        loader: "sass-loader"
+                    }],
+                    // use style-loader in development
+                    fallback: "style-loader"
+                })
             },
             {
-              test: /\.svg$/, loader: 'babel-loader?presets[]=es2015,presets[]=react!svg-react-loader'
+                test: /\.svg$/, loader: 'babel-loader?presets[]=es2015,presets[]=react!svg-react-loader'
             },
             {
                 test: /\.(jpe?g|png|gif|svg)$/i,
                 loaders: [
-                    'file-loader?hash=sha512&digest=hex&name=[hash].[ext]',
-                    'image-webpack-loader?bypassOnDebug&optimizationLevel=7&interlaced=false'
+                    'file-loader?hash=sha512&digest=hex&name=[name].[ext]',
+                    'image-webpack-loader?bypassOnDebug&optimizationLevel=7&interlaced=false',
+                    'url-loader'
                 ]
             }
         ]

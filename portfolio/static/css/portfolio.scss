@@ -1,26 +1,18 @@
-@import 'modules/functions';
-@import 'modules/mixins';
-@import 'components/tabs';
-@import 'components/containers';
-@import 'components/forms';
+@import 'modules/variables.scss';
+@import 'modules/functions.scss';
+@import 'modules/mixins.scss';
+
+@import 'components/tabs.scss';
+@import 'components/containers.scss';
+@import 'components/forms.scss';
+@import 'components/buttons.scss';
+@import 'components/images.scss';
 
 .background-gradient {
-
   height: 100%;
   overflow: hidden;
 }
 
-.st4 {
-  @keyframes shift {
-    from {
-      transform: translateX(-10%);
-    }
-    to {
-      transform: translateX(-40%);
-    }
-  }
-}
-
-.squiggle-container {
-  width: 100px;
+p {
+  font-family: 'Overpass', italic;
 }

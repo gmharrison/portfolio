@@ -1,0 +1,26 @@
+button.contact {
+  //animation: shiftTop 2s ease-in-out infinite;
+  border-radius: 4px;
+  color: white;
+  background: $pink;
+  border: none;
+  padding: 7px 10px;
+  text-transform: uppercase;
+  font-family: 'Overpass';
+}
+
+.submit-button {
+  background: #f05f5b;
+  border-radius: 4px;
+  border: none;
+  color: white;
+  display: block;
+  position: absolute;
+  font-size: 12px;
+  text-transform: uppercase;
+  right: 39%;
+  top: 145px;
+  padding: 5px 10px;
+  font-family: 'Overpass';
+  z-index: 1000;
+}
