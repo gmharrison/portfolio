@@ -3,29 +3,29 @@ var ReactDOM = require('react-dom');
 import $ from 'jquery';
 window.jQuery = $;
 
-var getCookie = function(name) {
+function getCookie(name) {
     var cookieValue = null;
     if (document.cookie && document.cookie != '') {
         var cookies = document.cookie.split(';');
         for (var i = 0; i < cookies.length; i++) {
-            var cookie = $.trim(cookies[i]);
+            var cookie = jQuery.trim(cookies[i]);
             // Does this cookie string begin with the name we want?
             if (cookie.substring(0, name.length + 1) == (name + '=')) {
-                cookieValue = decodeURIComponent(cookie.substring(name.length + 1));
+                cookieValue = decodeURIComponent(
+                  cookie.substring(name.length + 1)
+                  );
                 break;
             }
         }
     }
     return cookieValue;
 }
+let csrftoken = getCookie('csrftoken');
 
-export var csrftoken = getCookie('csrftoken');
-
-const DjangoCSRFToken = () => {
-    return (
-        <input type="hidden" name="csrfmiddlewaretoken" value={csrftoken} />
-    );
-};
-
-
-export default DjangoCSRFToken;
+export class DjangoCSRFToken extends React.Component {
+    render() {
+        return (
+            <input type="hidden" name="csrfmiddlewaretoken" value={csrftoken} />
+        )
+    }
+}
