@@ -3,8 +3,9 @@ var ReactDOM = require('react-dom');
 import $ from 'jquery';
 window.jQuery = $;
 
+var cookieValue;
 function getCookie(name) {
-    var cookieValue = null;
+
     if (document.cookie && document.cookie != '') {
         var cookies = document.cookie.split(';');
         for (var i = 0; i < cookies.length; i++) {
@@ -20,12 +21,12 @@ function getCookie(name) {
     }
     return cookieValue;
 }
-let csrftoken = getCookie('csrftoken');
+const csrftoken = cookieValue;
 
 export class DjangoCSRFToken extends React.Component {
     render() {
         return (
-            <input type="hidden" name="csrfmiddlewaretoken" value={{csrftoken}} />
+            <input type="hidden" name="csrfmiddlewaretoken" value={csrftoken} />
         )
     }
 }
