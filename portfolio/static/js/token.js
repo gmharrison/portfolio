@@ -25,7 +25,7 @@ let csrftoken = getCookie('csrftoken');
 export class DjangoCSRFToken extends React.Component {
     render() {
         return (
-            <input type="hidden" name="csrfmiddlewaretoken" value={csrftoken} />
+            <input type="hidden" name="csrfmiddlewaretoken" value={{csrftoken}} />
         )
     }
 }
