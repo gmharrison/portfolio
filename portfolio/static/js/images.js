@@ -1,5 +1,7 @@
 var React = require('react');
 var ReactDOM = require('react-dom');
+import $ from 'jquery';
+window.jQuery = $;
 
 const image = require('-!url-loader!../img/selection.png?name=Selection');
 import HorzSquiggle from '-!babel-loader!svg-react-loader!../img/squiggle.svg?name=Squiggle';
@@ -24,6 +26,10 @@ export const contact = {
         section: { backgroundImage: 'url(' + image + ')' }
     }
 };
+
+function load(){
+    $('.form-container form').css('z-index', '1000');
+}
 
 function Squiggle() {
 	return (
@@ -50,7 +56,7 @@ export class ImageContainer extends React.Component {
                 <div className="title-container">
                     <p className="work-title">{this.props.category.title}</p>
                 </div>
-                <div className="section" style={this.props.category.section}/>
+                <div className="section" style={this.props.category.section} onClick={load}/>
             </div>
         )
     }

@@ -90,31 +90,38 @@ li {
 .form-container {
   position: absolute;
   width: 94%;
-  top: 118px;
+  top: 130px;
   text-align: center; }
 
 form {
   margin-bottom: 0;
-  position: relative; }
+  position: relative;
+  display: inline-block; }
   form p {
     text-transform: uppercase;
     color: white;
     text-align: left;
     position: absolute;
-    left: 39%;
-    top: -26px; }
+    right: 0%;
+    top: -26px;
+    width: 100%; }
+  form ::placeholder {
+    color: #bcbcbc;
+    font-size: 10px; }
 
-label textarea {
+.form-group {
+  width: 150px; }
+
+textarea.form-control, .form-group > input.form-control {
   font-weight: 100;
   font-size: 12px;
   padding: 10px;
-  position: absolute;
-  right: 39%;
-  height: 135px;
   border-radius: 4px;
   display: block;
   border: none;
-  background-color: #f7f8ff; }
+  background-color: #f7f8ff;
+  font-family: 'Overpass';
+  width: 150px; }
 
 button.contact {
   border-radius: 4px;
@@ -134,8 +141,8 @@ button.contact {
   position: absolute;
   font-size: 12px;
   text-transform: uppercase;
-  right: 39%;
-  top: 145px;
+  right: 0;
+  top: 167px;
   padding: 5px 10px;
   font-family: 'Overpass';
   z-index: 1000; }

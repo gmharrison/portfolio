@@ -1,7 +1,6 @@
 var React = require('react');
 var ReactDOM = require('react-dom');
-import DjangoCSRFToken from 'django-react-csrftoken'
-
+import DjangoCSRFToken from '../js/token.js'
 
 export class EssayForm extends React.Component {
   constructor(props) {
@@ -11,27 +10,42 @@ export class EssayForm extends React.Component {
     };
 
     this.handleChange = this.handleChange.bind(this);
-    this.handleSubmit = this.handleSubmit.bind(this);
   }
 
   handleChange(event) {
     this.setState({value: event.target.value});
   }
 
-  handleSubmit(event) {
-    alert('An essay was submitted: ' + this.state.value);
+  submitForm(event) {
+    var postData = $('#contact-form').serialize();
     event.preventDefault();
+    $.post('/contact-submit/', postData)
+        .done(function (data) {
+          if (data.result == 'error') {
+            $('error-message').show();
+          } else if (data.result == 'success') {
+            $('success-message').show();
+          }
+        })
+        .fail(function () {
+
+        })
   }
 
   render() {
     return (
-      <form onSubmit={this.handleSubmit}>
-        <p>Contact</p>
-        <label>
-          <textarea value={this.state.value} onChange={this.handleChange} />
-        </label>
-        <input className="submit-button" type="submit" value="SEND" />
-      </form>
+        <div className="form-container">
+          <form id="contact-form" onSubmit={this.submitForm.bind(this)}>
+              <DjangoCSRFToken />
+            <p>Contact Me</p>
+            <div className="form-group">
+                <input type="email" name="from_email" className="form-control" id="input-email" placeholder="Email" />
+            </div>
+            <textarea className="form-control" name="message" rows="5" placeholder="Leave a message" id="contact-text" value={this.state.value} onChange={this.handleChange} />
+            <input className="submit-button" type="submit" value="SEND"/>
+              <div className="success-message">yay</div>
+          </form>
+        </div>
     );
   }
 }

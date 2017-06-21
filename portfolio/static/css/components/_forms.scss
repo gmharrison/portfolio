@@ -1,27 +1,36 @@
 form {
   margin-bottom: 0;
   position: relative;
+  display: inline-block;
 
   p {
     text-transform: uppercase;
     color: white;
     text-align: left;
     position: absolute;
-    left: 39%;
+    right: 0%;
     top: -26px;
+    width: 100%;
+  }
+
+  ::placeholder{
+    color: #bcbcbc;
+    font-size: 10px;
   }
 }
-label {
-  textarea {
-    font-weight: 100;
-    font-size: 12px;
-    padding: 10px;
-    position: absolute;
-    right: 39%;
-    height: 135px;
-    border-radius: 4px;
-    display: block;
-    border: none;
-    background-color: #f7f8ff;
-  }
+
+.form-group {
+  width: 150px;
+}
+
+textarea.form-control, .form-group > input.form-control {
+  font-weight: 100;
+  font-size: 12px;
+  padding: 10px;
+  border-radius: 4px;
+  display: block;
+  border: none;
+  background-color: #f7f8ff;
+  font-family: 'Overpass';
+  width: 150px;
 }

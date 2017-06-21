@@ -22,9 +22,7 @@ const tabsInstance = (
             <Tab eventKey={3} title="Contact">
                 <div className="content col-md-8 col-md-offset-2">
                     <ImageContainer className={contact.className} style={contact.style} category={contact.caravaggio} />
-                    <div className="form-container">
-                        <EssayForm />
-                    </div>
+                    <EssayForm />
                 </div>
             </Tab>
           </Tabs>
