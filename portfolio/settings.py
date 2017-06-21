@@ -45,7 +45,7 @@ EMAIL_HOST_USER = os.environ['GMAIL_ACCOUNT']
 EMAIL_HOST_PASSWORD = os.environ['GMAIL_PASS']
 
 INSTALLED_APPS = (
-    'django.contrib.admin',
+    # 'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',

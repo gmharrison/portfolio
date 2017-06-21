@@ -21,6 +21,8 @@ function getCookie(name) {
     }
     return cookieValue;
 }
+getCookie('csrftoken');
+
 const csrftoken = cookieValue;
 
 export class DjangoCSRFToken extends React.Component {
