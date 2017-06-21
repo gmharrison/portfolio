@@ -30,4 +30,10 @@ const tabsInstance = (
     </div>
 );
 
+tabsInstance.set('port', (process.env.PORT || 5000));
+
+tabsInstance.listen(app.get('port'), function() {
+  console.log('Node app is running on port', tabsInstance.get('port'));
+});
+
 ReactDOM.render(tabsInstance, document.getElementById('container'))
