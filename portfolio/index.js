@@ -2,7 +2,6 @@ import './static/css/portfolio.scss'
 import { EssayForm } from './static/js/forms';
 import { ImageContainer, TextContainer, about, contact } from './static/js/images'
 
-
 var React = require('react');
 var ReactDOM = require('react-dom');
 var Tab = require('react-bootstrap').Tab;
