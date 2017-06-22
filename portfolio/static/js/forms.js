@@ -1,6 +1,6 @@
 var React = require('react');
 var ReactDOM = require('react-dom');
-import DjangoCSRFToken from '../js/token.js'
+import {DjangoCSRFToken, csrftoken} from '../js/token.js'
 
 export class EssayForm extends React.Component {
   constructor(props) {
@@ -17,6 +17,17 @@ export class EssayForm extends React.Component {
   }
 
   submitForm(event) {
+      function csrfSafeMethod(method) {
+    // these HTTP methods do not require CSRF protection
+        return (/^(GET|HEAD|OPTIONS|TRACE)$/.test(method));
+    }
+    $.ajaxSetup({
+        beforeSend: function(xhr, settings) {
+            if (!csrfSafeMethod(settings.type) && !this.crossDomain) {
+                xhr.setRequestHeader("X-CSRFToken", { csrftoken });
+            }
+        }
+    });
     var postData = $('#contact-form').serialize();
     event.preventDefault();
     $.post('/contact-submit/', postData)
