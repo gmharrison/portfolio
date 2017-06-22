@@ -1,6 +1,12 @@
 var React = require('react');
 var ReactDOM = require('react-dom');
-import {DjangoCSRFToken, csrftoken} from '../js/token.js'
+import {csrftoken} from '../js/token.js'; //Here we import the previous created file
+
+export const DjangoCSRFToken = () => {
+    return (
+        <input type="hidden" name="csrfmiddlewaretoken" value={csrftoken} />
+    );
+};
 
 export class EssayForm extends React.Component {
   constructor(props) {
