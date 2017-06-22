@@ -2,8 +2,8 @@ from django.http import JsonResponse
 from django.views.generic.base import TemplateView
 from django import forms
 from django.core.mail import send_mail, BadHeaderError
-from django.http import HttpResponse, HttpResponseRedirect
-from django.shortcuts import render, redirect
+from django.http import HttpResponse
+from django.views.decorators.csrf import ensure_csrf_cookie
 
 
 class HomePageView(TemplateView):
@@ -14,7 +14,7 @@ class ContactForm(forms.Form):
     message = forms.CharField(required=True, widget=forms.Textarea)
     from_email = forms.EmailField(label="email", required=True)
 
-
+@ensure_csrf_cookie
 def email(request):
     if request.method == 'GET':
         form = ContactForm()
