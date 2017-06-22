@@ -1,6 +1,6 @@
 var React = require('react');
 var ReactDOM = require('react-dom');
-import DjangoCSRFToken from 'django-react-csrftoken'
+import DjangoCSRFToken from '../js/token.js'
 
 export class EssayForm extends React.Component {
   constructor(props) {
@@ -36,7 +36,7 @@ export class EssayForm extends React.Component {
     return (
         <div className="form-container">
           <form id="contact-form" onSubmit={this.submitForm.bind(this)}>
-              <input type="hidden" name="csrfmiddlewaretoken" value={DjangoCSRFToken} />
+              <DjangoCSRFToken />
             <p>Contact Me</p>
             <div className="form-group">
                 <input type="email" name="from_email" className="form-control" id="input-email" placeholder="Email" />
