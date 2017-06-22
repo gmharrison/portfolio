@@ -24,7 +24,7 @@ export class EssayForm extends React.Component {
     $.ajaxSetup({
         beforeSend: function(xhr, settings) {
             if (!csrfSafeMethod(settings.type) && !this.crossDomain) {
-                xhr.setRequestHeader("X-CSRFToken", { csrftoken });
+                xhr.setRequestHeader("X-CSRFToken", csrftoken);
             }
         }
     });
