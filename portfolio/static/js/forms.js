@@ -48,7 +48,7 @@ export class EssayForm extends React.Component {
     return (
         <div className="form-container">
           <form id="contact-form" onSubmit={this.submitForm.bind(this)}>
-              <input type="hidden" value={csrftoken} name="csrftoken" />
+              <input type="hidden" value={csrftoken} name="csrfmiddlewaretoken" />
             <p>Contact Me</p>
             <div className="form-group">
                 <input type="email" name="from_email" className="form-control" id="input-email" placeholder="Email" />

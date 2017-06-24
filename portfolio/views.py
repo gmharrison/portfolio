@@ -10,12 +10,12 @@ class HomePageView(TemplateView):
     template_name = "index.html"
 
 
+@ensure_csrf_cookie
 class ContactForm(forms.Form):
     message = forms.CharField(required=True, widget=forms.Textarea)
     from_email = forms.EmailField(label="email", required=True)
 
 
-@ensure_csrf_cookie
 def email(request):
     if request.method == 'GET':
         form = ContactForm()
