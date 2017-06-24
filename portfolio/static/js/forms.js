@@ -1,13 +1,12 @@
 var React = require('react');
 var ReactDOM = require('react-dom');
-import {csrftoken} from '../js/token.js'; //Here we import the previous created file
+import {csrftoken} from './token.js'
 
-export const DjangoCSRFToken = () => {
+export function SuccessMessage() {
     return (
-        <input type="hidden" name="csrfmiddlewaretoken" value={csrftoken} />
-    );
-};
-
+        <div className="success-message">Thanks for sending me a message!</div>
+    )
+}
 export class EssayForm extends React.Component {
   constructor(props) {
     super(props);
@@ -38,11 +37,12 @@ export class EssayForm extends React.Component {
     event.preventDefault();
     $.post('/contact-submit/', postData)
         .done(function (data) {
-          if (data.result == 'error') {
-            $('error-message').show();
-          } else if (data.result == 'success') {
-            $('success-message').show();
-          }
+            if (data.result == 'success') {
+                $('.success-message').show();
+                $('.error-message').hide();
+          } else if (data.result == 'error') {
+                $('.error-message').show();
+            }
         })
         .fail(function () {
 
@@ -53,14 +53,17 @@ export class EssayForm extends React.Component {
     return (
         <div className="form-container">
           <form id="contact-form" onSubmit={this.submitForm.bind(this)}>
-              <DjangoCSRFToken />
+              <input type="hidden" value={csrftoken} name="csrftoken" />
             <p>Contact Me</p>
             <div className="form-group">
                 <input type="email" name="from_email" className="form-control" id="input-email" placeholder="Email" />
             </div>
             <textarea className="form-control" name="message" rows="5" placeholder="Leave a message" id="contact-text" value={this.state.value} onChange={this.handleChange} />
-            <input className="submit-button" type="submit" value="SEND"/>
-              <div className="success-message">yay</div>
+            <div className="error-message">Please fill out both fields</div>
+            <div className="success-message">Thanks for the message!</div>
+            <div className="submit-button-container">
+                <input className="submit-button" type="submit" value="SEND"/>
+            </div>
           </form>
         </div>
     );

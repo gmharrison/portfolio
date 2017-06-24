@@ -14,6 +14,7 @@ class ContactForm(forms.Form):
     message = forms.CharField(required=True, widget=forms.Textarea)
     from_email = forms.EmailField(label="email", required=True)
 
+
 @ensure_csrf_cookie
 def email(request):
     if request.method == 'GET':
@@ -28,7 +29,7 @@ def email(request):
             except BadHeaderError:
                 return HttpResponse('Invalid header found.')
             return JsonResponse({'result': 'success'})
-    return JsonResponse({'result': 'error'})
+        return JsonResponse({'result': 'error'})
 
 
 def success(request):

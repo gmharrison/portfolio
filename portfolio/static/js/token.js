@@ -19,6 +19,6 @@ var getCookie = function(name) {
     return cookieValue;
 }
 
-var csrftoken = getCookie('csrftoken');
+export var csrftoken = getCookie('csrftoken');
 
-export {csrftoken}
+
