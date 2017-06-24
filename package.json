@@ -15,7 +15,9 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "csurf": "^1.9.0",
     "django-react-csrftoken": "^1.0.1",
+    "express": "^4.15.3",
     "html-loader": "^0.4.5",
     "react": "^15.5.4",
     "react-bootstrap": "^0.31.0",
