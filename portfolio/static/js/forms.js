@@ -2,11 +2,6 @@ var React = require('react');
 var ReactDOM = require('react-dom');
 import {csrftoken} from './token.js'
 
-export function SuccessMessage() {
-    return (
-        <div className="success-message">Thanks for sending me a message!</div>
-    )
-}
 export class EssayForm extends React.Component {
   constructor(props) {
     super(props);
