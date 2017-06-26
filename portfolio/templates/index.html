@@ -13,15 +13,12 @@
   integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
   crossorigin="anonymous">
     </script>
-    <script type="text/javascript">
-    // using jQuery
-    var csrftoken = jQuery("[name=csrfmiddlewaretoken]").val();
-    </script>
 </head>
 <body>
 <div id="container">
 
 </div>
+<input type="hidden" value="{{ csrf_token }}" id="csrftoken" name="csrftoken">
 {% render_bundle 'main' %}
 </body>
 </html>
