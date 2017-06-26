@@ -1,11 +1,18 @@
-import './static/css/portfolio.scss'
-import { EssayForm } from './static/js/forms';
-import { ImageContainer, TextContainer, about, contact } from './static/js/images'
-
 var React = require('react');
 var ReactDOM = require('react-dom');
-var Tab = require('react-bootstrap').Tab;
-var Tabs = require('react-bootstrap').Tabs;
+import {Tab, Tabs} from 'react-bootstrap'
+import $ from 'jquery';
+import './static/css/portfolio.scss'
+import { EssayForm } from './static/js/forms'
+import { ImageContainer, TextContainer, about, contact } from './static/js/images'
+import {setupAjax} from './static/js/token'
+
+
+
+$(document).ready(function () {
+    console.log('jquery ready');
+    setupAjax();
+});
 
 const tabsInstance = (
     <div className="container">
@@ -29,4 +36,4 @@ const tabsInstance = (
     </div>
 );
 
-ReactDOM.render(tabsInstance, document.getElementById('container'))
+ReactDOM.render(tabsInstance, document.getElementById('container'));

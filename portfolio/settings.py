@@ -43,8 +43,8 @@ EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
 EMAIL_HOST_USER = os.environ.get('GMAIL_ACCOUNT')
 EMAIL_HOST_PASSWORD = os.environ.get('GMAIL_PASS')
-CSRF_COOKIE_DOMAIN = "https://gmharrison-portfolio.herokuapp.com/"
-CSRF_TRUSTED_ORIGINS = ["https://gmharrison-portfolio.herokuapp.com/"]
+CSRF_COOKIE_DOMAIN = ".gmharrison-portfolio.herokuapp.com"
+CSRF_TRUSTED_ORIGINS = [".gmharrison-portfolio.herokuapp.com"]
 SESSION_COOKIE_DOMAIN = None
 
 INSTALLED_APPS = (
@@ -162,3 +162,7 @@ if DEBUG:
             'STATS_FILE': os.path.join(BASE_DIR, 'webpack-stats.json'),
         }
     }
+
+    CSRF_COOKIE_DOMAIN = "127.0.0.1"
+    CSRF_TRUSTED_ORIGINS = ["127.0.0.1"]
+    CSRF_COOKIE_SECURE = False

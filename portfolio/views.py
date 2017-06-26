@@ -5,10 +5,15 @@ from django.core.mail import send_mail, BadHeaderError
 from django.http import HttpResponse
 from django.views.decorators.csrf import ensure_csrf_cookie
 from django.conf import settings
+from django.utils.decorators import method_decorator
 
 
 class HomePageView(TemplateView):
     template_name = "index.html"
+
+    @method_decorator(ensure_csrf_cookie)
+    def dispatch(self, request, *args, **kwargs):
+        return super(HomePageView, self).dispatch(request, *args, **kwargs)
 
 
 class ContactForm(forms.Form):

@@ -1,6 +1,5 @@
 var React = require('react');
 var ReactDOM = require('react-dom');
-import {csrftoken} from './token.js'
 
 export class EssayForm extends React.Component {
   constructor(props) {
@@ -34,10 +33,11 @@ export class EssayForm extends React.Component {
   }
 
   render() {
+    let csrft = document.getElementById('csrftoken').value;
     return (
         <div className="form-container">
           <form id="contact-form" onSubmit={this.submitForm.bind(this)}>
-              <input type="hidden" value={csrftoken} name="csrfmiddlewaretoken" />
+              <input type="hidden" value={csrft} name="csrfmiddlewaretoken" />
             <p>Contact Me</p>
             <div className="form-group">
                 <input type="email" name="from_email" className="form-control" id="input-email" placeholder="Email" />
