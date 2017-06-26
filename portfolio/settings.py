@@ -18,8 +18,8 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 SECRET_KEY = os.environ['SECRET_KEY']
 AWS_STORAGE_BUCKET_NAME = 'gmharrisonportfolio'
-AWS_ACCESS_KEY_ID = os.environ['AWS_ACCESS_KEY_ID']
-AWS_SECRET_ACCESS_KEY = os.environ['AWS_SECRET_ACCESS_KEY']
+AWS_ACCESS_KEY_ID = os.environ.get('AWS_ACCESS_KEY_ID')
+AWS_SECRET_ACCESS_KEY = os.environ.get('AWS_SECRET_ACCESS_KEY')
 AWS_S3_CUSTOM_DOMAIN = "gmharrisonportfolio.s3.amazonaws.com"
 
 
@@ -41,8 +41,8 @@ SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 EMAIL_USE_TLS = True
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
-EMAIL_HOST_USER = os.environ['GMAIL_ACCOUNT']
-EMAIL_HOST_PASSWORD = os.environ['GMAIL_PASS']
+EMAIL_HOST_USER = os.environ.get('GMAIL_ACCOUNT')
+EMAIL_HOST_PASSWORD = os.environ.get('GMAIL_PASS')
 CSRF_COOKIE_DOMAIN = "https://gmharrison-portfolio.herokuapp.com/"
 CSRF_TRUSTED_ORIGINS = ["https://gmharrison-portfolio.herokuapp.com/"]
 SESSION_COOKIE_DOMAIN = None
