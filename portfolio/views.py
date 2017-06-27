@@ -32,7 +32,7 @@ def email(request):
             message = form.cleaned_data['message']
             if settings.EMAIL_HOST_USER:
                 try:
-                    send_mail(subject='Inquiry', message=message, from_email=from_email, recipient_list=['gabrielle.m.harrison@gmail.com'])
+                    send_mail(subject='Inquiry', message=(from_email + ' sent you a message: ' + message), from_email=from_email, recipient_list=['gabrielle.m.harrison@gmail.com'])
                 except BadHeaderError:
                     return HttpResponse('Invalid header found.')
             return JsonResponse({'result': 'success'})
