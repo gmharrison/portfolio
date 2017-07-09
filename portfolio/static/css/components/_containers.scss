@@ -73,3 +73,34 @@
   display: block;
   text-align: right;
 }
+
+#gallery-container {
+  padding: 50px;
+}
+
+.object-container {
+  padding: 100px 30px;
+  text-align: center;
+  background-size: cover;
+  font-family: 'Overpass';
+  background-repeat: no-repeat;
+  border: 1px solid darkblue;
+  position: relative;
+
+  .object-title {
+    font-size: 14px;
+    text-transform: uppercase;
+  }
+
+  .squiggle-container {
+    margin: -12px auto;
+  }
+
+  .text-container {
+    background-color: transparent;
+    text-align: center;
+    color: white;
+    padding: 0 50px;
+    width: 100%;
+  }
+}

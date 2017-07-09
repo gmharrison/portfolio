@@ -1,5 +1,5 @@
-var React = require('react');
-var ReactDOM = require('react-dom');
+import React from 'react';
+import ReactDOM from 'react-dom';
 import $ from 'jquery';
 window.jQuery = $;
 
@@ -31,7 +31,7 @@ function load(){
     $('.form-container form').css('z-index', '1000');
 }
 
-function Squiggle() {
+export function Squiggle() {
 	return (
 		<HorzSquiggle className='squiggle' />
 	)

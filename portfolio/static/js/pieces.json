@@ -1,0 +1,22 @@
+{
+  "pieces": [
+    {
+      "id": 1,
+      "title": "Pear Tree Studio",
+      "work": "The Haywain Triptych, Hieronymus Bosch, 1516",
+      "style": "./static/img/bosch.png"
+    },
+    {
+      "id": 2,
+      "title": "Tutor Associates",
+      "work": "Masnavi of Jalal-al Din Rumi, 1488-89",
+      "style": "./static/img/folio.png"
+    },
+    {
+      "id": 3,
+      "title": "Rhode Island Office of Innovation",
+      "work": "Annunciation and Visitation, Melchior Broederlam, 1398-99",
+      "style": "./static/img/annunciation.png"
+    }
+  ]
+}
