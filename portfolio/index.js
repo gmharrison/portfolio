@@ -27,9 +27,7 @@ const tabsInstance = (
             </Tab>
             <Tab eventKey={2} title="Work">
                 <div className="container" id="gallery-container">
-                    <div className="row">
-                        <Gallery pieces={json.pieces} key={json.pieces.id}/>
-                    </div>
+                    <Gallery pieces={json.pieces} key={json.pieces.id}/>
                 </div>
             </Tab>
             <Tab eventKey={3} title="Contact">
