@@ -20,6 +20,13 @@
       "work": "Annunciation and Visitation, Melchior Broederlam, 1398-99",
       "style": "./static/img/annunciation.png",
       "path": "rhode-island"
+    },
+    {
+      "id": 4,
+      "title": "Code Brooklyn",
+      "work": "A Thousand Li of Rivers and Mountains, Wang Ximeng, 1113",
+      "style": "./static/img/scroll.png",
+      "path": "code-brooklyn"
     }
   ]
 }

@@ -12,29 +12,21 @@
   50% {
     -webkit-transform: translateY(4px);
     transform: translateY(4px); } }
-.nav-tabs {
-  padding: 30px 0;
-  border: none; }
-  .nav-tabs ul {
-    padding-left: 0; }
-  .nav-tabs li {
-    padding: 0; }
-    .nav-tabs li a {
-      border: none; }
-  .nav-tabs > li.active a, .nav-tabs li.active a:hover, .nav-tabs li.active a:focus {
-    border: none; }
-  .nav-tabs > li a:hover, .nav-tabs > li a:active, .nav-tabs > li a:focus {
-    background: none;
-    border: none; }
-
-li {
-  list-style: none;
-  display: inline;
-  text-transform: uppercase;
-  padding: 0 10px;
-  font-family: 'Overpass', sans-serif; }
-  li a {
-    color: #f05f5b; }
+.nav-list {
+  padding: 30px 50px;
+  margin-bottom: 0; }
+  .nav-list li {
+    list-style: none;
+    display: inline;
+    text-transform: uppercase;
+    padding: 0 20px;
+    font-family: 'Overpass', sans-serif; }
+    .nav-list li:active, .nav-list li :hover, .nav-list li :visited, .nav-list li :focus {
+      text-decoration: none; }
+    .nav-list li a {
+      color: #f05f5b; }
+      .nav-list li a:active, .nav-list li a :hover, .nav-list li a :visited, .nav-list li a :focus {
+        text-decoration: none; }
 
 .content {
   padding: 20px 20px 0 20px;
@@ -83,10 +75,6 @@ li {
 .squiggle-container {
   width: 100px; }
 
-.vertsquiggle-container {
-  padding-top: 22px;
-  height: 300px; }
-
 .form-container {
   position: absolute;
   width: 94%;
@@ -98,7 +86,11 @@ li {
   text-align: right; }
 
 #gallery-container {
-  padding: 50px; }
+  padding: 0 50px 50px 50px; }
+  #gallery-container .row {
+    margin-top: 30px; }
+    #gallery-container .row:nth-child(1) {
+      margin-top: 10px; }
 
 .object-container {
   padding: 100px 30px;

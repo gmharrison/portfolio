@@ -1,0 +1,191 @@
+@keyframes shift {
+  from {
+    transform: translateX(-10%); }
+  to {
+    transform: translateX(-40%); } }
+
+@keyframes vertshift {
+  from {
+    transform: translateY(-10%); }
+  to {
+    transform: translateY(-40%); } }
+
+@keyframes shiftTop {
+  50% {
+    -webkit-transform: translateY(4px);
+    transform: translateY(4px); } }
+
+.nav-list {
+  padding: 30px 50px;
+  margin-bottom: 0; }
+  .nav-list li {
+    list-style: none;
+    display: inline;
+    text-transform: uppercase;
+    padding: 0 20px;
+    font-family: 'Overpass', sans-serif; }
+    .nav-list li:active, .nav-list li :hover, .nav-list li :visited, .nav-list li :focus {
+      text-decoration: none; }
+    .nav-list li a {
+      color: #f05f5b; }
+      .nav-list li a:active, .nav-list li a :hover, .nav-list li a :visited, .nav-list li a :focus {
+        text-decoration: none; }
+
+.content {
+  padding: 20px 20px 0 20px;
+  overflow-y: scroll; }
+
+.text-container {
+  display: inline-block;
+  padding: 20px;
+  text-align: left;
+  background: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: 'Overpass', sans-serif; }
+  .text-container .header {
+    text-transform: uppercase;
+    margin-bottom: -15px; }
+
+.image-container {
+  background-size: cover;
+  display: block;
+  text-align: center;
+  position: relative;
+  height: 400px;
+  border: 1px solid darkblue; }
+  .image-container .button-container {
+    padding-top: 150px; }
+
+.selection-container {
+  position: absolute; }
+
+.title-container {
+  position: absolute;
+  top: -17px;
+  right: 7px;
+  background: #fff8fb;
+  padding: 5px;
+  border-radius: 4px;
+  z-index: 1;
+  border: 1px solid darkblue; }
+  .title-container p {
+    font-size: 10px;
+    margin-bottom: 0; }
+
+.squiggle-container {
+  width: 100px; }
+
+.form-container {
+  position: absolute;
+  width: 94%;
+  top: 130px;
+  text-align: center; }
+
+.submit-button-container {
+  display: block;
+  text-align: right; }
+
+#gallery-container {
+  padding: 0 50px 50px 50px; }
+  #gallery-container .row {
+    margin-top: 30px; }
+    #gallery-container .row:nth-child(1) {
+      margin-top: 10px; }
+
+.object-container {
+  padding: 100px 30px;
+  text-align: center;
+  background-size: cover;
+  font-family: 'Overpass';
+  background-repeat: no-repeat;
+  border: 1px solid darkblue;
+  position: relative; }
+  .object-container .object-title {
+    font-size: 14px;
+    text-transform: uppercase; }
+  .object-container .squiggle-container {
+    margin: -12px auto; }
+  .object-container .text-container {
+    background-color: transparent;
+    text-align: center;
+    color: white;
+    padding: 0 50px;
+    width: 100%; }
+
+form {
+  margin-bottom: 0;
+  position: relative;
+  display: inline-block; }
+  form p {
+    text-transform: uppercase;
+    color: white;
+    text-align: left;
+    position: absolute;
+    right: 0%;
+    top: -26px;
+    width: 100%; }
+  form ::placeholder {
+    color: #bcbcbc;
+    font-size: 10px; }
+
+.form-group {
+  width: 150px; }
+
+textarea.form-control, .form-group > input.form-control {
+  font-weight: 100;
+  font-size: 12px;
+  padding: 10px;
+  border-radius: 4px;
+  display: block;
+  border: none;
+  background-color: #f7f8ff;
+  font-family: 'Overpass';
+  width: 150px; }
+
+.success-message, .error-message {
+  display: none;
+  background: #fff8fb;
+  margin-top: 10px;
+  padding: 5px;
+  border-radius: 4px;
+  font-size: 10px;
+  font-family: 'Overpass';
+  border: 1px solid darkblue; }
+
+button.contact {
+  border-radius: 4px;
+  color: white;
+  background: #f05f5b;
+  border: none;
+  padding: 7px 10px;
+  text-transform: uppercase;
+  font-family: 'Overpass'; }
+
+.submit-button {
+  background: #f05f5b;
+  border-radius: 4px;
+  border: none;
+  color: white;
+  font-size: 12px;
+  margin-top: 10px;
+  text-transform: uppercase;
+  padding: 5px 10px;
+  font-family: 'Overpass';
+  z-index: 1000; }
+
+.contact .section {
+  background-size: cover;
+  height: 400px;
+  width: 100%;
+  position: absolute;
+  z-index: 998; }
+
+.background-gradient {
+  height: 100%;
+  overflow: hidden; }
+
+p {
+  font-family: 'Overpass', italic; }

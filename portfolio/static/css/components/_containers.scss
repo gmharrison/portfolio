@@ -57,11 +57,6 @@
   width: 100px;
 }
 
-.vertsquiggle-container {
-  padding-top: 22px;
-  height: 300px;
-}
-
 .form-container {
   position: absolute;
   width: 94%;
@@ -75,7 +70,15 @@
 }
 
 #gallery-container {
-  padding: 50px;
+  padding: 0 50px 50px 50px;
+
+  .row {
+    margin-top: 30px;
+
+    &:nth-child(1) {
+      margin-top: 10px;
+    }
+  }
 }
 
 .object-container {

@@ -61,14 +61,3 @@ export class ImageContainer extends React.Component {
         )
     }
 }
-
-export class Home extends React.Component {
-    render() {
-        return (
-            <div className="content col-md-8 col-md-offset-2">
-                <ImageContainer className={about.className} style={about.style} category={about.durer} />
-                <TextContainer category={about.durer}/>
-            </div>
-        )
-    }
-}

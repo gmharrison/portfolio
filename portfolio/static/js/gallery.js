@@ -1,73 +1,55 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 import {Squiggle} from './images.js'
 
-
-// export function Gallery({ pieces }) {
-//     const Portfolio = pieces.map((piece) =>
-//     <div className="col-md-4" key={piece.id}>
-//         <div className="object-container" key={piece.id} style={{backgroundImage:'url(' + piece.style + ')'}}>
-//             <div className="text-container">
-//                 <div className="object-title">
-//                 {piece.title}
-//                 </div>
-//                 <div className="squiggle-container">
-//                     <Squiggle />
-//                 </div>
-//             </div>
-//             <div className="title-container">
-//                 <p className="work-title">{piece.description}</p>
-//             </div>
-//         </div>
-//     </div>
-//     )
-//
-//   return <div>{Portfolio}</div>
-// }
-
-export function Gallery({ pieces }) {
-  let content = [];
-  pieces.forEach((piece, i) =>{
-      if((i+1) % 3 == 0){
-        content.push(
-          <div className="row" key={piece.id}>
-            <div className="col-md-4" key={piece.id}>
-                <div className="object-container" href={piece.path} key={piece.id} style={{backgroundImage:'url(' + piece.style + ')'}}>
-                    <div className="text-container">
-                        <div className="object-title">
-                           {piece.title}
-                        </div>
-                        <div className="squiggle-container">
-                            <Squiggle />
-                        </div>
+function GalleryCol({piece}){
+    return(
+        <div className="col-md-4" key={piece.id}>
+            <div className="object-container" key={piece.id} style={{backgroundImage:'url(' + piece.style + ')'}}>
+                <div className="text-container">
+                    <div className="object-title">
+                        {piece.title}
                     </div>
-                    <div className="title-container">
-                        <p className="work-title">{piece.work}</p>
+                    <div className="squiggle-container">
+                        <Squiggle />
                     </div>
+                </div>
+                <div className="title-container">
+                    <p className="work-title">{piece.work}</p>
                 </div>
             </div>
-          </div>
-        )
-      }else{
-          content.push(<div className="col-md-4" key={piece.id}>
-                <div className="object-container" key={piece.id} style={{backgroundImage:'url(' + piece.style + ')'}}>
-                    <div className="text-container">
-                        <div className="object-title">
-                            {piece.title}
-                        </div>
-                        <div className="squiggle-container">
-                            <Squiggle />
-                        </div>
-                    </div>
-                    <div className="title-container">
-                        <p className="work-title">{piece.work}</p>
-                    </div>
-                </div>
+        </div>
+    )
+}
 
-            </div>);
-      }
-  });
+function GalleryRow({ cols }){
+    return(
+        <div className="row">
+            {cols.map((col, i) =>
+                <GalleryCol piece={col} />
+            )}
+        </div>
+    );
+}
+
+export function Gallery({ pieces }) {
+    const itemsPerRow = 3;
+    let rows = [];
+
+    // Turn our list of items into a list of rows that each have a list of columns
+    // so our data structure more accurately reflects our display structure
+    for (let i=0; i < pieces.length; i += itemsPerRow){
+        let cols = [];
+        for(let j=0; j < itemsPerRow && i + j < pieces.length; j++ ){
+            cols.push(pieces[i+j]);
+        }
+        rows.push(cols);
+    }
+
   return (
-      <div>{content}</div>
-  )
+    <div className="Gallery">
+        {rows.map((row, i) =>
+            <GalleryRow cols={row}/>
+        )}
+    </div>
+  );
 }
