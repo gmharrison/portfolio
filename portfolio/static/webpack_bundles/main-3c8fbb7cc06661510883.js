@@ -17689,7 +17689,7 @@ module.exports = ReactNoopUpdateQueue;
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_jquery__ = __webpack_require__(17);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_jquery___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_jquery__);
 
-const STATIC_URL = '/static';
+let STATIC_URL = document.getElementById('static-url').value;
 
 __webpack_provided_window_dot_jQuery = __WEBPACK_IMPORTED_MODULE_1_jquery___default.a;
 const HorzSquiggle = __webpack_require__(110);
@@ -21902,7 +21902,7 @@ class EssayForm extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component 
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__images_js__ = __webpack_require__(65);
 
 
-const STATIC_URL = '/static';
+let STATIC_URL = document.getElementById('static-url').value;
 
 function GalleryCol({ piece }) {
     return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(

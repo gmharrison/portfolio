@@ -1,5 +1,5 @@
 import React from 'react';
-const STATIC_URL = '/static'
+let STATIC_URL = document.getElementById('static-url').value;
 import $ from 'jquery';
 window.jQuery = $;
 const HorzSquiggle = require('-!babel-loader!svg-react-loader!../img/squiggle.svg?name=Squiggle');

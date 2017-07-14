@@ -1,6 +1,6 @@
 import React from 'react';
 import {Squiggle} from './images.js'
-const STATIC_URL = '/static'
+let STATIC_URL = document.getElementById('static-url').value;
 
 function GalleryCol({piece}){
     return(

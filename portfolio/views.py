@@ -6,6 +6,7 @@ from django.http import HttpResponse
 from django.views.decorators.csrf import ensure_csrf_cookie
 from django.conf import settings
 from django.utils.decorators import method_decorator
+from portfolio.settings import DEBUG
 
 
 class HomePageView(TemplateView):
@@ -14,6 +15,17 @@ class HomePageView(TemplateView):
     @method_decorator(ensure_csrf_cookie)
     def dispatch(self, request, *args, **kwargs):
         return super(HomePageView, self).dispatch(request, *args, **kwargs)
+
+    def get_context_data(self, **kwargs):
+        context = super(HomePageView, self).get_context_data()
+        if not DEBUG:
+            prod = True
+            context['prod'] = prod
+        if DEBUG:
+            dev = True
+            context['dev'] = dev
+
+        return context
 
 
 class ContactForm(forms.Form):
