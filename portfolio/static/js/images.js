@@ -4,13 +4,13 @@ import $ from 'jquery';
 window.jQuery = $;
 const image = require('-!url-loader!../img/selection.png?name=Selection');
 const HorzSquiggle = require('-!babel-loader!svg-react-loader!../img/squiggle.svg?name=Squiggle');
-// import Durer from '../img/durer.png?name=Durer'
+import Durer from '../img/durer.png?name=Durer'
 import Caravaggio from '../img/caravaggio.png?name=Caravaggio'
 
 
 export const about = {
     className: "about image-container",
-    style: { backgroundImage: `url()` },
+    style: { backgroundImage: `url(${Durer})` },
     durer: {
         header: "About",
         title: "Knight, Death, and the Devil, Albrecht Dürer, 1513",

@@ -69,11 +69,15 @@ module.exports = {
                 })
             },
             {
+                test: /\.html$/,
+                exclude: /node_modules/,
+                loader: 'html-loader'
+            },
+            {
                 test: /\.svg$/, loader: 'babel-loader?presets[]=es2015,presets[]=react!svg-react-loader'
             },
             {
                 test: /\.(jpe?g|png|gif|svg)$/,
-                include: '/static/img',
                 use: [
                 {
                   loader: 'file-loader',
