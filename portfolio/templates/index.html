@@ -20,7 +20,7 @@
 </div>
 <input type="hidden" value="{{ csrf_token }}" id="csrftoken" name="csrftoken">
 {% if prod %}
-    <input type="hidden" value="https://gmharrisonportfolio.s3.amazonaws.com/" id="static-url" name="static-url">
+    <input type="hidden" value="https://gmharrisonportfolio.s3.amazonaws.com" id="static-url" name="static-url">
 {% elif dev %}
     <input type="hidden" value="/static/" id="static-url" name="static-url">
 {% endif %}
