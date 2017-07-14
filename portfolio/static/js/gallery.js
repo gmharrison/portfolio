@@ -1,10 +1,11 @@
 import React from 'react';
 import {Squiggle} from './images.js'
+const STATIC_URL = '/static'
 
 function GalleryCol({piece}){
     return(
         <div className="col-md-4" key={piece.id}>
-            <div className="object-container" key={piece.id} style={{backgroundImage:'url(' + piece.style + ')'}}>
+            <div className="object-container" key={piece.id} style={{backgroundImage:'url(' + STATIC_URL + piece.style + ')'}}>
                 <div className="text-container">
                     <div className="object-title">
                         {piece.title}
@@ -20,7 +21,6 @@ function GalleryCol({piece}){
         </div>
     )
 }
-
 
 function GalleryRow({ cols }){
     return(
