@@ -2,15 +2,15 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import $ from 'jquery';
 window.jQuery = $;
-
 const image = require('-!url-loader!../img/selection.png?name=Selection');
-import HorzSquiggle from '-!babel-loader!svg-react-loader!../img/squiggle.svg?name=Squiggle';
-import Durer from '-!url-loader!../img/Durer.png?name=Durer'
-import Caravaggio from '-!url-loader!../img/Caravaggio.png?name=Caravaggio'
+const HorzSquiggle = require('-!babel-loader!svg-react-loader!../img/squiggle.svg?name=Squiggle');
+// import Durer from '../img/durer.png?name=Durer'
+import Caravaggio from '../img/caravaggio.png?name=Caravaggio'
+
 
 export const about = {
     className: "about image-container",
-    style: { backgroundImage: 'url(' + Durer + ')' },
+    style: { backgroundImage: `url()` },
     durer: {
         header: "About",
         title: "Knight, Death, and the Devil, Albrecht Dürer, 1513",
@@ -20,7 +20,7 @@ export const about = {
 
 export const contact = {
     className: "contact image-container",
-    style: { backgroundImage: 'url(' + Caravaggio + ')' },
+    style: { backgroundImage: `url(${Caravaggio})` },
     caravaggio: {
         title: "Judith Beheading Holofernes, Caravaggio, 1599",
         section: { backgroundImage: 'url(' + image + ')' }

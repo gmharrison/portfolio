@@ -11,17 +11,18 @@ const extractSass = new ExtractTextPlugin({
 
 module.exports = {
     //the base directory (absolute path) for resolving the entry option
-    context: __dirname,
+    context: path.resolve(__dirname, 'portfolio/static'),
     //the entry point we created earlier. Note that './' means 
     //your current directory. You don't have to specify the extension  now,
     //because you will specify extensions later in the `resolve` section
-    entry: './portfolio/index',
+    entry: './js/index.js',
     
     output: {
         //where you want your compiled bundle to be stored
         path: path.resolve('./portfolio/static/webpack_bundles/'),
         //naming convention webpack should use for your files
         filename: '[name]-[hash].js',
+        // publicPath: '/static/'
     },
     plugins: [
         //tells webpack where to store data about your webpack_bundles.
@@ -34,7 +35,8 @@ module.exports = {
         }),
         new ExtractTextPlugin("[name].scss"),
         new WebpackCleanupPlugin(),
-        extractSass
+        extractSass,
+        // new CopyWebpackPlugin([ { from: './portfolio/static/img/', to: './img/'}])
     ],
     
     module: {
@@ -44,6 +46,7 @@ module.exports = {
             {test: /\.jsx?$/, 
                 //we definitely don't want babel to transpile all the files in 
                 //node_modules. That would take a long time.
+                include: path.resolve(__dirname, 'portfolio/static'),
                 exclude: /node_modules/, 
                 //use the babel loader 
                 loader: 'babel-loader', 
@@ -56,32 +59,58 @@ module.exports = {
               test: /\.scss$/,
               use: extractSass.extract({
                     use: [{
-                        loader: "css-loader"
+                        loader: "css-loader?url=false"
                     }, {
                         loader: "sass-loader"
                     }],
                     // use style-loader in development
-                    fallback: "style-loader"
+                    fallback: "style-loader",
+
                 })
             },
             {
                 test: /\.svg$/, loader: 'babel-loader?presets[]=es2015,presets[]=react!svg-react-loader'
             },
             {
-                test: /\.(jpe?g|png|gif|svg)$/i,
-                loaders: [
-                    'file-loader?hash=sha512&digest=hex&name=[name].[ext]',
-                    'image-webpack-loader?bypassOnDebug&optimizationLevel=7&interlaced=false',
-                    'url-loader'
-                ]
+                test: /\.(jpe?g|png|gif|svg)$/,
+                include: '/static/img',
+                use: [
+                {
+                  loader: 'file-loader',
+                  options: {
+                    query: {
+                      name:'webpack_bundles/img/[name].[ext]'
+                    }
+                  }
+                },
+                {
+                  loader: 'image-webpack-loader',
+                  options: {
+                    query: {
+                      mozjpeg: {
+                        progressive: true,
+                      },
+                      gifsicle: {
+                        interlaced: true,
+                      },
+                      optipng: {
+                        optimizationLevel: 7,
+                      },
+                        name:'/img/[name].[ext]'
+                    }
+                  }
+                }],
             }
         ]
     },
     
     resolve: {
         //tells webpack where to look for modules
-        modules: ['node_modules'],
+        modules: ["./node_modules"],
+        alias:{
+          Img: path.resolve( __dirname, './portfolio/static/webpack_bundles/img/' )
+        },
         //extensions that should be used to resolve modules
-        extensions: ['.js', '.jsx']
+        extensions: ['.js', '.jsx', '.png']
     }   
 }

@@ -24,7 +24,7 @@ from django.conf.urls import url, include
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'^static/(?P<path>.*)$', serve, {'document_root': settings.STATIC_ROOT}),
+    # url(r'^static/(?P<path>.*)$', serve, {'document_root': settings.STATIC_ROOT}),
     url(r'^$', HomePageView.as_view(), name='home-page'),
     url(r'^contact-submit/', email, name='contact-form'),
 ]

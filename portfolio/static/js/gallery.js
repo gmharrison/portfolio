@@ -21,6 +21,7 @@ function GalleryCol({piece}){
     )
 }
 
+
 function GalleryRow({ cols }){
     return(
         <div className="row">

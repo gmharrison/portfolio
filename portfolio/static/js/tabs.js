@@ -1,8 +1,8 @@
 import React from 'react'
 import json from '../js/pieces.json'
-import {ImageContainer, TextContainer, about, contact} from '../js/images'
-import {Gallery} from '../js/gallery'
-import {EssayForm} from '../js/forms'
+import {ImageContainer, TextContainer, about, contact} from './images'
+import {Gallery} from './gallery'
+import {EssayForm} from './forms'
 
 
 export class AboutContainer extends React.Component {
