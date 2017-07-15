@@ -107,3 +107,31 @@
     width: 100%;
   }
 }
+
+.summary-container {
+  padding: 20px;
+  background: white;
+}
+
+.jumbo-container {
+  position: relative;
+}
+
+.jumbo-image {
+  text-align: center;
+  height: 300px;
+}
+
+#pear-detail-page {
+  .main-display-container {
+    background: #fff8fb;
+    padding: 70px;
+    text-align: center;
+    position: relative;
+
+    img {
+      width: 300px;
+      height: auto;
+    }
+  }
+}

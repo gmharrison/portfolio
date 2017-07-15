@@ -1,0 +1,26 @@
+.subtitle {
+  color: #f05f5b;
+  text-transform: uppercase;
+  font-size: 10px;
+  position: absolute;
+  top: 50%;
+  margin: 0;
+
+  &.right {
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+    right: 0;
+  }
+
+  &.left {
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+    left: 0;
+  }
+}

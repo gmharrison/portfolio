@@ -1,16 +1,26 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import {HashRouter, Route, Switch, Link, BrowserRouter as Router} from 'react-router-dom'
+import {HashRouter, Route, Link, BrowserRouter as Router} from 'react-router-dom'
 import {AboutContainer, GalleryContainer, ContactContainer} from './tabs'
 import $ from 'jquery';
 import '../css/portfolio.scss'
 import {setupAjax} from './token'
+
+import {Pear} from './detail'
 
 
 $(document).ready(function () {
     console.log('jquery ready');
     setupAjax();
 });
+
+const routes = [{
+    path: '/pear-tree',
+    component: Pear,
+    key: 1,
+}];
+
+const routeComponents = routes.map(({path, component, key}) => <Route exact path={path} component={component} key={key} />);
 
 ReactDOM.render(
     <HashRouter>
@@ -36,6 +46,7 @@ ReactDOM.render(
             <Route exact path="/" component={AboutContainer} />
             <Route path="/work" component={GalleryContainer}/>
             <Route path="/contact" component={ContactContainer}/>
+            <div>{routeComponents}</div>
         </div>
 
     </HashRouter>, document.getElementById('container'));

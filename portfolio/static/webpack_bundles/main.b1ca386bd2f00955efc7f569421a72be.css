@@ -115,6 +115,26 @@
     padding: 0 50px;
     width: 100%; }
 
+.summary-container {
+  padding: 20px;
+  background: white; }
+
+.jumbo-container {
+  position: relative; }
+
+.jumbo-image {
+  text-align: center;
+  height: 300px; }
+
+#pear-detail-page .main-display-container {
+  background: #fff8fb;
+  padding: 70px;
+  text-align: center;
+  position: relative; }
+  #pear-detail-page .main-display-container img {
+    width: 300px;
+    height: auto; }
+
 form {
   margin-bottom: 0;
   position: relative;
@@ -182,6 +202,31 @@ button.contact {
   width: 100%;
   position: absolute;
   z-index: 998; }
+
+#pear-detail-page.jumbo-image {
+  padding: 50px; }
+
+.subtitle {
+  color: #f05f5b;
+  text-transform: uppercase;
+  font-size: 10px;
+  position: absolute;
+  top: 50%;
+  margin: 0; }
+  .subtitle.right {
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+    right: 0; }
+  .subtitle.left {
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+    left: 0; }
 
 .background-gradient {
   height: 100%;
