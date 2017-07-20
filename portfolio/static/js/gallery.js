@@ -1,5 +1,5 @@
 import React from 'react';
-import {Squiggle} from './images.js'
+import {Squiggle} from './shapes.js'
 let STATIC_URL = document.getElementById('static-url').value;
 import {Link} from 'react-router-dom'
 

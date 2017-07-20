@@ -6,6 +6,141 @@
   z-index: 998;
 }
 
-#pear-detail-page.jumbo-image {
+.jumbo-image {
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+img.display {
+  width: 100%;
+}
+
+.jumbo-image {
   padding: 50px;
+}
+
+.rotate {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #f1c3c2;
+  position: absolute;
+  top: 30%;
+  right: 10%;
+}
+
+.dots {
+  height: 50px;
+  background-image: linear-gradient(-45deg, #f1c3c2 25%, transparent 25%, transparent 50%, #f1c3c2 50%, #f1c3c2 38%, transparent 48%, transparent);
+  background-size: 4px 4px;
+  border: none;
+}
+
+.circle {
+  width: 10px;
+  height: 10px;
+  border: 1px solid #f1c3c2;
+  -moz-border-radius: 50px;
+  -webkit-border-radius: 50px;
+  border-radius: 50px;
+  position: absolute;
+  top: 50%;
+  right: 10%;
+
+  &:nth-child(1){
+    left: 20%;
+  }
+}
+
+.shapes {
+  .rotate:nth-child(2) {
+    height: 60px;
+    width: 60px;
+    left: 15%;
+    top: 60%;
+  }
+
+  .circle {
+    width: 20px;
+    height: 20px;
+    border: 1px solid #f1c3c2;
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    border-radius: 50px;
+    position: absolute;
+    animation: MoveUpDown 6s cubic-bezier(0.4, 0, 1, 1) infinite;
+  }
+}
+
+.triangle {
+  width: 0;
+  height: 0;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-bottom: 20px solid #f1c3c2;
+  position: absolute;
+  left: 35%;
+}
+
+@keyframes MoveUpDown {
+  0% {
+    bottom: 0;
+    left: 25%
+  }
+  50% {
+    bottom: 100px;
+    left: 25%
+  }
+  100% {
+    bottom: 0;
+    left: 25%
+  }
+}
+
+#ta-detail-page {
+  .small-circle {
+    width: 8px;
+    height: 8px;
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
+    border-radius: 8px;
+    display: inline-block;
+    margin: 3px;
+
+    &.red {
+      background-color: #ff6d6f;
+    }
+    &.yellow {
+      background-color: #fff18a;
+    }
+    &.green {
+      background-color: #90e585;
+    }
+  }
+
+  .browser-shadow {
+    position: absolute;
+    left: -22px;
+    top: 15px;
+    height: 100%;
+    width: 100%;
+    background-size: 4px 4px;
+    background-image: linear-gradient(-45deg, #f1c3c2 25%, transparent 25%, transparent 50%, #f1c3c2 50%, #f1c3c2 38%, transparent 48%, transparent);
+  }
+}
+
+.line {
+  border-top: 1px solid darkblue;
+  position: absolute;
+  top: 0;
+  width: 50%;
+  left: 25%;
+}
+
+img.circle-text.rotate {
+  position: absolute;
+  top: 10px;
+  right: 0;
+  border: none;
+  height: 100px;
+  width: 100px;
 }

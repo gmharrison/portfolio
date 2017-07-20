@@ -15177,17 +15177,17 @@ module.exports = canDefineProperty;
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(__webpack_provided_window_dot_jQuery) {/* harmony export (immutable) */ __webpack_exports__["e"] = Squiggle;
-/* harmony export (immutable) */ __webpack_exports__["c"] = TextContainer;
+/* WEBPACK VAR INJECTION */(function(__webpack_provided_window_dot_jQuery) {/* harmony export (immutable) */ __webpack_exports__["c"] = TextContainer;
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(5);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_jquery__ = __webpack_require__(17);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_jquery___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_jquery__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__shapes__ = __webpack_require__(276);
 
 let STATIC_URL = document.getElementById('static-url').value;
 
 __webpack_provided_window_dot_jQuery = __WEBPACK_IMPORTED_MODULE_1_jquery___default.a;
-const HorzSquiggle = __webpack_require__(111);
+
 
 const about = {
     className: "about image-container",
@@ -15216,10 +15216,6 @@ function load() {
     __WEBPACK_IMPORTED_MODULE_1_jquery___default()('.form-container form').css('z-index', '1000');
 }
 
-function Squiggle() {
-    return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(HorzSquiggle, { className: 'squiggle' });
-}
-
 function TextContainer(props) {
     return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
         'div',
@@ -15232,7 +15228,7 @@ function TextContainer(props) {
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
             'div',
             { className: 'squiggle-container' },
-            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(Squiggle, null)
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2__shapes__["a" /* Squiggle */], null)
         ),
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
             'p',
@@ -21658,41 +21654,47 @@ module.exports = function(module) {
 /* unused harmony export Summary */
 /* unused harmony export DetailImage */
 /* unused harmony export DisplayImage */
+/* unused harmony export ImageSection */
+/* unused harmony export ImageSectionTwo */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(5);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__images__ = __webpack_require__(40);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__shapes__ = __webpack_require__(276);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__detail_data__ = __webpack_require__(277);
+
+
 
 let STATIC_URL = document.getElementById('static-url').value;
-
-
-const pear = {
-    style: { backgroundImage: `url(${STATIC_URL}/img/detail/bosch-wide.png)` },
-    header: "Pear Tree Studio Designs",
-    summary: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sollicitudin " + "massa neque, non aliquet urna placerat vitae. Nam auctor lacus et placerat gravida. Proin " + "pulvinar porttitor turpis, vitae facilisis sem. Morbi efficitur erat odio, id commodo enim rhoncus " + "sit amet. Quisque lobortis, erat at sodales lacinia, risus urna fringilla metus.",
-    maindisplay: `${STATIC_URL}/img/detail/pear-tree-logo.png`,
-    subtitle: 'Pear Tree Studio 2017'
-};
-/* unused harmony export pear */
-
 
 function Summary(props) {
     return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
         'div',
-        { className: 'summary-container text-container' },
-        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-            'p',
-            { className: 'header' },
-            props.details.header
-        ),
+        { className: 'container' },
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
             'div',
-            { className: 'squiggle-container' },
-            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__images__["e" /* Squiggle */], null)
-        ),
-        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-            'p',
-            null,
-            props.details.summary
+            { className: 'row' },
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                'div',
+                { className: 'col-md-6 col-md-offset-3' },
+                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                    'div',
+                    { className: 'summary-container' },
+                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                        'p',
+                        { className: 'header' },
+                        props.details.header
+                    ),
+                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                        'div',
+                        { className: 'squiggle-container' },
+                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__shapes__["a" /* Squiggle */], null)
+                    ),
+                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                        'p',
+                        null,
+                        props.details.summary
+                    )
+                )
+            )
         )
     );
 }
@@ -21705,16 +21707,202 @@ function DisplayImage(props) {
     return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
         'div',
         { className: 'main-display-container' },
-        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: props.details.maindisplay, className: 'main-display-image' }),
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: props.details.maindisplay, className: 'display' }),
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__shapes__["b" /* Square */], null),
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-            'p',
-            { className: 'subtitle left' },
-            props.details.subtitle
+            'div',
+            { className: 'squiggle-container' },
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__shapes__["a" /* Squiggle */], null)
+        ),
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__shapes__["c" /* Circle */], null),
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__shapes__["c" /* Circle */], null)
+    );
+}
+
+function ImageSection(props) {
+    return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+        'div',
+        { className: 'detail-image-container' },
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div', { className: 'line' }),
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+            'div',
+            { className: 'container' },
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                'div',
+                { className: 'row' },
+                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div', { className: 'col-md-2' }),
+                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                    'div',
+                    { className: 'col-md-8' },
+                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                        'div',
+                        { className: 'col-md-4' },
+                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                            'div',
+                            { className: 'image-container' },
+                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: props.details.alternate1, className: 'alternate-1 display' })
+                        ),
+                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                            'div',
+                            { className: 'title-container' },
+                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                'p',
+                                null,
+                                'Alternate 1'
+                            )
+                        )
+                    ),
+                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                        'div',
+                        { className: 'col-md-4' },
+                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                            'div',
+                            { className: 'image-container' },
+                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: props.details.alternate2, className: 'alternate-2 display' })
+                        ),
+                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                            'div',
+                            { className: 'title-container' },
+                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                'p',
+                                null,
+                                'Alternate 2'
+                            )
+                        )
+                    ),
+                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                        'div',
+                        { className: 'col-md-4' },
+                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                            'div',
+                            { className: 'image-container' },
+                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: props.details.alternate3, className: 'alternate-3 display' })
+                        ),
+                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                            'div',
+                            { className: 'title-container' },
+                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                'p',
+                                null,
+                                'Alternate 3'
+                            )
+                        )
+                    )
+                )
+            ),
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                'div',
+                { className: 'row' },
+                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div', { className: 'col-md-2' }),
+                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                    'div',
+                    { className: 'col-md-8' },
+                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                        'div',
+                        { className: 'col-md-4 col-md-offset-2' },
+                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                            'div',
+                            { className: 'image-container' },
+                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: props.details.alternate4, className: 'alternate-4 display' })
+                        ),
+                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                            'div',
+                            { className: 'title-container' },
+                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                'p',
+                                null,
+                                'Alternate 4'
+                            )
+                        )
+                    ),
+                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                        'div',
+                        { className: 'col-md-4' },
+                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                            'div',
+                            { className: 'image-container' },
+                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: props.details.alternate5, className: 'alternate-5 display' })
+                        ),
+                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                            'div',
+                            { className: 'title-container' },
+                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                'p',
+                                null,
+                                'Alternate 5'
+                            )
+                        )
+                    )
+                )
+            )
         ),
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-            'p',
-            { className: 'subtitle right' },
-            props.details.subtitle
+            'div',
+            { className: 'shapes' },
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__shapes__["b" /* Square */], null),
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__shapes__["d" /* SquareDots */], null),
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__shapes__["d" /* SquareDots */], null),
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                'div',
+                { className: 'circle-container' },
+                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__shapes__["c" /* Circle */], null)
+            )
+        )
+    );
+}
+
+function ImageSectionTwo(props) {
+    return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+        'div',
+        { className: 'detail-image-container' },
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+            'div',
+            { className: 'container' },
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                'div',
+                { className: 'row' },
+                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                    'div',
+                    { className: 'col-md-4 col-md-offset-2' },
+                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                        'div',
+                        { className: 'image-container no-padding' },
+                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: props.details.alternate6, className: 'alternate-6 display' })
+                    ),
+                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                        'div',
+                        { className: 'title-container' },
+                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                            'p',
+                            null,
+                            props.details.title1
+                        )
+                    )
+                ),
+                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                    'div',
+                    { className: 'col-md-4' },
+                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                        'div',
+                        { className: 'image-container no-padding' },
+                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: props.details.alternate7, className: 'alternate-7 display' })
+                    ),
+                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                        'div',
+                        { className: 'title-container' },
+                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                            'p',
+                            null,
+                            props.details.title2
+                        )
+                    )
+                )
+            )
+        ),
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+            'div',
+            { className: 'squiggle-container' },
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__shapes__["a" /* Squiggle */], null)
         )
     );
 }
@@ -21723,18 +21911,64 @@ class Pear extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
     render() {
         return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
             'div',
-            { id: 'pear-detail-page' },
+            { id: 'pear-detail-page', className: 'detail-page-container', style: __WEBPACK_IMPORTED_MODULE_2__detail_data__["a" /* pear */].style },
             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                 'div',
                 { className: 'jumbo-container' },
-                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(DetailImage, { details: pear }),
-                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(Summary, { details: pear })
+                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(Summary, { details: __WEBPACK_IMPORTED_MODULE_2__detail_data__["a" /* pear */] })
             ),
-            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(DisplayImage, { details: pear })
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(DisplayImage, { details: __WEBPACK_IMPORTED_MODULE_2__detail_data__["a" /* pear */] }),
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(ImageSection, { details: __WEBPACK_IMPORTED_MODULE_2__detail_data__["a" /* pear */] }),
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(ImageSectionTwo, { details: __WEBPACK_IMPORTED_MODULE_2__detail_data__["a" /* pear */] })
         );
     }
 }
 /* harmony export (immutable) */ __webpack_exports__["a"] = Pear;
+
+
+class TA extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
+    render() {
+        return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+            'div',
+            { id: 'ta-detail-page', className: 'detail-page-container', style: __WEBPACK_IMPORTED_MODULE_2__detail_data__["b" /* ta */].style },
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                'div',
+                { className: 'jumbo-container' },
+                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(Summary, { details: __WEBPACK_IMPORTED_MODULE_2__detail_data__["b" /* ta */] })
+            ),
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                'div',
+                { className: 'screenshot-container' },
+                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                    'div',
+                    { className: 'container' },
+                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                        'div',
+                        { className: 'row' },
+                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                            'div',
+                            { className: 'col-md-6 col-md-offset-3' },
+                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                'div',
+                                { className: 'browser-window' },
+                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                    'div',
+                                    { className: 'browser-bar' },
+                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div', { className: 'small-circle red' }),
+                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div', { className: 'small-circle yellow' }),
+                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div', { className: 'small-circle green' })
+                                ),
+                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: __WEBPACK_IMPORTED_MODULE_2__detail_data__["b" /* ta */].slideshow1, className: 'display' }),
+                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div', { className: 'browser-shadow' })
+                            )
+                        )
+                    )
+                )
+            )
+        );
+    }
+}
+/* harmony export (immutable) */ __webpack_exports__["b"] = TA;
 
 
 /***/ }),
@@ -21986,7 +22220,7 @@ class EssayForm extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component 
 /* harmony export (immutable) */ __webpack_exports__["a"] = Gallery;
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(5);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__images_js__ = __webpack_require__(40);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__shapes_js__ = __webpack_require__(276);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_react_router_dom__ = __webpack_require__(66);
 
 
@@ -22017,7 +22251,7 @@ function GalleryCol({ piece }) {
                         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                             'div',
                             { className: 'squiggle-container' },
-                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__images_js__["e" /* Squiggle */], null)
+                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__shapes_js__["a" /* Squiggle */], null)
                         )
                     ),
                     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
@@ -22101,6 +22335,10 @@ const routes = [{
     path: '/pear-tree',
     component: __WEBPACK_IMPORTED_MODULE_7__detail__["a" /* Pear */],
     key: 1
+}, {
+    path: '/tutor-associates',
+    component: __WEBPACK_IMPORTED_MODULE_7__detail__["b" /* TA */],
+    key: 2
 }];
 
 const routeComponents = routes.map(({ path, component, key }) => __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_react_router_dom__["a" /* Route */], { exact: true, path: path, component: component, key: key }));
@@ -37495,6 +37733,100 @@ module.exports = {
 		}
 	]
 };
+
+/***/ }),
+/* 272 */,
+/* 273 */,
+/* 274 */,
+/* 275 */,
+/* 276 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function(__webpack_provided_window_dot_jQuery) {/* harmony export (immutable) */ __webpack_exports__["a"] = Squiggle;
+/* harmony export (immutable) */ __webpack_exports__["b"] = Square;
+/* harmony export (immutable) */ __webpack_exports__["d"] = SquareDots;
+/* harmony export (immutable) */ __webpack_exports__["c"] = Circle;
+/* unused harmony export Triangle */
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(5);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_jquery__ = __webpack_require__(17);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_jquery___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_jquery__);
+
+const HorzSquiggle = __webpack_require__(111);
+// import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
+
+__webpack_provided_window_dot_jQuery = __WEBPACK_IMPORTED_MODULE_1_jquery___default.a;
+
+function Squiggle() {
+	return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(HorzSquiggle, { className: 'squiggle' });
+}
+
+function Square() {
+	return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div', { className: 'rotate' });
+}
+
+function SquareDots() {
+	return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div', { className: 'rotate dots' });
+}
+
+function Circle() {
+	return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div', { className: 'circle' });
+}
+
+function Triangle() {
+	return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div', { className: 'triangle rotate' });
+}
+
+let sdegree = 0;
+
+__WEBPACK_IMPORTED_MODULE_1_jquery___default()(window).scroll(function () {
+
+	sdegree++;
+	sdegree = sdegree + 2;
+	var srotate = "rotate(" + sdegree + "deg)";
+	__WEBPACK_IMPORTED_MODULE_1_jquery___default()(".rotate").css({ "-moz-transform": srotate, "-webkit-transform": srotate });
+});
+/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(17)))
+
+/***/ }),
+/* 277 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(5);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
+
+let STATIC_URL = document.getElementById('static-url').value;
+
+const pear = {
+    style: { backgroundImage: `url(${STATIC_URL}/img/detail/bosch-wide.png)` },
+    circle: `${STATIC_URL}/img/detail/pear-circle.png`,
+    header: "Pear Tree Studio Designs",
+    summary: "Pear Tree Studio contacted me about creating a logo and design for their business cards, " + "providing me with two references for inspiration: old seed packets and socialist posters. " + "Below you'll find the final logo design, alternates, and the final business card design, which " + "attempt to synthesize these two styles.",
+    maindisplay: `${STATIC_URL}/img/detail/pear-tree-logo.png`,
+    subtitle: 'Pear Tree Studio 2017',
+    alternate1: `${STATIC_URL}/img/detail/pear-alt-1.png`,
+    alternate2: `${STATIC_URL}/img/detail/pear-alt-2.png`,
+    alternate3: `${STATIC_URL}/img/detail/pear-alt-3.png`,
+    alternate4: `${STATIC_URL}/img/detail/pear-alt-5.png`,
+    alternate5: `${STATIC_URL}/img/detail/pear-alt-6.png`,
+    alternate6: `${STATIC_URL}/img/detail/bc-front.png`,
+    alternate7: `${STATIC_URL}/img/detail/bc-back.png`,
+    title1: 'Business Card Front',
+    title2: 'Business Card Back'
+};
+/* harmony export (immutable) */ __webpack_exports__["a"] = pear;
+
+
+const ta = {
+    style: { backgroundImage: `url(${STATIC_URL}/img/detail/folio-wide.png)` },
+    header: "Tutor Associates Designs",
+    summary: "Pear Tree Studio contacted me about creating a logo and design for their business cards, " + "providing me with two references for inspiration: old seed packets and socialist posters. " + "Below you'll find the final logo design, alternates, and the final business card design, which " + "attempt to synthesize these two styles.",
+    slideshow1: `${STATIC_URL}/img/detail/ta-mockup-1.png`
+};
+/* harmony export (immutable) */ __webpack_exports__["b"] = ta;
+
 
 /***/ })
 /******/ ]);

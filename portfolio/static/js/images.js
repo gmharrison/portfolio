@@ -2,7 +2,7 @@ import React from 'react';
 let STATIC_URL = document.getElementById('static-url').value;
 import $ from 'jquery';
 window.jQuery = $;
-const HorzSquiggle = require('-!babel-loader!svg-react-loader!../img/squiggle.svg?name=Squiggle');
+import {Squiggle} from './shapes'
 
 
 export const about = {
@@ -26,12 +26,6 @@ export const contact = {
 
 function load(){
     $('.form-container form').css('z-index', '1000');
-}
-
-export function Squiggle() {
-	return (
-		<HorzSquiggle className='squiggle' />
-	)
 }
 
 export function TextContainer (props) {
