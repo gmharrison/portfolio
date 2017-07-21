@@ -35,6 +35,12 @@ img.display {
   border: none;
 }
 
+.jumbo-container {
+  .circle:nth-child(2) {
+    left: 20%;
+  }
+}
+
 .circle {
   width: 10px;
   height: 10px;
@@ -45,17 +51,13 @@ img.display {
   position: absolute;
   top: 50%;
   right: 10%;
-
-  &:nth-child(1){
-    left: 20%;
-  }
 }
 
 .shapes {
   .rotate:nth-child(2) {
     height: 60px;
     width: 60px;
-    left: 15%;
+    left: 19%;
     top: 60%;
   }
 
@@ -134,6 +136,13 @@ img.display {
   top: 0;
   width: 50%;
   left: 25%;
+}
+
+.small-line {
+  width: 10%;
+  height: 1px;
+  background-color: $pink;
+  margin-bottom: 10px;
 }
 
 img.circle-text.rotate {

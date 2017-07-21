@@ -21652,10 +21652,6 @@ module.exports = function(module) {
 
 "use strict";
 /* unused harmony export Summary */
-/* unused harmony export DetailImage */
-/* unused harmony export DisplayImage */
-/* unused harmony export ImageSection */
-/* unused harmony export ImageSectionTwo */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(5);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__shapes__ = __webpack_require__(276);
@@ -21668,242 +21664,35 @@ let STATIC_URL = document.getElementById('static-url').value;
 function Summary(props) {
     return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
         'div',
-        { className: 'container' },
+        null,
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
             'div',
-            { className: 'row' },
+            { className: 'summary-container' },
             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                'div',
-                { className: 'col-md-6 col-md-offset-3' },
-                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                    'div',
-                    { className: 'summary-container' },
-                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                        'p',
-                        { className: 'header' },
-                        props.details.header
-                    ),
-                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                        'div',
-                        { className: 'squiggle-container' },
-                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__shapes__["a" /* Squiggle */], null)
-                    ),
-                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                        'p',
-                        null,
-                        props.details.summary
-                    )
-                )
-            )
-        )
-    );
-}
-
-function DetailImage(props) {
-    return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div', { className: 'jumbo-image', style: props.details.style });
-}
-
-function DisplayImage(props) {
-    return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-        'div',
-        { className: 'main-display-container' },
-        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: props.details.maindisplay, className: 'display' }),
-        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__shapes__["b" /* Square */], null),
-        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-            'div',
-            { className: 'squiggle-container' },
-            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__shapes__["a" /* Squiggle */], null)
-        ),
-        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__shapes__["c" /* Circle */], null),
-        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__shapes__["c" /* Circle */], null)
-    );
-}
-
-function ImageSection(props) {
-    return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-        'div',
-        { className: 'detail-image-container' },
-        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div', { className: 'line' }),
-        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-            'div',
-            { className: 'container' },
-            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                'div',
-                { className: 'row' },
-                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div', { className: 'col-md-2' }),
-                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                    'div',
-                    { className: 'col-md-8' },
-                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                        'div',
-                        { className: 'col-md-4' },
-                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                            'div',
-                            { className: 'image-container' },
-                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: props.details.alternate1, className: 'alternate-1 display' })
-                        ),
-                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                            'div',
-                            { className: 'title-container' },
-                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                'p',
-                                null,
-                                'Alternate 1'
-                            )
-                        )
-                    ),
-                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                        'div',
-                        { className: 'col-md-4' },
-                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                            'div',
-                            { className: 'image-container' },
-                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: props.details.alternate2, className: 'alternate-2 display' })
-                        ),
-                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                            'div',
-                            { className: 'title-container' },
-                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                'p',
-                                null,
-                                'Alternate 2'
-                            )
-                        )
-                    ),
-                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                        'div',
-                        { className: 'col-md-4' },
-                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                            'div',
-                            { className: 'image-container' },
-                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: props.details.alternate3, className: 'alternate-3 display' })
-                        ),
-                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                            'div',
-                            { className: 'title-container' },
-                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                'p',
-                                null,
-                                'Alternate 3'
-                            )
-                        )
-                    )
-                )
+                'p',
+                { className: 'header' },
+                props.details.header
             ),
             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                 'div',
-                { className: 'row' },
-                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div', { className: 'col-md-2' }),
-                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                    'div',
-                    { className: 'col-md-8' },
-                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                        'div',
-                        { className: 'col-md-4 col-md-offset-2' },
-                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                            'div',
-                            { className: 'image-container' },
-                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: props.details.alternate4, className: 'alternate-4 display' })
-                        ),
-                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                            'div',
-                            { className: 'title-container' },
-                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                'p',
-                                null,
-                                'Alternate 4'
-                            )
-                        )
-                    ),
-                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                        'div',
-                        { className: 'col-md-4' },
-                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                            'div',
-                            { className: 'image-container' },
-                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: props.details.alternate5, className: 'alternate-5 display' })
-                        ),
-                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                            'div',
-                            { className: 'title-container' },
-                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                'p',
-                                null,
-                                'Alternate 5'
-                            )
-                        )
-                    )
-                )
+                { className: 'squiggle-container' },
+                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__shapes__["a" /* Squiggle */], null)
+            ),
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                'p',
+                null,
+                props.details.summary
             )
         ),
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
             'div',
-            { className: 'shapes' },
-            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__shapes__["b" /* Square */], null),
-            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__shapes__["d" /* SquareDots */], null),
-            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__shapes__["d" /* SquareDots */], null),
-            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                'div',
-                { className: 'circle-container' },
-                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__shapes__["c" /* Circle */], null)
-            )
-        )
-    );
-}
-
-function ImageSectionTwo(props) {
-    return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-        'div',
-        { className: 'detail-image-container' },
-        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-            'div',
-            { className: 'container' },
-            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                'div',
-                { className: 'row' },
-                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                    'div',
-                    { className: 'col-md-4 col-md-offset-2' },
-                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                        'div',
-                        { className: 'image-container no-padding' },
-                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: props.details.alternate6, className: 'alternate-6 display' })
-                    ),
-                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                        'div',
-                        { className: 'title-container' },
-                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                            'p',
-                            null,
-                            props.details.title1
-                        )
-                    )
-                ),
-                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                    'div',
-                    { className: 'col-md-4' },
-                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                        'div',
-                        { className: 'image-container no-padding' },
-                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: props.details.alternate7, className: 'alternate-7 display' })
-                    ),
-                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                        'div',
-                        { className: 'title-container' },
-                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                            'p',
-                            null,
-                            props.details.title2
-                        )
-                    )
-                )
-            )
+            { className: 'jumbo-image-container' },
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: props.details.maindisplay, className: 'display' })
         ),
-        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-            'div',
-            { className: 'squiggle-container' },
-            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__shapes__["a" /* Squiggle */], null)
-        )
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__shapes__["b" /* Square */], null),
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__shapes__["c" /* SquareDots */], null),
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__shapes__["d" /* Circle */], null),
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__shapes__["d" /* Circle */], null)
     );
 }
 
@@ -21911,15 +21700,213 @@ class Pear extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
     render() {
         return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
             'div',
-            { id: 'pear-detail-page', className: 'detail-page-container', style: __WEBPACK_IMPORTED_MODULE_2__detail_data__["a" /* pear */].style },
+            { id: 'pear-detail-page', className: 'detail-page-container' },
             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                 'div',
                 { className: 'jumbo-container' },
                 __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(Summary, { details: __WEBPACK_IMPORTED_MODULE_2__detail_data__["a" /* pear */] })
             ),
-            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(DisplayImage, { details: __WEBPACK_IMPORTED_MODULE_2__detail_data__["a" /* pear */] }),
-            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(ImageSection, { details: __WEBPACK_IMPORTED_MODULE_2__detail_data__["a" /* pear */] }),
-            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(ImageSectionTwo, { details: __WEBPACK_IMPORTED_MODULE_2__detail_data__["a" /* pear */] })
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                'div',
+                { className: 'detail-image-container' },
+                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                    'div',
+                    { className: 'container' },
+                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                        'div',
+                        { className: 'row' },
+                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                            'div',
+                            { className: 'col-md-10 col-md-offset-1' },
+                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                'div',
+                                { className: 'background-image', style: __WEBPACK_IMPORTED_MODULE_2__detail_data__["a" /* pear */].style },
+                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                    'div',
+                                    { className: 'section-title-container' },
+                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                        'div',
+                                        { className: 'number' },
+                                        '.001'
+                                    ),
+                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                        'p',
+                                        null,
+                                        'Alternate',
+                                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br', null),
+                                        'Logos'
+                                    )
+                                ),
+                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                    'div',
+                                    { className: 'row' },
+                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                        'div',
+                                        { className: 'col-md-4' },
+                                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                            'div',
+                                            { className: 'image-container' },
+                                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: __WEBPACK_IMPORTED_MODULE_2__detail_data__["a" /* pear */].alternate1, className: 'alternate-1 display' })
+                                        )
+                                    ),
+                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                        'div',
+                                        { className: 'col-md-4' },
+                                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                            'div',
+                                            { className: 'image-container' },
+                                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: __WEBPACK_IMPORTED_MODULE_2__detail_data__["a" /* pear */].alternate2, className: 'alternate-2 display' })
+                                        )
+                                    ),
+                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                        'div',
+                                        { className: 'col-md-4' },
+                                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                            'div',
+                                            { className: 'image-container' },
+                                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: __WEBPACK_IMPORTED_MODULE_2__detail_data__["a" /* pear */].alternate3, className: 'alternate-3 display' })
+                                        )
+                                    )
+                                )
+                            )
+                        )
+                    ),
+                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                        'div',
+                        { className: 'row vertical-align' },
+                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                            'div',
+                            { className: 'col-md-3 col-md-offset-1' },
+                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                'div',
+                                { className: 'quote-container' },
+                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div', { className: 'small-line' }),
+                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                    'p',
+                                    null,
+                                    'I loved the challenge of synthesizing two very specific styles into one logo'
+                                )
+                            )
+                        ),
+                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                            'div',
+                            { className: 'col-md-7' },
+                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                'div',
+                                { className: 'background-image', style: __WEBPACK_IMPORTED_MODULE_2__detail_data__["a" /* pear */].style },
+                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                    'div',
+                                    { className: 'section-title-container' },
+                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                        'div',
+                                        { className: 'number' },
+                                        '.002'
+                                    ),
+                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                        'p',
+                                        null,
+                                        'Alternate',
+                                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br', null),
+                                        'Logos'
+                                    )
+                                ),
+                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                    'div',
+                                    { className: 'row' },
+                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                        'div',
+                                        { className: 'col-md-6' },
+                                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                            'div',
+                                            { className: 'image-container' },
+                                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: __WEBPACK_IMPORTED_MODULE_2__detail_data__["a" /* pear */].alternate4, className: 'alternate-4 display' })
+                                        )
+                                    ),
+                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                        'div',
+                                        { className: 'col-md-6' },
+                                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                            'div',
+                                            { className: 'image-container' },
+                                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: __WEBPACK_IMPORTED_MODULE_2__detail_data__["a" /* pear */].alternate5, className: 'alternate-5 display' })
+                                        )
+                                    )
+                                )
+                            )
+                        )
+                    ),
+                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                        'div',
+                        { className: 'shapes' },
+                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__shapes__["b" /* Square */], null),
+                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__shapes__["c" /* SquareDots */], null),
+                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__shapes__["c" /* SquareDots */], null),
+                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                            'div',
+                            { className: 'circle-container' },
+                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__shapes__["d" /* Circle */], null)
+                        )
+                    )
+                )
+            ),
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                'div',
+                { className: 'detail-image-container' },
+                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                    'div',
+                    { className: 'container' },
+                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                        'div',
+                        { className: 'row' },
+                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                            'div',
+                            { className: 'col-md-10 col-md-offset-1' },
+                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                'div',
+                                { className: 'background-image', style: __WEBPACK_IMPORTED_MODULE_2__detail_data__["a" /* pear */].style },
+                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                    'div',
+                                    { className: 'section-title-container' },
+                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                        'div',
+                                        { className: 'number' },
+                                        '.003'
+                                    ),
+                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                        'p',
+                                        null,
+                                        'Business',
+                                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br', null),
+                                        'Card'
+                                    )
+                                ),
+                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                    'div',
+                                    { className: 'row' },
+                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                        'div',
+                                        { className: 'col-md-6' },
+                                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                            'div',
+                                            { className: 'image-container no-padding' },
+                                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: __WEBPACK_IMPORTED_MODULE_2__detail_data__["a" /* pear */].alternate6, className: 'alternate-6 display' })
+                                        )
+                                    ),
+                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                        'div',
+                                        { className: 'col-md-6' },
+                                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                            'div',
+                                            { className: 'image-container no-padding' },
+                                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: __WEBPACK_IMPORTED_MODULE_2__detail_data__["a" /* pear */].alternate7, className: 'alternate-7 display' })
+                                        )
+                                    )
+                                )
+                            )
+                        )
+                    )
+                )
+            )
         );
     }
 }
@@ -22246,12 +22233,12 @@ function GalleryCol({ piece }) {
                         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                             'div',
                             { className: 'object-title' },
-                            piece.title
-                        ),
-                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                            'div',
-                            { className: 'squiggle-container' },
-                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__shapes_js__["a" /* Squiggle */], null)
+                            piece.title,
+                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                'p',
+                                { className: 'desc' },
+                                piece.desc
+                            )
                         )
                     ),
                     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
@@ -37708,6 +37695,7 @@ module.exports = {
 			"title": "Pear Tree Studio",
 			"work": "The Haywain Triptych, Hieronymus Bosch, 1516",
 			"style": "/img/bosch.png",
+			"desc": "logo and business card design",
 			"path": "/pear-tree"
 		},
 		{
@@ -37715,6 +37703,7 @@ module.exports = {
 			"title": "Tutor Associates",
 			"work": "Masnavi of Jalal-al Din Rumi, 1488-89",
 			"style": "/img/folio.png",
+			"desc": "logo and web design",
 			"path": "tutor-associates"
 		},
 		{
@@ -37722,6 +37711,7 @@ module.exports = {
 			"title": "Rhode Island Office of Innovation",
 			"work": "Annunciation and Visitation, Melchior Broederlam, 1398-99",
 			"style": "/img/annunciation.png",
+			"desc": "print design",
 			"path": "rhode-island"
 		},
 		{
@@ -37729,6 +37719,7 @@ module.exports = {
 			"title": "Code Brooklyn",
 			"work": "A Thousand Li of Rivers and Mountains, Wang Ximeng, 1113",
 			"style": "/img/scroll.png",
+			"desc": "logo design",
 			"path": "code-brooklyn"
 		}
 	]
@@ -37745,8 +37736,8 @@ module.exports = {
 "use strict";
 /* WEBPACK VAR INJECTION */(function(__webpack_provided_window_dot_jQuery) {/* harmony export (immutable) */ __webpack_exports__["a"] = Squiggle;
 /* harmony export (immutable) */ __webpack_exports__["b"] = Square;
-/* harmony export (immutable) */ __webpack_exports__["d"] = SquareDots;
-/* harmony export (immutable) */ __webpack_exports__["c"] = Circle;
+/* harmony export (immutable) */ __webpack_exports__["c"] = SquareDots;
+/* harmony export (immutable) */ __webpack_exports__["d"] = Circle;
 /* unused harmony export Triangle */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(5);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);

@@ -31,6 +31,9 @@
       .nav-list li a:active, .nav-list li a :hover, .nav-list li a :visited, .nav-list li a :focus {
         text-decoration: none; }
 
+body {
+  background: #fff8fb; }
+
 .content {
   padding: 20px 20px 0 20px;
   overflow-y: scroll; }
@@ -92,6 +95,11 @@
     #gallery-container .row:nth-child(1) {
       margin-top: 10px; }
 
+a {
+  color: black; }
+  a:hover {
+    color: black; }
+
 .object-container {
   padding: 100px 30px;
   text-align: center;
@@ -101,29 +109,70 @@
   border: 1px solid darkblue;
   position: relative; }
   .object-container .object-title {
-    font-size: 14px;
-    text-transform: uppercase; }
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #f05f5b; }
   .object-container .squiggle-container {
     margin: -12px auto; }
   .object-container .text-container {
-    background-color: transparent;
     text-align: center;
-    color: white;
-    padding: 0 50px;
-    width: 100%; }
+    border-radius: 6px; }
+    .object-container .text-container .desc {
+      font-size: 9px;
+      font-family: 'Overpass-italic';
+      text-transform: none;
+      margin: 5px 0 0 0;
+      color: black; }
 
 .summary-container {
   padding: 20px;
   background: white;
   border-radius: 6px;
-  border: 1px solid darkblue; }
+  border: 1px solid darkblue;
+  display: inline-block;
+  width: 33%;
+  vertical-align: middle;
+  text-align: left;
+  margin-left: 40px; }
+
+.jumbo-image-container {
+  display: inline-block;
+  vertical-align: middle;
+  width: 33%;
+  padding: 40px; }
 
 .jumbo-container {
   background: #fff8fb;
-  padding-top: 50px; }
+  text-align: center; }
 
-.detail-page-container {
-  padding: 60px 0; }
+.background-image {
+  padding: 80px 90px 35px 75px;
+  position: relative; }
+
+.vertical-align {
+  display: flex;
+  align-items: center; }
+
+.section-title-container {
+  position: absolute;
+  top: 0;
+  left: 20px;
+  color: #f05f5b;
+  padding: 15px 10px;
+  background: white;
+  z-index: 4;
+  font-size: 12px; }
+  .section-title-container p {
+    margin: 0;
+    font-family: 'Overpass'; }
+  .section-title-container .number {
+    border-bottom: 1px solid #f05f5b;
+    margin-bottom: 5px; }
+
+.quote-container p {
+  color: #f05f5b;
+  font-family: 'Overpass-italic';
+  font-size: 20px; }
 
 #pear-detail-page .main-display-container {
   background: #fff8fb;
@@ -140,7 +189,7 @@
 
 #pear-detail-page .detail-image-container {
   background: #fff8fb;
-  padding: 70px 0;
+  padding: 20px 0;
   position: relative; }
   #pear-detail-page .detail-image-container .squiggle-container {
     position: absolute;
@@ -273,6 +322,9 @@ img.display {
   background-size: 4px 4px;
   border: none; }
 
+.jumbo-container .circle:nth-child(2) {
+  left: 20%; }
+
 .circle {
   width: 10px;
   height: 10px;
@@ -283,13 +335,11 @@ img.display {
   position: absolute;
   top: 50%;
   right: 10%; }
-  .circle:nth-child(1) {
-    left: 20%; }
 
 .shapes .rotate:nth-child(2) {
   height: 60px;
   width: 60px;
-  left: 15%;
+  left: 19%;
   top: 60%; }
 
 .shapes .circle {
@@ -352,6 +402,12 @@ img.display {
   top: 0;
   width: 50%;
   left: 25%; }
+
+.small-line {
+  width: 10%;
+  height: 1px;
+  background-color: #f05f5b;
+  margin-bottom: 10px; }
 
 img.circle-text.rotate {
   position: absolute;

@@ -1,6 +1,10 @@
+body {
+  background: #fff8fb;
+}
 .content {
   padding: 20px 20px 0 20px;
   overflow-y: scroll;
+  //background: linear-gradient($pink, white)
 }
 
 .text-container {
@@ -76,6 +80,14 @@
   }
 }
 
+a {
+  color: black;
+
+  &:hover {
+    color: black;
+  }
+}
+
 .object-container {
   padding: 100px 30px;
   text-align: center;
@@ -86,8 +98,9 @@
   position: relative;
 
   .object-title {
-    font-size: 14px;
+    font-size: 12px;
     text-transform: uppercase;
+    color: $pink;
   }
 
   .squiggle-container {
@@ -95,11 +108,16 @@
   }
 
   .text-container {
-    background-color: transparent;
     text-align: center;
-    color: white;
-    padding: 0 50px;
-    width: 100%;
+    border-radius: 6px;
+
+    .desc {
+      font-size: 9px;
+      font-family: 'Overpass-italic';
+      text-transform: none;
+      margin: 5px 0 0 0;
+      color: black;
+    }
   }
 }
 
@@ -108,21 +126,62 @@
   background: white;
   border-radius: 6px;
   border: 1px solid darkblue;
+  display: inline-block;
+  width: 33%;
+  vertical-align: middle;
+  text-align: left;
+  margin-left: 40px;
+}
+
+.jumbo-image-container {
+  display: inline-block;
+  vertical-align: middle;
+  width: 33%;
+  padding: 40px;
 }
 
 .jumbo-container {
-  //position: relative;
   background: #fff8fb;
-  padding-top: 50px;
+  text-align: center;
 }
 
-//.jumbo-image {
-//  text-align: center;
-//  height: 300px;
-//}
+.background-image {
+  padding: 80px 90px 35px 75px;
+  position: relative;
+}
 
-.detail-page-container {
-  padding: 60px 0;
+.vertical-align {
+  display: flex;
+  align-items: center;
+}
+
+.section-title-container {
+  position: absolute;
+  top: 0;
+  left: 20px;
+  color: #f05f5b;
+  padding: 15px 10px;
+  background: white;
+  z-index: 4;
+  font-size: 12px;
+
+  p{
+    margin: 0;
+    font-family: 'Overpass';
+  }
+
+  .number {
+    border-bottom: 1px solid $pink;
+    margin-bottom: 5px;
+  }
+}
+
+.quote-container {
+  p {
+    color: $pink;
+    font-family: 'Overpass-italic';
+    font-size: 20px;
+  }
 }
 
 #pear-detail-page {
@@ -145,7 +204,7 @@
   }
   .detail-image-container {
     background: #fff8fb;
-    padding: 70px 0;
+    padding: 20px 0;
     position: relative;
 
     .squiggle-container {

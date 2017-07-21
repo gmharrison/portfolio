@@ -5,6 +5,7 @@
       "title": "Pear Tree Studio",
       "work": "The Haywain Triptych, Hieronymus Bosch, 1516",
       "style": "/img/bosch.png",
+      "desc": "logo and business card design",
       "path": "/pear-tree"
     },
     {
@@ -12,6 +13,7 @@
       "title": "Tutor Associates",
       "work": "Masnavi of Jalal-al Din Rumi, 1488-89",
       "style": "/img/folio.png",
+      "desc": "logo and web design",
       "path": "tutor-associates"
     },
     {
@@ -19,6 +21,7 @@
       "title": "Rhode Island Office of Innovation",
       "work": "Annunciation and Visitation, Melchior Broederlam, 1398-99",
       "style": "/img/annunciation.png",
+      "desc": "print design",
       "path": "rhode-island"
     },
     {
@@ -26,6 +29,7 @@
       "title": "Code Brooklyn",
       "work": "A Thousand Li of Rivers and Mountains, Wang Ximeng, 1113",
       "style": "/img/scroll.png",
+      "desc": "logo design",
       "path": "code-brooklyn"
     }
   ]

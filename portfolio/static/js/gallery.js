@@ -13,9 +13,7 @@ function GalleryCol({piece}){
                     <div className="text-container">
                         <div className="object-title">
                             {piece.title}
-                        </div>
-                        <div className="squiggle-container">
-                            <Squiggle />
+                            <p className="desc">{piece.desc}</p>
                         </div>
                     </div>
                     <div className="title-container">
