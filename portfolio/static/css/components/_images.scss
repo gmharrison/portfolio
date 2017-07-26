@@ -28,13 +28,6 @@ img.display {
   right: 10%;
 }
 
-.dots {
-  height: 50px;
-  background-image: linear-gradient(-45deg, #f1c3c2 25%, transparent 25%, transparent 50%, #f1c3c2 50%, #f1c3c2 38%, transparent 48%, transparent);
-  background-size: 4px 4px;
-  border: none;
-}
-
 .jumbo-container {
   .circle:nth-child(2) {
     left: 20%;
@@ -139,10 +132,19 @@ img.display {
 }
 
 .small-line {
-  width: 10%;
+  width: 30px;
   height: 1px;
   background-color: $pink;
   margin-bottom: 10px;
+}
+
+.vert-line {
+  width: 1px;
+  height: 100px;
+  position: absolute;
+  background: #f05f68;
+  left: 170px;
+  top: 17px;
 }
 
 img.circle-text.rotate {

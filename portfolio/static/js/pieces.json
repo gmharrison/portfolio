@@ -31,6 +31,22 @@
       "style": "/img/scroll.png",
       "desc": "logo design",
       "path": "code-brooklyn"
+    },
+    {
+      "id": 5,
+      "title": "Codesters",
+      "work": "Medusa, Caravaggio, 1509",
+      "style": "/img/medusa.png",
+      "desc": "web development and graphic design",
+      "path": "codesters"
+    },
+    {
+      "id": 6,
+      "title": "Illustrations",
+      "work": "TBD",
+      "style": "/img/bosch.png",
+      "desc": "drawings and digital illustrations",
+      "path": "illustrations"
     }
   ]
 }

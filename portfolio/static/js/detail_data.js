@@ -7,7 +7,7 @@ export const pear = {
     header: "Pear Tree Studio Designs",
     summary: "Pear Tree Studio contacted me about creating a logo and design for their business cards, " +
     "providing me with two references for inspiration: old seed packets and socialist posters. " +
-    "Below you'll find the final logo design, alternates, and the final business card design, which " +
+    "Here you'll find the final logo design, alternates, and the final business card design, which " +
     "attempt to synthesize these two styles.",
     maindisplay: `${STATIC_URL}/img/detail/pear-tree-logo.png`,
     subtitle: 'Pear Tree Studio 2017',
@@ -25,9 +25,12 @@ export const pear = {
 export const ta = {
     style: { backgroundImage: `url(${STATIC_URL}/img/detail/folio-wide.png)` },
     header: "Tutor Associates Designs",
-    summary: "Pear Tree Studio contacted me about creating a logo and design for their business cards, " +
-    "providing me with two references for inspiration: old seed packets and socialist posters. " +
-    "Below you'll find the final logo design, alternates, and the final business card design, which " +
-    "attempt to synthesize these two styles.",
+    summary: "I've been working with Tutor Associates consistently for a few years, designing print materials," +
+    "informational graphics. Most recently I've worked on concepts for their rebranding, including logo designs" +
+    "and website mockups.",
+    maindisplay: `${STATIC_URL}/img/detail/ta-alt-1.png`,
+    alternate1: `${STATIC_URL}/img/detail/ta-alt-2.png`,
+    alternate2: `${STATIC_URL}/img/detail/ta-alt-3.png`,
+    alternate3: `${STATIC_URL}/img/detail/ta-alt-4.png`,
     slideshow1: `${STATIC_URL}/img/detail/ta-mockup-1.png`
 }

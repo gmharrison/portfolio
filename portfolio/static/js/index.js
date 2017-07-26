@@ -45,6 +45,12 @@ ReactDOM.render(
                         Contact
                     </Link>
                 </li>
+                <li className="nav-link">
+                    <Link to="/contact">
+                        <button className="button roulette">Art Roulette</button>
+                        <div className="button-shadow" />
+                    </Link>
+                </li>
             </ul>
 
             <Route exact path="/" component={AboutContainer} />

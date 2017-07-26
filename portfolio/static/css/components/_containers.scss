@@ -1,5 +1,12 @@
 body {
-  background: #fff8fb;
+  //background: #fff8fb;
+  background-size: 4px 4px;
+  background-image: linear-gradient(-45deg, #fde0e0 25%, transparent 25%, transparent 50%, #fde0e0 50%, #fde0e0 38%, transparent 48%, transparent);
+}
+
+#container {
+  background-image: linear-gradient(180deg, white, transparent);
+  height: 100%;
 }
 .content {
   padding: 20px 20px 0 20px;
@@ -141,7 +148,6 @@ a {
 }
 
 .jumbo-container {
-  background: #fff8fb;
   text-align: center;
 }
 
@@ -155,14 +161,21 @@ a {
   align-items: center;
 }
 
-.section-title-container {
-  position: absolute;
-  top: 0;
-  left: 20px;
+.section-title {
+  position: relative;
+
+  p{
+    position: absolute;
+    left: 125px;
+    top: -11px;
+    color: #f05f5b;
+  }
+}
+
+.block-title-container {
   color: #f05f5b;
-  padding: 15px 10px;
   background: white;
-  z-index: 4;
+  text-align: left;
   font-size: 12px;
 
   p{
@@ -179,14 +192,15 @@ a {
 .quote-container {
   p {
     color: $pink;
-    font-family: 'Overpass-italic';
+    font-family: 'Overpass';
+    font-style: italic;
+    font-weight: 300;
     font-size: 20px;
   }
 }
 
 #pear-detail-page {
   .main-display-container {
-    background: #fff8fb;
     padding: 70px;
     text-align: center;
     position: relative;
@@ -202,40 +216,6 @@ a {
       height: auto;
     }
   }
-  .detail-image-container {
-    background: #fff8fb;
-    padding: 20px 0;
-    position: relative;
-
-    .squiggle-container {
-      position: absolute;
-      top: 34%;
-      left: 17%;
-    }
-
-      &:last-child{
-      padding-top: 0;
-    }
-
-    .image-container {
-      height: auto;
-      background: white;
-      padding: 10px;
-      border-radius: 6px;
-
-      img {
-        border-radius: 6px;
-      }
-
-      &.no-padding {
-        padding: 0;
-      }
-    }
-
-    .row:nth-child(2) {
-      margin-top: 30px;
-    }
-  }
 
   .circle-container {
     position: absolute;
@@ -244,11 +224,40 @@ a {
   }
 }
 
-#ta-detail-page {
-  .screenshot-container {
-    background: #fff8fb;
-    padding: 70px 0;
+.detail-image-container {
+  padding: 20px 0;
+  position: relative;
+
+  .row {
+    margin: 0 120px;
   }
+
+  .squiggle-container {
+    position: absolute;
+    top: 34%;
+    left: 17%;
+  }
+
+  .image-container {
+    height: auto;
+    background: white;
+    padding: 10px;
+
+    img {
+      border-radius: 6px;
+    }
+
+    &.no-padding {
+      padding: 0;
+    }
+  }
+
+  .row:nth-child(2) {
+    margin-top: 30px;
+  }
+}
+
+#ta-detail-page {
 
   .browser-window {
     border: 1px solid darkblue;

@@ -46,7 +46,7 @@ export class EssayForm extends React.Component {
             <div className="error-message">Please fill out both fields</div>
             <div className="success-message">Thanks for the message!</div>
             <div className="submit-button-container">
-                <input className="submit-button" type="submit" value="SEND"/>
+                <input className="submit-button button" type="submit" value="SEND"/>
             </div>
           </form>
         </div>
