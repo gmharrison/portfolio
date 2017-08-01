@@ -129,7 +129,7 @@ body {
   background-repeat: no-repeat;
   border: 1px solid darkblue;
   position: relative;
-  background-position: -400px; }
+  background-position: -325px; }
   .object-container:hover {
     transition: background-position 0.4s cubic-bezier(0.19, 1, 0.22, 1);
     background-position: 0px; }
@@ -162,10 +162,6 @@ body {
   .jumbo-container .squiggle-container {
     margin: 0 0 0 auto; }
 
-.background-image {
-  padding: 80px 90px 35px 75px;
-  position: relative; }
-
 .vertical-align {
   display: flex;
   align-items: center;
@@ -176,22 +172,6 @@ body {
   background: white;
   text-align: left;
   font-size: 12px; }
-
-#pear-detail-page .main-display-container {
-  padding: 70px;
-  text-align: center;
-  position: relative; }
-  #pear-detail-page .main-display-container .squiggle-container {
-    position: absolute;
-    top: 40%;
-    left: 10%; }
-  #pear-detail-page .main-display-container img {
-    width: 300px;
-    height: auto; }
-#pear-detail-page .circle-container {
-  position: absolute;
-  top: 100px;
-  left: 10%; }
 
 .detail-image-container {
   padding: 40px 0;
@@ -213,14 +193,14 @@ body {
     .detail-image-container .image-container.no-padding {
       padding: 0; }
 
-#ta-detail-page .browser-window {
+.browser-window {
   border: 1px solid darkblue;
   position: relative; }
-  #ta-detail-page .browser-window img {
+  .browser-window img {
     position: relative;
     z-index: 3;
     margin-top: 15px; }
-  #ta-detail-page .browser-window .browser-bar {
+  .browser-window .browser-bar {
     height: 15px;
     background: white;
     border-bottom: 1px solid #ececec;
@@ -228,6 +208,12 @@ body {
     z-index: 5;
     position: absolute;
     width: 100%; }
+
+@media screen and (max-width: 768px) {
+  .detail-image-container .image-container {
+    margin-top: 20px; } }
+.col-sm-12 .image-container {
+  margin-top: 20px; }
 
 form {
   margin-bottom: 0;
@@ -291,6 +277,11 @@ textarea.form-control, .form-group > input.form-control {
     right: 28px;
     bottom: 20px;
     z-index: 4; }
+  .button.back-button {
+    z-index: 4;
+    position: absolute;
+    left: 28px;
+    bottom: 20px; }
   .button.roulette {
     float: right; }
 
@@ -417,6 +408,9 @@ img.circle-text.rotate {
   height: 275px;
   left: 90px;
   animation: Move 5s cubic-bezier(0.39, 0.58, 0.57, 1) infinite; }
+
+#illustrations-detail-page .image-container:nth-child(2) {
+  margin-top: 20px; }
 
 .subtitle {
   color: #f05f5b;

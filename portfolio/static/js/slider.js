@@ -7,7 +7,7 @@ const next = (
 )
 
 const prev = (
-    <button className="button next-button">Prev</button>
+    <button className="button back-button">Prev</button>
 )
 
 export class Slider extends React.Component {

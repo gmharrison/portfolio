@@ -51,3 +51,30 @@ export const ri = {
     alternate5: `${STATIC_URL}/img/detail/ri-page-5.png`,
     alternate6: `${STATIC_URL}/img/detail/ri-page-6.png`
 }
+
+export const cb = {
+    header: "Code Brooklyn",
+    summary: "I've been working with Tutor Associates consistently for a few years, designing print materials, " +
+    "informational graphics. Most recently I've worked on concepts for their rebranding, including logo designs " +
+    "and website mockups.",
+    alternate1: `${STATIC_URL}/img/detail/cb-alt-1.png`,
+    alternate2: `${STATIC_URL}/img/detail/cb-alt-2.png`,
+    alternate3: `${STATIC_URL}/img/detail/cb-alt-3.png`,
+    alternate4: `${STATIC_URL}/img/detail/cb-banner.png`,
+}
+
+export const illustrations = {
+    header: "Drawings & Illustrations",
+    summary: "I've been working with Tutor Associates consistently for a few years, designing print materials, " +
+    "informational graphics. Most recently I've worked on concepts for their rebranding, including logo designs " +
+    "and website mockups.",
+    alternate1: `${STATIC_URL}/img/detail/joe.png`,
+    alternate2: `${STATIC_URL}/img/detail/me.png`,
+    alternate3: `${STATIC_URL}/img/detail/drake.png`,
+    alternate4: `${STATIC_URL}/img/detail/drake-2.png`,
+    alternate5: `${STATIC_URL}/img/detail/finn.png`,
+    alternate6: `${STATIC_URL}/img/detail/finn-2.png`,
+    alternate7: `${STATIC_URL}/img/detail/chance-1.png`,
+    alternate8: `${STATIC_URL}/img/detail/chance-2.png`,
+    alternate9: `${STATIC_URL}/img/detail/chance-3.png`,
+}
