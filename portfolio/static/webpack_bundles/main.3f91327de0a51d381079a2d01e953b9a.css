@@ -122,7 +122,7 @@ body {
   @media screen and (max-width: 768px) {
     #gallery-container .col-sm-4 {
       margin-bottom: 20px; }
-      #gallery-container .col-sm-4 .object-container {
+      #gallery-container .col-sm-4 .sub-container {
         background-position: 0; } }
 
 .sub-container {
