@@ -97,23 +97,33 @@ body {
   }
 }
 
+.sub-container {
+  transition: background-position .4s cubic-bezier(.19,1,.22,1);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: -325px -80px;
+  top: 0;
+  left: 0;
+}
+
 .object-container {
   padding: 100px 30px;
   text-align: center;
-  background-size: cover;
   font-family: 'Overpass';
-  background-repeat: no-repeat;
   border: 1px solid darkblue;
   position: relative;
-  background-position: -325px;
-
-  &:hover {
-    transition: background-position .4s cubic-bezier(.19,1,.22,1);
-    background-position: 0px;
-  }
 
   .squiggle-container {
     margin: -12px auto;
+  }
+
+  &:hover {
+    .sub-container {
+      background-position: 0px -80px;
+    }
   }
 }
 

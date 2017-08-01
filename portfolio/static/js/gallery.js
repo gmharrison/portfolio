@@ -9,9 +9,11 @@ function GalleryCol({piece}){
         <div key={piece.id}>
         <Link key={piece.id} to={piece.path} >
             <div className="col-md-4 col-sm-4" key={piece.id}>
-                <div className="object-container" key={piece.id} style={{backgroundImage:'url(' + STATIC_URL + piece.style + ')'}}>
+                <div className="object-container" key={piece.id}>
                     <div className="title-container">
                         <p className="work-title">{piece.work}</p>
+                    </div>
+                    <div className="sub-container" key={piece.id} style={{backgroundImage:'url(' + STATIC_URL + piece.style + ')'}}>
                     </div>
                 </div>
                 <div className="object-title-container text-container">

@@ -22911,7 +22911,7 @@ function GalleryCol({ piece }) {
                 { className: 'col-md-4 col-sm-4', key: piece.id },
                 __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                     'div',
-                    { className: 'object-container', key: piece.id, style: { backgroundImage: 'url(' + STATIC_URL + piece.style + ')' } },
+                    { className: 'object-container', key: piece.id },
                     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                         'div',
                         { className: 'title-container' },
@@ -22920,7 +22920,8 @@ function GalleryCol({ piece }) {
                             { className: 'work-title' },
                             piece.work
                         )
-                    )
+                    ),
+                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div', { className: 'sub-container', key: piece.id, style: { backgroundImage: 'url(' + STATIC_URL + piece.style + ')' } })
                 ),
                 __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                     'div',
