@@ -17,6 +17,11 @@ form {
     color: #bcbcbc;
     font-size: 10px;
   }
+
+  &.front {
+    z-index: 4;
+    transition: all 1s ease-in;
+  }
 }
 
 .form-group {

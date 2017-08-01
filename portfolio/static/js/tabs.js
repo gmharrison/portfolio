@@ -3,15 +3,22 @@ import json from '../js/pieces.json'
 import {ImageContainer, TextContainer, about, contact} from './images'
 import {Gallery} from './gallery'
 import {EssayForm} from './forms'
+import Appear from 'react-appear'
 
 
 export class AboutContainer extends React.Component {
     render() {
         return (
-            <div className="content col-md-8 col-md-offset-2">
-                <ImageContainer className={about.className} style={about.style} category={about.durer} />
-                <TextContainer category={about.durer}/>
-            </div>
+            <Appear className="custom-fade">
+                <div className="container">
+                    <div className="row">
+                        <div className="content col-md-8 col-md-offset-2">
+                            <ImageContainer className={about.className} style={about.style} category={about.durer} />
+                            <TextContainer category={about.durer}/>
+                        </div>
+                    </div>
+                </div>
+            </Appear>
         )
     }
 }
@@ -19,11 +26,13 @@ export class AboutContainer extends React.Component {
 export class GalleryContainer extends React.Component {
     render () {
         return (
-            <div className="container" id="gallery-container">
-                <div className="row">
-                    <Gallery pieces={json.pieces} key={json.pieces.id}/>
+            <Appear className="custom-fade">
+                <div className="container" id="gallery-container">
+                    <div className="row">
+                        <Gallery pieces={json.pieces} key={json.pieces.id}/>
+                    </div>
                 </div>
-            </div>
+            </Appear>
         )
     }
 }
@@ -31,10 +40,16 @@ export class GalleryContainer extends React.Component {
 export class ContactContainer extends React.Component {
     render() {
         return (
-        <div className="content col-md-8 col-md-offset-2">
-            <ImageContainer className={contact.className} style={contact.style} category={contact.caravaggio} />
-            <EssayForm />
-        </div>
+            <Appear className="custom-fade">
+                <div className="container">
+                    <div className="row">
+                        <div className="content col-md-8 col-md-offset-2">
+                            <ImageContainer className={contact.className} style={contact.style} category={contact.caravaggio} />
+                            <EssayForm />
+                        </div>
+                    </div>
+                </div>
+            </Appear>
         )
     }
 }

@@ -25,7 +25,7 @@ export const contact = {
 };
 
 function load(){
-    $('.form-container form').css('z-index', '1000');
+    $('.form-container form').addClass('front');
 }
 
 export function TextContainer (props) {

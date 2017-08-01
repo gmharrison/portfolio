@@ -6,7 +6,7 @@ import $ from 'jquery';
 import '../css/portfolio.scss'
 import {setupAjax} from './token'
 
-import {Pear, TA} from './detail'
+import {Pear, TA, RI} from './detail'
 
 
 $(document).ready(function () {
@@ -22,6 +22,10 @@ const routes = [{
     path: '/tutor-associates',
     component: TA,
     key: 2
+}, {
+    path: '/rhode-island',
+    component: RI,
+    key: 3
 }];
 
 const routeComponents = routes.map(({path, component, key}) => <Route exact path={path} component={component} key={key} />);
@@ -45,10 +49,9 @@ ReactDOM.render(
                         Contact
                     </Link>
                 </li>
-                <li className="nav-link">
+                <li className="nav-link roulette">
                     <Link to="/contact">
                         <button className="button roulette">Art Roulette</button>
-                        <div className="button-shadow" />
                     </Link>
                 </li>
             </ul>

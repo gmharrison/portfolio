@@ -1,5 +1,5 @@
 .subtitle {
-  color: #f05f5b;
+  color: $pink;
   text-transform: uppercase;
   font-size: 10px;
   position: absolute;
@@ -26,6 +26,72 @@
 }
 
 .header {
+  text-align: left;
   text-transform: uppercase;
   margin-bottom: -15px;
+}
+
+.detail-header {
+  text-align: left;
+  line-height: 1;
+  color: $pink;
+  padding-left: 15%;
+  font-family: 'Overpass';
+  font-size: 52px;
+
+  &.dark {
+    color: darkblue;
+  }
+}
+
+a {
+  color: black;
+
+  &:hover {
+    color: black;
+  }
+}
+
+.object-title {
+  font-size: 18px;
+  text-transform: uppercase;
+  color: $pink;
+  max-width: 200px;
+}
+
+.desc {
+  font-size: 9px;
+  font-family: 'Overpass-italic';
+  text-transform: none;
+  margin: 0;
+  color: black;
+}
+
+.section-title {
+  p{
+    position: absolute;
+    left: -60px;
+    top: -35px;
+    color: $pink;
+  }
+}
+
+.quote-container > p {
+  color: $pink;
+  font-family: 'Overpass';
+  font-style: italic;
+  font-weight: 300;
+  font-size: 20px;
+}
+
+.block-title-container {
+  p{
+    margin: 0;
+    font-family: 'Overpass';
+  }
+
+  .number {
+    border-bottom: 1px solid $pink;
+    margin-bottom: 5px;
+  }
 }

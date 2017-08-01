@@ -3,20 +3,11 @@
   height: 400px;
   width: 100%;
   position: absolute;
-  z-index: 998;
-}
-
-.jumbo-image {
-  background-size: cover;
-  background-repeat: no-repeat;
+  z-index: 1;
 }
 
 img.display {
   width: 100%;
-}
-
-.jumbo-image {
-  padding: 50px;
 }
 
 .rotate {
@@ -78,16 +69,13 @@ img.display {
 
 @keyframes MoveUpDown {
   0% {
-    bottom: 0;
-    left: 25%
+    bottom: -10px;
   }
   50% {
-    bottom: 100px;
-    left: 25%
+    bottom: -20px;
   }
   100% {
-    bottom: 0;
-    left: 25%
+    bottom: -10px;
   }
 }
 
@@ -114,12 +102,13 @@ img.display {
 
   .browser-shadow {
     position: absolute;
-    left: -22px;
-    top: 15px;
+    left: -10px;
+    top: 10px;
     height: 100%;
     width: 100%;
-    background-size: 4px 4px;
-    background-image: linear-gradient(-45deg, #f1c3c2 25%, transparent 25%, transparent 50%, #f1c3c2 50%, #f1c3c2 38%, transparent 48%, transparent);
+    border: 1px solid $pink;
+    //background-size: 4px 4px;
+    //background-image: linear-gradient(-45deg, #f1c3c2 25%, transparent 25%, transparent 50%, #f1c3c2 50%, #f1c3c2 38%, transparent 48%, transparent);
   }
 }
 
@@ -143,8 +132,8 @@ img.display {
   height: 100px;
   position: absolute;
   background: #f05f68;
-  left: 170px;
-  top: 17px;
+  left: -30px;
+  top: -6px;
 }
 
 img.circle-text.rotate {
@@ -154,4 +143,11 @@ img.circle-text.rotate {
   border: none;
   height: 100px;
   width: 100px;
+}
+
+.jumbo-image-container > img {
+  position: absolute;
+  height: 275px;
+  left: 90px;
+  animation: Move 5s cubic-bezier(0.39, 0.58, 0.57, 1) infinite;
 }

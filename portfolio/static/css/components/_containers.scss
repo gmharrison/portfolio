@@ -85,13 +85,15 @@ body {
       margin-top: 10px;
     }
   }
-}
 
-a {
-  color: black;
+  @media screen and (max-width: 768px) {
+    .col-sm-4 {
+      margin-bottom: 20px;
 
-  &:hover {
-    color: black;
+      .object-container {
+        background-position: 0;
+      }
+    }
   }
 }
 
@@ -103,52 +105,50 @@ a {
   background-repeat: no-repeat;
   border: 1px solid darkblue;
   position: relative;
+  background-position: -400px;
 
-  .object-title {
-    font-size: 12px;
-    text-transform: uppercase;
-    color: $pink;
+  &:hover {
+    transition: background-position .4s cubic-bezier(.19,1,.22,1);
+    background-position: 0px;
   }
 
   .squiggle-container {
     margin: -12px auto;
   }
+}
 
-  .text-container {
-    text-align: center;
-    border-radius: 6px;
-
-    .desc {
-      font-size: 9px;
-      font-family: 'Overpass-italic';
-      text-transform: none;
-      margin: 5px 0 0 0;
-      color: black;
-    }
-  }
+.object-title-container {
+  left: 20px;
+  margin: 0 20px;
+  transform: translateY(-50%);
 }
 
 .summary-container {
   padding: 20px;
+  margin-bottom: 50px;
   background: white;
   border-radius: 6px;
   border: 1px solid darkblue;
-  display: inline-block;
-  width: 33%;
-  vertical-align: middle;
   text-align: left;
-  margin-left: 40px;
+
+  p{
+    margin-bottom: 0;
+  }
 }
 
 .jumbo-image-container {
-  display: inline-block;
-  vertical-align: middle;
-  width: 33%;
-  padding: 40px;
+  position:relative;
+  padding: 30px;
+  min-height: 200px;
 }
 
 .jumbo-container {
   text-align: center;
+  margin: 30px 0;
+
+  .squiggle-container {
+    margin: 0 0 0 auto;
+  }
 }
 
 .background-image {
@@ -159,17 +159,7 @@ a {
 .vertical-align {
   display: flex;
   align-items: center;
-}
-
-.section-title {
-  position: relative;
-
-  p{
-    position: absolute;
-    left: 125px;
-    top: -11px;
-    color: #f05f5b;
-  }
+  flex-wrap: wrap;
 }
 
 .block-title-container {
@@ -177,26 +167,6 @@ a {
   background: white;
   text-align: left;
   font-size: 12px;
-
-  p{
-    margin: 0;
-    font-family: 'Overpass';
-  }
-
-  .number {
-    border-bottom: 1px solid $pink;
-    margin-bottom: 5px;
-  }
-}
-
-.quote-container {
-  p {
-    color: $pink;
-    font-family: 'Overpass';
-    font-style: italic;
-    font-weight: 300;
-    font-size: 20px;
-  }
 }
 
 #pear-detail-page {
@@ -225,11 +195,17 @@ a {
 }
 
 .detail-image-container {
-  padding: 20px 0;
+  padding: 40px 0;
   position: relative;
 
   .row {
-    margin: 0 120px;
+    margin: 0 120px 30px 120px;
+  }
+
+  @media screen and (max-width: 992px) {
+    .row {
+      margin: 0 40px 30px 40px;
+    }
   }
 
   .squiggle-container {
@@ -242,18 +218,11 @@ a {
     height: auto;
     background: white;
     padding: 10px;
-
-    img {
-      border-radius: 6px;
-    }
+    position: relative;
 
     &.no-padding {
       padding: 0;
     }
-  }
-
-  .row:nth-child(2) {
-    margin-top: 30px;
   }
 }
 
@@ -266,6 +235,7 @@ a {
     img{
       position: relative;
       z-index: 3;
+      margin-top: 15px;
     }
 
     .browser-bar {
@@ -273,6 +243,9 @@ a {
       background: white;
       border-bottom: 1px solid #ececec;
       padding: 0 5px;
+      z-index: 5;
+      position: absolute;
+      width: 100%;
     }
   }
 }
