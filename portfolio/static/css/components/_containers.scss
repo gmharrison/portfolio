@@ -1,7 +1,7 @@
 body {
   background-size: 4px 4px;
   background-image: linear-gradient(-45deg, #fde0e0 25%, transparent 25%, transparent 50%, #fde0e0 50%, #fde0e0 38%, transparent 48%, transparent);
-  background-image: -webkit-linear-gradient(-45deg, #fde0e0 25%, transparent 25%, transparent 50%, #fde0e0 50%, #fde0e0 38%, transparent 48%, transparent);
+  background-image: -webkit-linear-gradient(-45deg, #fde0e0 25%, white 25%, white 50%, #fde0e0 50%, #fde0e0 38%, white 48%, white);
   background-image: -moz-linear-gradient(-45deg, #fde0e0 25%, transparent 25%, transparent 50%, #fde0e0 50%, #fde0e0 38%, transparent 48%, transparent);
   font-family: 'Overpass';
 }
@@ -19,9 +19,9 @@ body {
 }
 
 #container {
-  background-image: linear-gradient(180deg, white, transparent);
-  background-image: -webkit-linear-gradient(top, white 0%,transparent 100%);
-  background-image: -moz-linear-gradient(180deg, white, transparent);
+  background-image: linear-gradient(180deg, white, rgba(255,255,255,0));
+  background-image: -webkit-linear-gradient(top, white 0%,rgba(255,255,255,0) 100%);
+  background-image: -moz-linear-gradient(180deg, white, rgba(255,255,255,0));
   height: 100%;
 }
 
