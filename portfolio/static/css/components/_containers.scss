@@ -1,6 +1,8 @@
 body {
   background-size: 4px 4px;
   background-image: linear-gradient(-45deg, #fde0e0 25%, transparent 25%, transparent 50%, #fde0e0 50%, #fde0e0 38%, transparent 48%, transparent);
+  background-image: -webkit-gradient(-45deg, #fde0e0 25%, transparent 25%, transparent 50%, #fde0e0 50%, #fde0e0 38%, transparent 48%, transparent);
+  background-image: -moz-linear-gradient(-45deg, #fde0e0 25%, transparent 25%, transparent 50%, #fde0e0 50%, #fde0e0 38%, transparent 48%, transparent);
 }
 
 [class*="col-"] {
@@ -17,6 +19,8 @@ body {
 
 #container {
   background-image: linear-gradient(180deg, white, transparent);
+  background-image: -webkit-linear-gradient(top, white 0%,transparent 100%);
+  background-image: -moz-linear-gradient(180deg, white, transparent);
   height: 100%;
 }
 
@@ -29,7 +33,6 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-family: 'Overpass', sans-serif;
 }
 
 .image-container {

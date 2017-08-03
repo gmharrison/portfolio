@@ -49,7 +49,9 @@
 
 body {
   background-size: 4px 4px;
-  background-image: linear-gradient(-45deg, #fde0e0 25%, transparent 25%, transparent 50%, #fde0e0 50%, #fde0e0 38%, transparent 48%, transparent); }
+  background-image: linear-gradient(-45deg, #fde0e0 25%, transparent 25%, transparent 50%, #fde0e0 50%, #fde0e0 38%, transparent 48%, transparent);
+  background-image: -webkit-gradient(-45deg, #fde0e0 25%, transparent 25%, transparent 50%, #fde0e0 50%, #fde0e0 38%, transparent 48%, transparent);
+  background-image: -moz-linear-gradient(-45deg, #fde0e0 25%, transparent 25%, transparent 50%, #fde0e0 50%, #fde0e0 38%, transparent 48%, transparent); }
 
 [class*="col-"] {
   padding: 10px; }
@@ -62,6 +64,8 @@ body {
 
 #container {
   background-image: linear-gradient(180deg, white, transparent);
+  background-image: -webkit-linear-gradient(top, white 0%, transparent 100%);
+  background-image: -moz-linear-gradient(180deg, white, transparent);
   height: 100%; }
 
 .text-container {
@@ -72,8 +76,7 @@ body {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
-  font-family: 'Overpass', sans-serif; }
+  transform: translate(-50%, -50%); }
 
 .image-container {
   background-size: cover;
@@ -222,6 +225,16 @@ body {
 #carousel-container {
   min-height: 200px; }
 
+@media only screen and (max-width: 480px) {
+  .nav-list {
+    padding: 30px 0; }
+
+  .title-container {
+    font-size: 14px; }
+
+  .text-container {
+    padding: 30px;
+    width: 300px; } }
 form {
   margin-bottom: 0;
   position: relative;
@@ -419,6 +432,9 @@ img.circle-text.rotate {
 #illustrations-detail-page .image-container:nth-child(2) {
   margin-top: 20px; }
 
+p {
+  font-family: 'Overpass'; }
+
 .subtitle {
   color: #f05f5b;
   text-transform: uppercase;
@@ -469,7 +485,6 @@ a {
 
 .desc {
   font-size: 9px;
-  font-family: 'Overpass-italic';
   text-transform: none;
   margin: 0;
   color: black; }
@@ -482,23 +497,14 @@ a {
 
 .quote-container > p {
   color: #f05f5b;
-  font-family: 'Overpass';
   font-style: italic;
   font-weight: 300;
   font-size: 20px; }
 
 .block-title-container p {
-  margin: 0;
-  font-family: 'Overpass'; }
+  margin: 0; }
 .block-title-container .number {
   border-bottom: 1px solid #f05f5b;
   margin-bottom: 5px; }
-
-.background-gradient {
-  height: 100%;
-  overflow: hidden; }
-
-p {
-  font-family: 'Overpass', italic; }
 
 /*# sourceMappingURL=portfolio.css.map */

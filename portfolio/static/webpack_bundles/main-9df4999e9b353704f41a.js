@@ -22554,15 +22554,11 @@ class Illustrations extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Compon
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__js_pieces_json__ = __webpack_require__(273);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__js_pieces_json___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__js_pieces_json__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__images__ = __webpack_require__(115);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__gallery__ = __webpack_require__(114);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__forms__ = __webpack_require__(113);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_react_appear__ = __webpack_require__(425);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_react_appear___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5_react_appear__);
-
-
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__images__ = __webpack_require__(115);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__forms__ = __webpack_require__(113);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_react_appear__ = __webpack_require__(425);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_react_appear___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_react_appear__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__gallery__ = __webpack_require__(114);
 
 
 
@@ -22572,19 +22568,19 @@ class Illustrations extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Compon
 class AboutContainer extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
     render() {
         return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-            __WEBPACK_IMPORTED_MODULE_5_react_appear___default.a,
+            __WEBPACK_IMPORTED_MODULE_3_react_appear___default.a,
             { className: 'custom-fade' },
             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                 'div',
-                { className: 'container' },
+                { className: 'container-fluid' },
                 __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                     'div',
                     { className: 'row' },
                     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                         'div',
                         { id: 'content', className: 'col-md-8 col-md-offset-2' },
-                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2__images__["a" /* ImageContainer */], { className: __WEBPACK_IMPORTED_MODULE_2__images__["b" /* about */].className, style: __WEBPACK_IMPORTED_MODULE_2__images__["b" /* about */].style, category: __WEBPACK_IMPORTED_MODULE_2__images__["b" /* about */].durer }),
-                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2__images__["c" /* TextContainer */], { category: __WEBPACK_IMPORTED_MODULE_2__images__["b" /* about */].durer })
+                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__images__["a" /* ImageContainer */], { className: __WEBPACK_IMPORTED_MODULE_1__images__["b" /* about */].className, style: __WEBPACK_IMPORTED_MODULE_1__images__["b" /* about */].style, category: __WEBPACK_IMPORTED_MODULE_1__images__["b" /* about */].durer }),
+                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__images__["c" /* TextContainer */], { category: __WEBPACK_IMPORTED_MODULE_1__images__["b" /* about */].durer })
                     )
                 )
             )
@@ -22597,7 +22593,7 @@ class AboutContainer extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Compo
 class GalleryContainer extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
     render() {
         return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-            __WEBPACK_IMPORTED_MODULE_5_react_appear___default.a,
+            __WEBPACK_IMPORTED_MODULE_3_react_appear___default.a,
             { className: 'custom-fade' },
             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                 'div',
@@ -22605,7 +22601,7 @@ class GalleryContainer extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Com
                 __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                     'div',
                     { className: 'row' },
-                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_3__gallery__["a" /* WindowResize */], null)
+                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_4__gallery__["a" /* WindowResize */], null)
                 )
             )
         );
@@ -22617,19 +22613,19 @@ class GalleryContainer extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Com
 class ContactContainer extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
     render() {
         return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-            __WEBPACK_IMPORTED_MODULE_5_react_appear___default.a,
+            __WEBPACK_IMPORTED_MODULE_3_react_appear___default.a,
             { className: 'custom-fade' },
             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                 'div',
-                { className: 'container' },
+                { className: 'container-fluid' },
                 __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                     'div',
                     { className: 'row' },
                     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                         'div',
                         { id: 'content', className: 'col-md-8 col-md-offset-2' },
-                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2__images__["a" /* ImageContainer */], { className: __WEBPACK_IMPORTED_MODULE_2__images__["d" /* contact */].className, style: __WEBPACK_IMPORTED_MODULE_2__images__["d" /* contact */].style, category: __WEBPACK_IMPORTED_MODULE_2__images__["d" /* contact */].caravaggio }),
-                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_4__forms__["a" /* EssayForm */], null)
+                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__images__["a" /* ImageContainer */], { className: __WEBPACK_IMPORTED_MODULE_1__images__["d" /* contact */].className, style: __WEBPACK_IMPORTED_MODULE_1__images__["d" /* contact */].style, category: __WEBPACK_IMPORTED_MODULE_1__images__["d" /* contact */].caravaggio }),
+                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2__forms__["a" /* EssayForm */], null)
                     )
                 )
             )

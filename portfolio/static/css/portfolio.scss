@@ -5,16 +5,8 @@
 
 @import 'components/tabs.scss';
 @import 'components/containers.scss';
+@import 'components/mobile_styles';
 @import 'components/forms.scss';
 @import 'components/buttons.scss';
 @import 'components/images.scss';
 @import 'components/text.scss';
-
-.background-gradient {
-  height: 100%;
-  overflow: hidden;
-}
-
-p {
-  font-family: 'Overpass', italic;
-}
