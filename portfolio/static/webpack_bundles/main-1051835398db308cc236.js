@@ -21844,7 +21844,7 @@ class Pear extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
                                 { className: 'col-md-6 col-sm-6 col-xs-12' },
                                 __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                                     'div',
-                                    { className: 'image-container no-padding' },
+                                    { className: 'image-container' },
                                     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                                         'div',
                                         { className: 'section-title' },
@@ -21863,7 +21863,7 @@ class Pear extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
                                 { className: 'col-md-6 col-sm-6 col-xs-12' },
                                 __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                                     'div',
-                                    { className: 'image-container no-padding' },
+                                    { className: 'image-container' },
                                     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: __WEBPACK_IMPORTED_MODULE_2__detail_data__["a" /* pear */].alternate7, className: 'alternate-7 display' })
                                 )
                             )
@@ -22453,7 +22453,7 @@ class Illustrations extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Compon
                             { className: 'row' },
                             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                                 'div',
-                                { className: 'col-md-4 col-sm-4 col-xs-12' },
+                                { className: 'col-md-5 col-sm-5 col-xs-12' },
                                 __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                                     'div',
                                     { className: 'image-container' },
@@ -22481,7 +22481,7 @@ class Illustrations extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Compon
                             ),
                             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                                 'div',
-                                { className: 'col-md-4 col-sm-4 col-xs-12' },
+                                { className: 'col-md-5 col-sm-5 col-xs-12' },
                                 __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                                     'div',
                                     { className: 'image-container' },
@@ -22496,10 +22496,32 @@ class Illustrations extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Compon
                                     ),
                                     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: __WEBPACK_IMPORTED_MODULE_2__detail_data__["e" /* illustrations */].alternate2, className: 'alternate-7 display' })
                                 )
+                            )
+                        )
+                    ),
+                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                        __WEBPACK_IMPORTED_MODULE_4_react_appear___default.a,
+                        { className: 'custom-fade' },
+                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                            'div',
+                            { className: 'row vertical-align' },
+                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                'div',
+                                { className: 'col-md-4 col-md-offset-3 col-sm-4 col-xs-12' },
+                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                    'div',
+                                    { className: 'quote-container' },
+                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div', { className: 'small-line' }),
+                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                        'p',
+                                        null,
+                                        'Instead of buying a whole roll of wrapping paper, I thought it would be fun to make my own'
+                                    )
+                                )
                             ),
                             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                                 'div',
-                                { className: 'col-md-4 col-sm-4 col-xs-12' },
+                                { className: 'col-md-5 col-sm-5 col-xs-12' },
                                 __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                                     'div',
                                     { className: 'image-container' },
@@ -22546,6 +22568,7 @@ class Illustrations extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Compon
 
 
 
+
 class AboutContainer extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
     render() {
         return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
@@ -22559,7 +22582,7 @@ class AboutContainer extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Compo
                     { className: 'row' },
                     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                         'div',
-                        { className: 'content col-md-8 col-md-offset-2' },
+                        { id: 'content', className: 'col-md-8 col-md-offset-2' },
                         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2__images__["a" /* ImageContainer */], { className: __WEBPACK_IMPORTED_MODULE_2__images__["b" /* about */].className, style: __WEBPACK_IMPORTED_MODULE_2__images__["b" /* about */].style, category: __WEBPACK_IMPORTED_MODULE_2__images__["b" /* about */].durer }),
                         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2__images__["c" /* TextContainer */], { category: __WEBPACK_IMPORTED_MODULE_2__images__["b" /* about */].durer })
                     )
@@ -22582,7 +22605,7 @@ class GalleryContainer extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Com
                 __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                     'div',
                     { className: 'row' },
-                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_3__gallery__["a" /* Gallery */], { pieces: __WEBPACK_IMPORTED_MODULE_1__js_pieces_json___default.a.pieces, key: __WEBPACK_IMPORTED_MODULE_1__js_pieces_json___default.a.pieces.id })
+                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_3__gallery__["a" /* WindowResize */], null)
                 )
             )
         );
@@ -22604,7 +22627,7 @@ class ContactContainer extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Com
                     { className: 'row' },
                     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                         'div',
-                        { className: 'content col-md-8 col-md-offset-2' },
+                        { id: 'content', className: 'col-md-8 col-md-offset-2' },
                         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2__images__["a" /* ImageContainer */], { className: __WEBPACK_IMPORTED_MODULE_2__images__["d" /* contact */].className, style: __WEBPACK_IMPORTED_MODULE_2__images__["d" /* contact */].style, category: __WEBPACK_IMPORTED_MODULE_2__images__["d" /* contact */].caravaggio }),
                         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_4__forms__["a" /* EssayForm */], null)
                     )
@@ -22889,14 +22912,65 @@ class EssayForm extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component 
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (immutable) */ __webpack_exports__["a"] = Gallery;
+/* unused harmony export Gallery */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__shapes_js__ = __webpack_require__(40);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_react_router_dom__ = __webpack_require__(66);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react_dom__ = __webpack_require__(31);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react_dom___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_react_dom__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__shapes_js__ = __webpack_require__(40);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_react_router_dom__ = __webpack_require__(66);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__js_pieces_json__ = __webpack_require__(273);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__js_pieces_json___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4__js_pieces_json__);
+
 
 
 let STATIC_URL = document.getElementById('static-url').value;
+
+
+
+class WindowResize extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
+    constructor(props) {
+        super(props);
+        this._handleWindowResize = _.debounce(this._handleWindowResize.bind(this), 100);
+        this.state = {
+            containerWidth: '',
+            Num: 3
+        };
+        this._isMounted = false;
+    }
+
+    componentDidMount() {
+        this._isMounted = true;
+        window.addEventListener('resize', this._handleWindowResize);
+    }
+
+    componentWillUnmount() {
+        this._isMounted = false;
+        window.removeEventListener('resize', this._handleWindowResize);
+    }
+
+    _handleWindowResize() {
+        if (this._isMounted) {
+            this.setState({
+                containerWidth: document.getElementById('container').offsetWidth
+            });
+            if (this.state.containerWidth < 992) {
+                this.setState({ Num: 2 });
+            } else {
+                this.setState({ Num: 3 });
+            }
+        }
+    }
+
+    render() {
+        return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+            'div',
+            null,
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(Gallery, { itemsPerRow: this.state.Num, pieces: __WEBPACK_IMPORTED_MODULE_4__js_pieces_json___default.a.pieces, key: __WEBPACK_IMPORTED_MODULE_4__js_pieces_json___default.a.pieces.id })
+        );
+    }
+}
+/* harmony export (immutable) */ __webpack_exports__["a"] = WindowResize;
 
 
 function GalleryCol({ piece }) {
@@ -22904,11 +22978,11 @@ function GalleryCol({ piece }) {
         'div',
         { key: piece.id },
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-            __WEBPACK_IMPORTED_MODULE_2_react_router_dom__["c" /* Link */],
+            __WEBPACK_IMPORTED_MODULE_3_react_router_dom__["c" /* Link */],
             { key: piece.id, to: piece.path },
             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                 'div',
-                { className: 'col-md-4 col-sm-4', key: piece.id },
+                { className: 'col-md-4 col-sm-6', key: piece.id },
                 __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                     'div',
                     { className: 'object-container', key: piece.id },
@@ -22950,16 +23024,15 @@ function GalleryRow({ cols }) {
     );
 }
 
-function Gallery({ pieces }) {
-    const itemsPerRow = 3;
+function Gallery(props) {
     let rows = [];
 
     // Turn our list of items into a list of rows that each have a list of columns
     // so our data structure more accurately reflects our display structure
-    for (let i = 0; i < pieces.length; i += itemsPerRow) {
+    for (let i = 0; i < props.pieces.length; i += props.itemsPerRow) {
         let cols = [];
-        for (let j = 0; j < itemsPerRow && i + j < pieces.length; j++) {
-            cols.push(pieces[i + j]);
+        for (let j = 0; j < props.itemsPerRow && i + j < props.pieces.length; j++) {
+            cols.push(props.pieces[i + j]);
         }
         rows.push(cols);
     }

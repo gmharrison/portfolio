@@ -51,13 +51,18 @@ body {
   background-size: 4px 4px;
   background-image: linear-gradient(-45deg, #fde0e0 25%, transparent 25%, transparent 50%, #fde0e0 50%, #fde0e0 38%, transparent 48%, transparent); }
 
+[class*="col-"] {
+  padding: 10px; }
+
+.row {
+  padding: 10px 0; }
+
+#content {
+  padding: 20px 20px 0 20px; }
+
 #container {
   background-image: linear-gradient(180deg, white, transparent);
   height: 100%; }
-
-.content {
-  padding: 20px 20px 0 20px;
-  overflow-y: scroll; }
 
 .text-container {
   display: inline-block;
@@ -111,15 +116,11 @@ body {
 
 #gallery-container {
   padding: 0 50px 50px 50px; }
-  #gallery-container .row {
-    margin-top: 30px; }
-    #gallery-container .row:nth-child(1) {
-      margin-top: 10px; }
+  #gallery-container .row:nth-child(1) {
+    margin-top: 10px; }
   @media screen and (max-width: 768px) {
-    #gallery-container .col-sm-4 {
-      margin-bottom: 20px; }
-      #gallery-container .col-sm-4 .sub-container {
-        background-position: 0; } }
+    #gallery-container .sub-container {
+      background-position: 0; } }
 
 .sub-container {
   transition: background-position 0.4s cubic-bezier(0.19, 1, 0.22, 1);
@@ -128,7 +129,7 @@ body {
   position: absolute;
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: -325px -80px;
+  background-position: -325px;
   top: 0;
   left: 0; }
 
@@ -141,16 +142,15 @@ body {
   .object-container .squiggle-container {
     margin: -12px auto; }
   .object-container:hover .sub-container {
-    background-position: 0px -80px; }
+    background-position: 0px; }
 
 .object-title-container {
-  left: 20px;
+  left: 25px;
   margin: 0 20px;
   transform: translateY(-50%); }
 
 .summary-container {
   padding: 20px;
-  margin-bottom: 50px;
   background: white;
   border-radius: 6px;
   border: 1px solid darkblue;
@@ -166,6 +166,11 @@ body {
 .jumbo-container {
   text-align: center;
   margin: 30px 0; }
+  .jumbo-container .row {
+    padding: 0; }
+  .jumbo-container [class*="col-"] {
+    padding-top: 0;
+    padding-bottom: 0; }
   .jumbo-container .squiggle-container {
     margin: 0 0 0 auto; }
 
@@ -184,10 +189,10 @@ body {
   padding: 40px 0;
   position: relative; }
   .detail-image-container .row {
-    margin: 0 120px 30px 120px; }
+    margin: 0 120px; }
   @media screen and (max-width: 992px) {
     .detail-image-container .row {
-      margin: 0 40px 30px 40px; } }
+      margin: 0 40px; } }
   .detail-image-container .squiggle-container {
     position: absolute;
     top: 34%;
@@ -197,8 +202,6 @@ body {
     background: white;
     padding: 10px;
     position: relative; }
-    .detail-image-container .image-container.no-padding {
-      padding: 0; }
 
 .browser-window {
   border: 1px solid darkblue;
@@ -215,12 +218,6 @@ body {
     z-index: 5;
     position: absolute;
     width: 100%; }
-
-@media screen and (max-width: 768px) {
-  .detail-image-container .image-container {
-    margin-top: 20px; } }
-.col-sm-12 .image-container {
-  margin-top: 20px; }
 
 #carousel-container {
   min-height: 200px; }
