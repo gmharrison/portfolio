@@ -23497,7 +23497,7 @@ class CB extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
                             { className: 'row' },
                             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                                 'div',
-                                { className: 'col-md-4' },
+                                { className: 'col-md-4 col-sm-4 col-xs-12' },
                                 __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                                     'div',
                                     { className: 'image-container' },
@@ -23525,7 +23525,7 @@ class CB extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
                             ),
                             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                                 'div',
-                                { className: 'col-md-4' },
+                                { className: 'col-md-4 col-sm-4 col-xs-12' },
                                 __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                                     'div',
                                     { className: 'image-container' },
@@ -23543,7 +23543,7 @@ class CB extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
                             ),
                             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                                 'div',
-                                { className: 'col-md-4' },
+                                { className: 'col-md-4 col-sm-4 col-xs-12' },
                                 __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                                     'div',
                                     { className: 'image-container' },
@@ -23753,7 +23753,7 @@ class Illustrations extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Compon
                             { className: 'row' },
                             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                                 'div',
-                                { className: 'col-md-5 col-sm-5 col-xs-12' },
+                                { className: 'col-md-6 col-sm-6 col-xs-12' },
                                 __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                                     'div',
                                     { className: 'image-container' },
@@ -23781,7 +23781,7 @@ class Illustrations extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Compon
                             ),
                             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                                 'div',
-                                { className: 'col-md-5 col-sm-5 col-xs-12' },
+                                { className: 'col-md-6 col-sm-6 col-xs-12' },
                                 __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                                     'div',
                                     { className: 'image-container' },
@@ -23807,7 +23807,7 @@ class Illustrations extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Compon
                             { className: 'row vertical-align' },
                             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                                 'div',
-                                { className: 'col-md-4 col-md-offset-3 col-sm-4 col-xs-12' },
+                                { className: 'col-md-6 col-sm-6 col-xs-12' },
                                 __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                                     'div',
                                     { className: 'quote-container' },
@@ -23821,7 +23821,7 @@ class Illustrations extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Compon
                             ),
                             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                                 'div',
-                                { className: 'col-md-5 col-sm-5 col-xs-12' },
+                                { className: 'col-md-6 col-sm-6 col-xs-12' },
                                 __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                                     'div',
                                     { className: 'image-container' },
@@ -24150,6 +24150,7 @@ class WindowResize extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Compone
 
     componentDidMount() {
         this._isMounted = true;
+        this._handleWindowResize();
         window.addEventListener('resize', this._handleWindowResize);
     }
 
@@ -24204,19 +24205,19 @@ function GalleryCol({ piece }) {
                             piece.work
                         )
                     ),
-                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div', { className: 'sub-container', key: piece.id, style: { backgroundImage: 'url(' + STATIC_URL + piece.style + ')' } })
-                ),
-                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                    'div',
-                    { className: 'object-title-container text-container' },
+                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div', { className: 'sub-container', key: piece.id, style: { backgroundImage: 'url(' + STATIC_URL + piece.style + ')' } }),
                     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                         'div',
-                        { className: 'object-title' },
-                        piece.title,
+                        { className: 'object-title-container text-container' },
                         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                            'p',
-                            { className: 'desc' },
-                            piece.desc
+                            'div',
+                            { className: 'object-title' },
+                            piece.title,
+                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                'p',
+                                { className: 'desc' },
+                                piece.desc
+                            )
                         )
                     )
                 )

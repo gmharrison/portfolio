@@ -19,6 +19,7 @@ export class WindowResize extends React.Component {
 
 	componentDidMount () {
 		this._isMounted = true;
+		this._handleWindowResize()
 		window.addEventListener('resize', this._handleWindowResize);
 	}
 
@@ -60,12 +61,12 @@ function GalleryCol({piece}){
                     </div>
                     <div className="sub-container" key={piece.id} style={{backgroundImage:'url(' + STATIC_URL + piece.style + ')'}}>
                     </div>
-                </div>
-                <div className="object-title-container text-container">
+                    <div className="object-title-container text-container">
                     <div className="object-title">
                         {piece.title}
                         <p className="desc">{piece.desc}</p>
                     </div>
+                </div>
                 </div>
             </div>
         </Link>

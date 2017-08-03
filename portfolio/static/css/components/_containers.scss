@@ -93,12 +93,6 @@ body {
       margin-top: 10px;
     }
   }
-
-  @media screen and (max-width: 768px) {
-    .sub-container {
-      background-position: 0;
-    }
-  }
 }
 
 .sub-container {
@@ -111,6 +105,18 @@ body {
   background-position: -325px;
   top: 0;
   left: 0;
+}
+
+@media screen and (max-width: 1199px) and (min-width: 992px) {
+    .sub-container {
+      background-position: -260px;
+    }
+  }
+
+@media screen and (max-width: 768px) {
+  .sub-container {
+    background-position: 0;
+  }
 }
 
 .object-container {

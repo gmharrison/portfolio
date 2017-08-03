@@ -307,7 +307,7 @@ export class CB extends React.Component {
                     <div className="container">
                         <Appear className="custom-fade">
                             <div className="row">
-                                <div className="col-md-4">
+                                <div className="col-md-4 col-sm-4 col-xs-12">
                                     <div className="image-container">
                                         <div className="section-title">
                                             <p>Logo Design</p>
@@ -319,7 +319,7 @@ export class CB extends React.Component {
                                         <img src={cb.alternate1} className="alternate-1 display" />
                                     </div>
                                 </div>
-                                <div className="col-md-4">
+                                <div className="col-md-4 col-sm-4 col-xs-12">
                                     <div className="image-container">
                                         <div className="block-title-container">
                                             <p>002</p>
@@ -327,7 +327,7 @@ export class CB extends React.Component {
                                         <img src={cb.alternate2} className="alternate-2 display" />
                                     </div>
                                 </div>
-                                <div className="col-md-4">
+                                <div className="col-md-4 col-sm-4 col-xs-12">
                                     <div className="image-container">
                                         <div className="block-title-container">
                                             <p>003</p>
@@ -427,7 +427,7 @@ export class Illustrations extends React.Component {
                     <div className="container">
                         <Appear className="custom-fade">
                             <div className="row">
-                                <div className="col-md-5 col-sm-5 col-xs-12">
+                                <div className="col-md-6 col-sm-6 col-xs-12">
                                     <div className="image-container">
                                         <div className="section-title">
                                             <p>Digital Illustrations</p>
@@ -439,7 +439,7 @@ export class Illustrations extends React.Component {
                                         <img src={illustrations.alternate1} className="alternate-6 display" />
                                     </div>
                                 </div>
-                                <div className="col-md-5 col-sm-5 col-xs-12">
+                                <div className="col-md-6 col-sm-6 col-xs-12">
                                     <div className="image-container">
                                         <div className="block-title-container">
                                             <p>007</p>
@@ -451,14 +451,14 @@ export class Illustrations extends React.Component {
                         </Appear>
                         <Appear className="custom-fade">
                             <div className="row vertical-align">
-                                <div className="col-md-4 col-md-offset-3 col-sm-4 col-xs-12">
+                                <div className="col-md-6 col-sm-6 col-xs-12">
                                     <div className="quote-container">
                                         <div className="small-line" />
                                         <p>Instead of buying a whole roll of wrapping paper, I thought
                                         it would be fun to make my own</p>
                                     </div>
                                 </div>
-                                <div className="col-md-5 col-sm-5 col-xs-12">
+                                <div className="col-md-6 col-sm-6 col-xs-12">
                                     <div className="image-container">
                                         <div className="block-title-container">
                                             <p>008</p>

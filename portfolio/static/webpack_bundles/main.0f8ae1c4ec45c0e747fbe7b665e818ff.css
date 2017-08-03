@@ -126,9 +126,6 @@ body {
   padding: 0 50px 50px 50px; }
   #gallery-container .row:nth-child(1) {
     margin-top: 10px; }
-  @media screen and (max-width: 768px) {
-    #gallery-container .sub-container {
-      background-position: 0; } }
 
 .sub-container {
   transition: background-position 0.4s cubic-bezier(0.19, 1, 0.22, 1);
@@ -140,6 +137,14 @@ body {
   background-position: -325px;
   top: 0;
   left: 0; }
+
+@media screen and (max-width: 1199px) and (min-width: 992px) {
+  .sub-container {
+    background-position: -260px; } }
+
+@media screen and (max-width: 768px) {
+  .sub-container {
+    background-position: 0; } }
 
 .object-container {
   padding: 100px 30px;
