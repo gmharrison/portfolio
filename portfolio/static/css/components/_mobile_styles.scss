@@ -3,12 +3,27 @@
     padding: 30px 0;
   }
 
+  #about-container {
+    .text-container {
+      padding: 30px;
+      width: 300px;
+    }
+  }
   .title-container {
     font-size: 14px;
   }
 
-  .text-container {
-    padding: 30px;
-    width: 300px;
+  #contact-container {
+    .image-container {
+      background-position: -100;
+    }
+
+    .section {
+      background-position: -102px -1px;
+    }
+
+    .form-container {
+      top: 94px;
+    }
   }
 }

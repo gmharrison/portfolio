@@ -54,8 +54,9 @@
 body {
   background-size: 4px 4px;
   background-image: linear-gradient(-45deg, #fde0e0 25%, transparent 25%, transparent 50%, #fde0e0 50%, #fde0e0 38%, transparent 48%, transparent);
-  background-image: -webkit-gradient(-45deg, #fde0e0 25%, transparent 25%, transparent 50%, #fde0e0 50%, #fde0e0 38%, transparent 48%, transparent);
-  background-image: -moz-linear-gradient(-45deg, #fde0e0 25%, transparent 25%, transparent 50%, #fde0e0 50%, #fde0e0 38%, transparent 48%, transparent); }
+  background-image: -webkit-linear-gradient(-45deg, #fde0e0 25%, transparent 25%, transparent 50%, #fde0e0 50%, #fde0e0 38%, transparent 48%, transparent);
+  background-image: -moz-linear-gradient(-45deg, #fde0e0 25%, transparent 25%, transparent 50%, #fde0e0 50%, #fde0e0 38%, transparent 48%, transparent);
+  font-family: 'Overpass'; }
 
 [class*="col-"] {
   padding: 10px; }
@@ -232,11 +233,17 @@ body {
 @media only screen and (max-width: 480px) {
   .nav-list {
     padding: 30px 0; }
+  #about-container .text-container {
+    padding: 30px;
+    width: 300px; }
   .title-container {
     font-size: 14px; }
-  .text-container {
-    padding: 30px;
-    width: 300px; } }
+  #contact-container .image-container {
+    background-position: -100; }
+  #contact-container .section {
+    background-position: -102px -1px; }
+  #contact-container .form-container {
+    top: 94px; } }
 
 form {
   margin-bottom: 0;
@@ -312,7 +319,7 @@ textarea.form-control, .form-group > input.form-control {
   background-image: none;
   opacity: 1; }
 
-.contact .section {
+.section {
   background-size: cover;
   height: 400px;
   width: 100%;

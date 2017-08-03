@@ -9,7 +9,7 @@ export class AboutContainer extends React.Component {
     render() {
         return (
             <Appear className="custom-fade">
-                <div className="container-fluid">
+                <div className="container-fluid" id="about-container">
                     <div className="row">
                         <div id="content" className="col-md-8 col-md-offset-2">
                             <ImageContainer className={about.className} style={about.style} category={about.durer} />
@@ -40,7 +40,7 @@ export class ContactContainer extends React.Component {
     render() {
         return (
             <Appear className="custom-fade">
-                <div className="container-fluid">
+                <div className="container-fluid" id="contact-container">
                     <div className="row">
                         <div id="content" className="col-md-8 col-md-offset-2">
                             <ImageContainer className={contact.className} style={contact.style} category={contact.caravaggio} />
