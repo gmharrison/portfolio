@@ -3,7 +3,8 @@ import {ImageContainer, TextContainer, about, contact} from './images'
 import {EssayForm} from './forms'
 import Appear from 'react-appear'
 import {WindowResize} from './gallery'
-
+import {PieceData} from './roulette'
+import {data} from './roulette_data'
 
 export class AboutContainer extends React.Component {
     render() {
@@ -45,6 +46,22 @@ export class ContactContainer extends React.Component {
                         <div id="content" className="col-md-8 col-md-offset-2">
                             <ImageContainer className={contact.className} style={contact.style} category={contact.caravaggio} />
                             <EssayForm />
+                        </div>
+                    </div>
+                </div>
+            </Appear>
+        )
+    }
+}
+
+export class RouletteContainer extends React.Component {
+    render() {
+        return (
+            <Appear className="custom-fade">
+                <div className="container-fluid" id="roulette-container">
+                    <div className="row">
+                        <div id="content" className="col-md-8 col-md-offset-2">
+                            <PieceData data={data}/>
                         </div>
                     </div>
                 </div>

@@ -23859,6 +23859,10 @@ class Illustrations extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Compon
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_react_appear__ = __webpack_require__(128);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_react_appear___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_react_appear__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__gallery__ = __webpack_require__(165);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__roulette__ = __webpack_require__(381);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__roulette_data__ = __webpack_require__(382);
+
+
 
 
 
@@ -23933,6 +23937,30 @@ class ContactContainer extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Com
     }
 }
 /* harmony export (immutable) */ __webpack_exports__["c"] = ContactContainer;
+
+
+class RouletteContainer extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
+    render() {
+        return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+            __WEBPACK_IMPORTED_MODULE_3_react_appear___default.a,
+            { className: 'custom-fade' },
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                'div',
+                { className: 'container-fluid', id: 'roulette-container' },
+                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                    'div',
+                    { className: 'row' },
+                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                        'div',
+                        { id: 'content', className: 'col-md-8 col-md-offset-2' },
+                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_5__roulette__["a" /* PieceData */], { data: __WEBPACK_IMPORTED_MODULE_6__roulette_data__["a" /* data */] })
+                    )
+                )
+            )
+        );
+    }
+}
+/* harmony export (immutable) */ __webpack_exports__["d"] = RouletteContainer;
 
 
 /***/ }),
@@ -24440,7 +24468,7 @@ __WEBPACK_IMPORTED_MODULE_1_react_dom___default.a.render(__WEBPACK_IMPORTED_MODU
                 { className: 'nav-link roulette' },
                 __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                     __WEBPACK_IMPORTED_MODULE_2_react_router_dom__["c" /* Link */],
-                    { to: '/contact' },
+                    { to: '/roulette' },
                     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                         'button',
                         { className: 'button roulette' },
@@ -24452,6 +24480,7 @@ __WEBPACK_IMPORTED_MODULE_1_react_dom___default.a.render(__WEBPACK_IMPORTED_MODU
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_react_router_dom__["a" /* Route */], { exact: true, path: '/', component: __WEBPACK_IMPORTED_MODULE_3__tabs__["a" /* AboutContainer */] }),
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_react_router_dom__["a" /* Route */], { path: '/work', component: __WEBPACK_IMPORTED_MODULE_3__tabs__["b" /* GalleryContainer */] }),
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_react_router_dom__["a" /* Route */], { path: '/contact', component: __WEBPACK_IMPORTED_MODULE_3__tabs__["c" /* ContactContainer */] }),
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_react_router_dom__["a" /* Route */], { path: '/roulette', component: __WEBPACK_IMPORTED_MODULE_3__tabs__["d" /* RouletteContainer */] }),
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
             'div',
             null,
@@ -42338,6 +42367,109 @@ module.exports = {
 		}
 	]
 };
+
+/***/ }),
+/* 377 */,
+/* 378 */,
+/* 379 */,
+/* 380 */,
+/* 381 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
+
+let STATIC_URL = document.getElementById('static-url').value;
+
+class PieceData extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
+    constructor(props) {
+        super(props);
+        this.setNewTarget = this.setNewTarget.bind(this);
+        this.state = {
+            index: -1
+        };
+    }
+
+    static get defaultProps() {
+        return {
+            data: []
+        };
+    }
+
+    randomInteger(min, max) {
+        var rand = min + Math.random() * (max - min);
+        rand = Math.round(rand);
+        return rand;
+    }
+
+    setNewTarget() {
+        var l = this.props.data.length - 1;
+        this.setState({
+            index: this.randomInteger(0, l)
+        });
+    }
+    render() {
+        var hlI = this.state.index;
+        var listItems = this.props.data.map(function (datum, i) {
+            if (i == hlI) {
+                return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                    'div',
+                    { key: i },
+                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                        'p',
+                        null,
+                        datum.name
+                    ),
+                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                        'p',
+                        null,
+                        datum.text
+                    ),
+                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: datum.image })
+                );
+            }
+        });
+        return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+            'div',
+            null,
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                'button',
+                { onClick: this.setNewTarget },
+                'Click me'
+            ),
+            listItems
+        );
+    }
+}
+/* harmony export (immutable) */ __webpack_exports__["a"] = PieceData;
+
+
+/***/ }),
+/* 382 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+let STATIC_URL = document.getElementById('static-url').value;
+
+const data = [{
+    id: 1,
+    name: "Medusa",
+    text: "really cool but scary painting",
+    image: `${STATIC_URL}/img/medusa.png`
+}, {
+    id: 2,
+    name: "Folio",
+    text: "lots of pretty detail and landscape",
+    image: `${STATIC_URL}/img/annunciation.png`
+}, {
+    id: 3,
+    name: "Mountain Painting",
+    text: "tiny, beautiful details",
+    image: `${STATIC_URL}/img/scroll.png`
+}];
+/* harmony export (immutable) */ __webpack_exports__["a"] = data;
+
 
 /***/ })
 /******/ ]);

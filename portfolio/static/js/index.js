@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import {HashRouter, Route, Link, BrowserRouter as Router} from 'react-router-dom'
-import {AboutContainer, GalleryContainer, ContactContainer} from './tabs'
+import {AboutContainer, GalleryContainer, ContactContainer, RouletteContainer} from './tabs'
 import $ from 'jquery';
 import '../css/portfolio.scss'
 import {setupAjax} from './token'
@@ -57,7 +57,7 @@ ReactDOM.render(
                     </Link>
                 </li>
                 <li className="nav-link roulette">
-                    <Link to="/contact">
+                    <Link to="/roulette">
                         <button className="button roulette">Art Roulette</button>
                     </Link>
                 </li>
@@ -66,6 +66,7 @@ ReactDOM.render(
             <Route exact path="/" component={AboutContainer} />
             <Route path="/work" component={GalleryContainer}/>
             <Route path="/contact" component={ContactContainer}/>
+            <Route path="/roulette" component={RouletteContainer}/>
             <div>{routeComponents}</div>
         </div>
 
