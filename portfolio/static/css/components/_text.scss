@@ -96,3 +96,39 @@ a {
     margin-bottom: 5px;
   }
 }
+
+.roulette-text-container {
+  p {
+    margin-bottom: 0;
+    font-size: 10px;
+
+    &:nth-child(2){
+      margin-bottom: -15px;
+    }
+  }
+
+  .link {
+    margin-top: 10px;
+    a {
+      color: $pink;
+
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+
+  .title {
+    font-size: 14px;
+    font-style: italic;
+  }
+
+  .additional {
+    display: block;
+    padding: 10px 15px 0 15px;
+  }
+
+  .date {
+    font-size: 14px;
+  }
+}

@@ -24469,11 +24469,7 @@ __WEBPACK_IMPORTED_MODULE_1_react_dom___default.a.render(__WEBPACK_IMPORTED_MODU
                 __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                     __WEBPACK_IMPORTED_MODULE_2_react_router_dom__["c" /* Link */],
                     { to: '/roulette' },
-                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                        'button',
-                        { className: 'button roulette' },
-                        'Art Roulette'
-                    )
+                    'Art Roulette'
                 )
             )
         ),
@@ -42379,8 +42375,12 @@ module.exports = {
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(3);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react_appear__ = __webpack_require__(128);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react_appear___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_react_appear__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__shapes__ = __webpack_require__(62);
 
-let STATIC_URL = document.getElementById('static-url').value;
+
+
 
 class PieceData extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
     constructor(props) {
@@ -42414,19 +42414,81 @@ class PieceData extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component 
         var listItems = this.props.data.map(function (datum, i) {
             if (i == hlI) {
                 return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                    'div',
-                    { key: i },
+                    __WEBPACK_IMPORTED_MODULE_1_react_appear___default.a,
+                    { className: 'custom-fade' },
                     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                        'p',
-                        null,
-                        datum.name
-                    ),
-                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                        'p',
-                        null,
-                        datum.text
-                    ),
-                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: datum.image })
+                        'div',
+                        { key: i },
+                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                            'div',
+                            { className: 'row' },
+                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                'div',
+                                { className: 'col-md-5' },
+                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                    'div',
+                                    { className: 'roulette-text-container' },
+                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                        'p',
+                                        { className: 'artist' },
+                                        datum.artist
+                                    ),
+                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                        'p',
+                                        null,
+                                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                            'span',
+                                            { className: 'title' },
+                                            datum.title,
+                                            ','
+                                        ),
+                                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                            'span',
+                                            { className: 'date' },
+                                            ' ',
+                                            datum.date
+                                        )
+                                    ),
+                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                        'div',
+                                        { className: 'squiggle-container' },
+                                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2__shapes__["a" /* Squiggle */], null)
+                                    ),
+                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                        'p',
+                                        { className: 'text' },
+                                        '"',
+                                        datum.text,
+                                        '"',
+                                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                            'span',
+                                            { className: 'additional' },
+                                            datum.additional
+                                        )
+                                    ),
+                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                        'p',
+                                        { className: 'link' },
+                                        'From the ',
+                                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                            'a',
+                                            { target: '_blank', href: datum.link },
+                                            datum.source
+                                        )
+                                    )
+                                )
+                            ),
+                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                'div',
+                                { className: 'col-md-7' },
+                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                    'div',
+                                    { className: 'roulette-image-container' },
+                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: datum.image })
+                                )
+                            )
+                        )
+                    )
                 );
             }
         });
@@ -42434,9 +42496,13 @@ class PieceData extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component 
             'div',
             null,
             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                'button',
-                { onClick: this.setNewTarget },
-                'Click me'
+                'div',
+                { className: 'roulette-button-container' },
+                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                    'button',
+                    { className: 'button', id: 'roulette-button', onClick: this.setNewTarget },
+                    'click for art'
+                )
             ),
             listItems
         );
@@ -42450,23 +42516,48 @@ class PieceData extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component 
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
 let STATIC_URL = document.getElementById('static-url').value;
+
 
 const data = [{
     id: 1,
-    name: "Medusa",
-    text: "really cool but scary painting",
-    image: `${STATIC_URL}/img/medusa.png`
+    title: "Table of the Seven Deadly Sins",
+    artist: "Hieronymus Bosch",
+    date: "1505 - 1510",
+    text: "Bosch represents the message in five circles. At the centre of the largest, " + "central circle, which resembles a huge eye or a concave mirror, Christ is shown rising " + "from his tomb as the Man of Sorrows, displaying the wound in his side. A similar image is " + "to be found in The Mass of Saint Gregory on the closed shutters of the Prado Adoration of " + "the Magi (P02048). It is an appeal to the faithful, urging them to follow the path that " + "Jesus has shown them and to meditate on his death on the cross for the forgiveness of man’s " + "sins. This innermost circle or pupil is surrounded by gilded rays stretching to the outer ring, " + "which is divided into seven segments of varying size, each depicting one of the seven Deadly Sins, " + "identified by an inscription. Bosch conveyed this moral teaching through everyday situations " + "involving people from different social classes, observed by the all-seeing eye of God. Yet, " + "regardless of the message, some of the scenes -particularly Gluttony- mark him out as a pioneer " + "in genre painting, which was later to acquire such importance.",
+    image: `${STATIC_URL}/img/roulette/seven_sins.jpg`,
+    source: 'Museo del Prado',
+    link: 'https://www.museodelprado.es/en/the-collection/art-work/table-of-the-seven-deadly-sins/3fc0a84e-d77d-4217-b960-8a34b8873b70'
 }, {
     id: 2,
-    name: "Folio",
-    text: "lots of pretty detail and landscape",
-    image: `${STATIC_URL}/img/annunciation.png`
+    title: "Album of Calligraphies Including Poetry and Prophetic Traditions (Hadith)",
+    artist: "Shaikh Hamdullah ibn Mustafa Ded",
+    date: "ca. 1500",
+    text: "This album contains samples written by Shaykh Hamdullah, the most famous Ottoman " + "calligrapher. The text comes from the Hadith, the compilation of the Prophet Muhammad's " + "words and deeds that is an important source for moral and legal guidance in the Islamic " + "tradition. On each page, several lines of a small script (naskh) are framed by one or two " + "lines in a larger script (thuluth or muhaqqaq) and then pasted onto sheets of marbleized paper, " + "each with a different pattern.",
+    image: `${STATIC_URL}/img/roulette/poetry.jpg`,
+    source: "Metropolitan Museum of Art",
+    link: 'http://www.metmuseum.org/art/collection/search/453166'
 }, {
     id: 3,
-    name: "Mountain Painting",
-    text: "tiny, beautiful details",
-    image: `${STATIC_URL}/img/scroll.png`
+    title: "Outing to Zhang Gong's Grotto",
+    artist: "Shitao (Zhu Ruoji)",
+    date: "ca. 1700",
+    text: "Zhang Gong's grotto, a famous scenic spot and once the abode of Zhang Daoling (Zhang Gong; 2nd century A.D.), " + "a patriarch of the Daoist church, is located near Lake Tai in Jiangsu Province, not far from the pottery center of Yixing. " + "According to Daoist beliefs, such grottoes are wellsprings of nature's creative force and offer the potential for " + "rejuvenation and renewal. Shitao's painting of the grotto, done at the peak of his artistic powers, about 1700, is " + "one of his most sumptuous masterpieces. Following an earlier composition by Shen Zhou (1427–1509), Shitao painted as if he " + "were reenacting the cosmic process of creation: by building up layers of energized brushwork in flowery hues of sky blue, " + "pale green, orange, and fuchsia, he transformed Shen Zhou's topographical likeness into a glowing image redolent of nature's " + "procreative power. In a long poem at the end of the scroll, Shitao acknowledges the mystical Daoist attributes of the cave and playfully " + "suggests that through his art he has captured both the cave and its creative force.",
+    image: `${STATIC_URL}/img/roulette/grotto.jpg`,
+    source: "Metropolitan Museum of Art",
+    link: 'http://www.metmuseum.org/art/collection/search/49177'
+}, {
+    id: 4,
+    title: "Page of Calligraphy. Folio from the Shah Jahan Album",
+    artist: "Painting: Bishan Das, Calligraphy: Mir 'Ali Haravi",
+    date: "ca. 1640",
+    text: "This panel of calligraphy conforms closely to the type probably established by the celebrated " + "calligrapher Sultan 'Ali about forty or fifty years earlier. The border illumination is signed by the artist Daulat, " + "who executed paintings and marginalia for three generations of Mughal emperors, from Akbar to Shah Jahan. Mir 'Ali was " + "both the calligrapher and author of the lines written here:",
+    additional: `One with the eye of gazelles / ` + `hunted the bird of my heart, / ` + `Robbed me of steadfastness, / ` + `robbed me, poor lover, of rest. / ` + `Counsel and good advice / ` + `is no longer of use– / ` + `There is no use anymore, /` + `friends, in counseling me! /` + `The poor 'Ali.`,
+    image: `${STATIC_URL}/img/roulette/verso.jpg`,
+    source: "Metropolitan Museum of Art",
+    link: 'http://www.metmuseum.org/art/collection/search/454620'
 }];
 /* harmony export (immutable) */ __webpack_exports__["a"] = data;
 

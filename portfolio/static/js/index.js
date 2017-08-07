@@ -58,7 +58,7 @@ ReactDOM.render(
                 </li>
                 <li className="nav-link roulette">
                     <Link to="/roulette">
-                        <button className="button roulette">Art Roulette</button>
+                        Art Roulette
                     </Link>
                 </li>
             </ul>

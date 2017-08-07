@@ -244,3 +244,24 @@ body {
 #carousel-container {
   min-height: 200px;
 }
+
+.roulette-button-container {
+  width: 100%;
+  text-align: center;
+}
+
+.roulette-text-container {
+  background: #fff8fb;
+  border-radius: 4px;
+  border: 1px solid darkblue;
+  padding: 20px;
+  text-align: left;
+}
+
+.roulette-image-container {
+  border: 1px solid darkblue;
+
+  img {
+    width: 100%;
+  }
+}
