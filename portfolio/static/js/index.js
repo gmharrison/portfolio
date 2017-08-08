@@ -11,6 +11,10 @@ import {Pear, TA, RI, CB, Illustrations} from './detail'
 $(document).ready(function () {
     console.log('jquery ready');
     setupAjax();
+    var http = require("http");
+    setInterval(function() {
+        http.get("http://gmharrison-portfolio.herokuapp.com"); console.log("wake up")
+    }, 300000); // every 5 minutes (300000)
 });
 
 const routes = [{
