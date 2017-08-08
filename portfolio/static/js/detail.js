@@ -451,7 +451,7 @@ export class Illustrations extends React.Component {
                         </Appear>
                         <Appear className="custom-fade">
                             <div className="row vertical-align">
-                                <div className="col-md-6 col-md-offset-3 col-sm-4 col-xs-12">
+                                <div className="col-md-6 col-md-offset-3 col-sm-6 col-sm-offset-3 col-xs-12">
                                     <div className="quote-container">
                                         <div className="small-line" />
                                         <p>Instead of buying a whole roll of wrapping paper, I thought
@@ -460,7 +460,7 @@ export class Illustrations extends React.Component {
                                 </div>
                             </div>
                             <div className="row">
-                                <div className="col-md-6 col-sm-4 col-xs-12">
+                                <div className="col-md-6 col-sm-6 col-xs-12">
                                     <div className="image-container">
                                         <div className="block-title-container">
                                             <p>008</p>
@@ -468,7 +468,7 @@ export class Illustrations extends React.Component {
                                         <img src={illustrations.alternate4} className="alternate-8 display" />
                                     </div>
                                 </div>
-                                <div className="col-md-6 col-sm-4 col-xs-12">
+                                <div className="col-md-6 col-sm-6 col-xs-12">
                                     <div className="image-container">
                                         <div className="block-title-container">
                                             <p>009</p>

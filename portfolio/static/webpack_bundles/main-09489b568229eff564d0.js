@@ -23815,7 +23815,7 @@ class Illustrations extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Compon
                             { className: 'row vertical-align' },
                             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                                 'div',
-                                { className: 'col-md-6 col-md-offset-3 col-sm-4 col-xs-12' },
+                                { className: 'col-md-6 col-md-offset-3 col-sm-6 col-sm-offset-3 col-xs-12' },
                                 __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                                     'div',
                                     { className: 'quote-container' },
@@ -23833,7 +23833,7 @@ class Illustrations extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Compon
                             { className: 'row' },
                             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                                 'div',
-                                { className: 'col-md-6 col-sm-4 col-xs-12' },
+                                { className: 'col-md-6 col-sm-6 col-xs-12' },
                                 __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                                     'div',
                                     { className: 'image-container' },
@@ -23851,7 +23851,7 @@ class Illustrations extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Compon
                             ),
                             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                                 'div',
-                                { className: 'col-md-6 col-sm-4 col-xs-12' },
+                                { className: 'col-md-6 col-sm-6 col-xs-12' },
                                 __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                                     'div',
                                     { className: 'image-container' },
