@@ -242,13 +242,22 @@ body {
   .roulette-image-container img {
     width: 100%; }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 320px) {
   .nav-list {
-    padding: 30px 0; }
+    font-size: 11px; }
 
   #about-container .text-container {
     padding: 30px;
-    width: 300px; }
+    width: 225px; } }
+@media only screen and (max-width: 480px) and (min-width: 321px) {
+  #about-container .text-container {
+    padding: 30px;
+    width: 300px; } }
+@media only screen and (max-width: 480px) {
+  .nav-list {
+    padding: 30px 20px; }
+    .nav-list li {
+      padding: 0 10px; }
 
   .title-container {
     font-size: 14px; }

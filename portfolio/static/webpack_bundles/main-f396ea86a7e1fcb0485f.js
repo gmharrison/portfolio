@@ -24039,7 +24039,6 @@ function setupAjax() {
         beforeSend: function (xhr, settings) {
             if (!csrfSafeMethod(settings.type) && !this.crossDomain) {
                 xhr.setRequestHeader("X-CSRFToken", getCookie('csrftoken'));
-                console.log(document.cookie);
             }
         }
     });
