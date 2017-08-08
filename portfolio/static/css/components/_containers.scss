@@ -217,6 +217,7 @@ body {
     background: white;
     padding: 10px;
     position: relative;
+    min-height: 300px;
   }
 }
 
@@ -260,6 +261,7 @@ body {
 
 .roulette-image-container {
   border: 1px solid darkblue;
+  min-height: 300px;
 
   img {
     width: 100%;

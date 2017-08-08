@@ -73,5 +73,11 @@ export const data = [{
     image: `${STATIC_URL}/img/roulette/verso.jpg`,
     source: "Metropolitan Museum of Art",
     link: 'http://www.metmuseum.org/art/collection/search/454620'
+    }, {
+    id: 5,
+    title: "St. Sebastian Thrown into the Cloaca Maxima",
+    artist: "Lodovico Carracci",
+    date: "1612",
+
 }
 ]

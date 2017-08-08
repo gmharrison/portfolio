@@ -25,9 +25,10 @@ export const pear = {
 export const ta = {
     style: { backgroundImage: `url(${STATIC_URL}/img/detail/folio-wide.png)` },
     header: "Tutor Associates",
-    summary: "I've been working with Tutor Associates consistently for a few years, designing print materials, " +
-    "informational graphics. Most recently I've worked on concepts for their rebranding, including logo designs " +
-    "and website mockups.",
+    summary: "I've been working with Tutor Associates consistently for a few years, designing print materials and " +
+    "informational graphics. They have consistently emphasized their desire for personable, simple designs that communicate professionalism " +
+    "and warmth. With that in mind, Tutor Associates requested logo designs and website mock ups to fit their new rebranding " +
+    "plan. Here you'll find mock ups for an online onboarding survey for clients, as well as proposed logo designs.",
     maindisplay: `${STATIC_URL}/img/detail/ta-alt-1.png`,
     alternate1: `${STATIC_URL}/img/detail/ta-alt-2.png`,
     alternate2: `${STATIC_URL}/img/detail/ta-alt-3.png`,
@@ -41,9 +42,9 @@ export const ta = {
 
 export const ri = {
     header: "Rhode Island Office of Innovation",
-    summary: "I've been working with Tutor Associates consistently for a few years, designing print materials, " +
-    "informational graphics. Most recently I've worked on concepts for their rebranding, including logo designs " +
-    "and website mockups.",
+    summary: "I had the opportunity to work with the Rhode Island Office of Innovation on a design for a 30-page " +
+    "document promoting their Personalized Learning Initiative. This was a unique challenge for me, since I had not previously designed" +
+    "for longer, large-format documents. Here you'll find some samples of my favorite pages.",
     alternate1: `${STATIC_URL}/img/detail/ri-page-1.png`,
     alternate2: `${STATIC_URL}/img/detail/ri-page-2.png`,
     alternate3: `${STATIC_URL}/img/detail/ri-page-3.png`,
@@ -54,9 +55,10 @@ export const ri = {
 
 export const cb = {
     header: "Code Brooklyn",
-    summary: "I've been working with Tutor Associates consistently for a few years, designing print materials, " +
-    "informational graphics. Most recently I've worked on concepts for their rebranding, including logo designs " +
-    "and website mockups.",
+    summary: "Code Brooklyn emerged as an initiative lead by Brooklyn Borough President, Eric Adams, to give every public school " +
+    "student in Brooklyn the opportunity to learn how to code. I was approached by some of the organizers, who requested a logo and banner design " +
+    "that could be used throughout Brooklyn public schools, on their website, and for any related PR materials. You can view my designs here as well as",
+    link: "www.codebrooklyn.com",
     alternate1: `${STATIC_URL}/img/detail/cb-alt-1.png`,
     alternate2: `${STATIC_URL}/img/detail/cb-alt-2.png`,
     alternate3: `${STATIC_URL}/img/detail/cb-alt-3.png`,
@@ -65,9 +67,9 @@ export const cb = {
 
 export const illustrations = {
     header: "Drawings & Illustrations",
-    summary: "I've been working with Tutor Associates consistently for a few years, designing print materials, " +
-    "informational graphics. Most recently I've worked on concepts for their rebranding, including logo designs " +
-    "and website mockups.",
+    summary: "When I'm drawing or illustrating I get to flex creative muscles I don't typically use while coding. Pencil and paper" +
+    " are challenging in an entirely different way, and I like to think that my artistic skills positively influence my ability to code. It's both" +
+    " helpful and personally fulfilling to get back to the basics when I've had enough of the keyboard.",
     alternate1: `${STATIC_URL}/img/detail/joe.png`,
     alternate2: `${STATIC_URL}/img/detail/me.png`,
     alternate3: `${STATIC_URL}/img/detail/drake.png`,
@@ -77,4 +79,5 @@ export const illustrations = {
     alternate7: `${STATIC_URL}/img/detail/chance-1.png`,
     alternate8: `${STATIC_URL}/img/detail/chance-2.png`,
     alternate9: `${STATIC_URL}/img/detail/chance-3.png`,
+    alternate10: `${STATIC_URL}/img/detail/drake-3.png`,
 }

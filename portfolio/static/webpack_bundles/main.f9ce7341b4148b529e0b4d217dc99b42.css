@@ -214,7 +214,8 @@ body {
     height: auto;
     background: white;
     padding: 10px;
-    position: relative; }
+    position: relative;
+    min-height: 300px; }
 
 .browser-window {
   border: 1px solid darkblue;
@@ -247,7 +248,8 @@ body {
   text-align: left; }
 
 .roulette-image-container {
-  border: 1px solid darkblue; }
+  border: 1px solid darkblue;
+  min-height: 300px; }
   .roulette-image-container img {
     width: 100%; }
 

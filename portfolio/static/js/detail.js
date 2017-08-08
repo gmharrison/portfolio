@@ -23,7 +23,7 @@ export function Summary(props) {
                     <div className="col-md-5 col-sm-6 col-xs-8">
                         <Appear className="custom-fade">
                             <div className="summary-container">
-                                <p>{props.detail.summary}</p>
+                                <p>{props.detail.summary} <a href={props.detail.link}>{props.detail.link}</a></p>
                             </div>
                         </Appear>
                     </div>
@@ -451,19 +451,29 @@ export class Illustrations extends React.Component {
                         </Appear>
                         <Appear className="custom-fade">
                             <div className="row vertical-align">
-                                <div className="col-md-6 col-sm-6 col-xs-12">
+                                <div className="col-md-6 col-md-offset-3 col-sm-4 col-xs-12">
                                     <div className="quote-container">
                                         <div className="small-line" />
                                         <p>Instead of buying a whole roll of wrapping paper, I thought
                                         it would be fun to make my own</p>
                                     </div>
                                 </div>
-                                <div className="col-md-6 col-sm-6 col-xs-12">
+                            </div>
+                            <div className="row">
+                                <div className="col-md-6 col-sm-4 col-xs-12">
                                     <div className="image-container">
                                         <div className="block-title-container">
                                             <p>008</p>
                                         </div>
                                         <img src={illustrations.alternate4} className="alternate-8 display" />
+                                    </div>
+                                </div>
+                                <div className="col-md-6 col-sm-4 col-xs-12">
+                                    <div className="image-container">
+                                        <div className="block-title-container">
+                                            <p>009</p>
+                                        </div>
+                                        <img src={illustrations.alternate10} className="alternate-9 display" />
                                     </div>
                                 </div>
                             </div>
