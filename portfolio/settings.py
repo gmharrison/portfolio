@@ -44,7 +44,7 @@ EMAIL_PORT = 587
 EMAIL_HOST_USER = os.environ.get('GMAIL_ACCOUNT')
 EMAIL_HOST_PASSWORD = os.environ.get('GMAIL_PASS')
 CSRF_COOKIE_DOMAIN = ".gabrielleharrison.com"
-CSRF_TRUSTED_ORIGINS = [".gmharrison-portfolio.herokuapp.com", ".gabrielleharrison.com"]
+CSRF_TRUSTED_ORIGINS = [".gabrielleharrison.com"]
 SESSION_COOKIE_DOMAIN = None
 
 INSTALLED_APPS = (
