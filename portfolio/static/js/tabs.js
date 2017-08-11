@@ -5,6 +5,7 @@ import Appear from 'react-appear'
 import {WindowResize} from './gallery'
 import {PieceData} from './roulette'
 import {data} from './roulette_data'
+import {SocialLinks} from './links'
 
 export class AboutContainer extends React.Component {
     render() {
@@ -17,6 +18,9 @@ export class AboutContainer extends React.Component {
                             <TextContainer category={about.durer}/>
                         </div>
                     </div>
+                </div>
+                <div>
+                    <SocialLinks />
                 </div>
             </Appear>
         )
@@ -48,6 +52,9 @@ export class ContactContainer extends React.Component {
                             <EssayForm />
                         </div>
                     </div>
+                </div>
+                <div>
+                    <SocialLinks />
                 </div>
             </Appear>
         )

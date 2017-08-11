@@ -248,6 +248,17 @@ body {
   .roulette-image-container img {
     width: 100%; }
 
+.social-links-container {
+  width: 100%;
+  text-align: center;
+  margin-top: 30px; }
+  .social-links-container .icon-container {
+    display: inline-block;
+    margin: 0 10px; }
+    .social-links-container .icon-container i {
+      font-size: 25px;
+      color: #f05f5b; }
+
 @media only screen and (max-width: 320px) {
   .nav-list {
     font-size: 11px; }
@@ -358,6 +369,9 @@ textarea.form-control, .form-group > input.form-control {
   width: 100%;
   position: absolute;
   z-index: 1; }
+
+#contact-container .section {
+  height: 399px; }
 
 img.display {
   width: 100%; }
