@@ -13,6 +13,15 @@ $(document).ready(function () {
     setupAjax();
 });
 
+var ReactGA = require('react-ga');
+ReactGA.initialize('UA-104484958-1');
+
+function logPageView() {
+  ReactGA.set({ page: window.location.pathname + window.location.search });
+  ReactGA.pageview(window.location.pathname + window.location.search);
+}
+
+
 const routes = [{
     path: '/pear-tree',
     component: Pear,
@@ -38,7 +47,7 @@ const routes = [{
 const routeComponents = routes.map(({path, component, key}) => <Route exact path={path} component={component} key={key} />);
 
 ReactDOM.render(
-    <HashRouter>
+    <HashRouter onUpdate={logPageView}>
         <div>
             <ul className="nav-list">
                 <li className="nav-link">
