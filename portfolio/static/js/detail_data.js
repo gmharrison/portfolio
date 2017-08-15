@@ -44,13 +44,20 @@ export const ri = {
     header: "Rhode Island Office of Innovation",
     summary: "I had the opportunity to work with the Rhode Island Office of Innovation on a design for a 30-page " +
     "document promoting their Personalized Learning Initiative. This was a unique challenge for me, since I had not previously designed" +
-    "for longer, large-format documents. Here you'll find some samples of my favorite pages.",
+    " for longer, large-format documents. Here you'll find some samples of my favorite pages.",
     alternate1: `${STATIC_URL}/img/detail/ri-page-1.png`,
     alternate2: `${STATIC_URL}/img/detail/ri-page-2.png`,
     alternate3: `${STATIC_URL}/img/detail/ri-page-3.png`,
     alternate4: `${STATIC_URL}/img/detail/ri-page-4.png`,
     alternate5: `${STATIC_URL}/img/detail/ri-page-5.png`,
     alternate6: `${STATIC_URL}/img/detail/ri-page-6.png`
+}
+
+export const codesters = {
+    header: "Codesters",
+    summary: "Currently I am a graphic designer and developer at Codesters, Inc. Much of my work involves creating" +
+    " designs for our website and implementing those designs in a way that allows them to interact with a Python backend." +
+    " "
 }
 
 export const cb = {

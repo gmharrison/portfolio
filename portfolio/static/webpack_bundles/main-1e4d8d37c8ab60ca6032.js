@@ -18636,7 +18636,7 @@ const ta = {
 
 const ri = {
     header: "Rhode Island Office of Innovation",
-    summary: "I had the opportunity to work with the Rhode Island Office of Innovation on a design for a 30-page " + "document promoting their Personalized Learning Initiative. This was a unique challenge for me, since I had not previously designed" + "for longer, large-format documents. Here you'll find some samples of my favorite pages.",
+    summary: "I had the opportunity to work with the Rhode Island Office of Innovation on a design for a 30-page " + "document promoting their Personalized Learning Initiative. This was a unique challenge for me, since I had not previously designed" + " for longer, large-format documents. Here you'll find some samples of my favorite pages.",
     alternate1: `${STATIC_URL}/img/detail/ri-page-1.png`,
     alternate2: `${STATIC_URL}/img/detail/ri-page-2.png`,
     alternate3: `${STATIC_URL}/img/detail/ri-page-3.png`,
@@ -18645,6 +18645,13 @@ const ri = {
     alternate6: `${STATIC_URL}/img/detail/ri-page-6.png`
 };
 /* harmony export (immutable) */ __webpack_exports__["c"] = ri;
+
+
+const codesters = {
+    header: "Codesters",
+    summary: "Currently I am a graphic designer and developer at Codesters, Inc. Much of my work involves creating" + " designs for our website and implementing those designs in a way that allows them to interact with a Python backend." + " "
+};
+/* harmony export (immutable) */ __webpack_exports__["e"] = codesters;
 
 
 const cb = {
@@ -18673,7 +18680,7 @@ const illustrations = {
     alternate9: `${STATIC_URL}/img/detail/chance-3.png`,
     alternate10: `${STATIC_URL}/img/detail/drake-3.png`
 };
-/* harmony export (immutable) */ __webpack_exports__["e"] = illustrations;
+/* harmony export (immutable) */ __webpack_exports__["f"] = illustrations;
 
 
 /***/ }),
@@ -23621,12 +23628,24 @@ class CB extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
 /* harmony export (immutable) */ __webpack_exports__["d"] = CB;
 
 
+class Codesters extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
+    render() {
+        return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+            'div',
+            { id: 'codesters-detail-page', className: 'detail-page-container' },
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(Summary, { detail: __WEBPACK_IMPORTED_MODULE_2__detail_data__["e" /* codesters */] })
+        );
+    }
+}
+/* harmony export (immutable) */ __webpack_exports__["f"] = Codesters;
+
+
 class Illustrations extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
     render() {
         return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
             'div',
             { id: 'illustrations-detail-page', className: 'detail-page-container' },
-            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(Summary, { detail: __WEBPACK_IMPORTED_MODULE_2__detail_data__["e" /* illustrations */] }),
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(Summary, { detail: __WEBPACK_IMPORTED_MODULE_2__detail_data__["f" /* illustrations */] }),
             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                 'div',
                 { className: 'detail-image-container' },
@@ -23664,7 +23683,7 @@ class Illustrations extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Compon
                                             '001'
                                         )
                                     ),
-                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: __WEBPACK_IMPORTED_MODULE_2__detail_data__["e" /* illustrations */].alternate7, className: 'alternate-1 display' })
+                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: __WEBPACK_IMPORTED_MODULE_2__detail_data__["f" /* illustrations */].alternate7, className: 'alternate-1 display' })
                                 ),
                                 __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                                     'div',
@@ -23678,7 +23697,7 @@ class Illustrations extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Compon
                                             '002'
                                         )
                                     ),
-                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: __WEBPACK_IMPORTED_MODULE_2__detail_data__["e" /* illustrations */].alternate8, className: 'alternate-2 display' })
+                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: __WEBPACK_IMPORTED_MODULE_2__detail_data__["f" /* illustrations */].alternate8, className: 'alternate-2 display' })
                                 )
                             ),
                             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
@@ -23696,7 +23715,7 @@ class Illustrations extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Compon
                                             '003'
                                         )
                                     ),
-                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: __WEBPACK_IMPORTED_MODULE_2__detail_data__["e" /* illustrations */].alternate9, className: 'alternate-3 display' })
+                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: __WEBPACK_IMPORTED_MODULE_2__detail_data__["f" /* illustrations */].alternate9, className: 'alternate-3 display' })
                                 )
                             )
                         )
@@ -23722,7 +23741,7 @@ class Illustrations extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Compon
                                             '004'
                                         )
                                     ),
-                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: __WEBPACK_IMPORTED_MODULE_2__detail_data__["e" /* illustrations */].alternate5, className: 'alternate-4 display' })
+                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: __WEBPACK_IMPORTED_MODULE_2__detail_data__["f" /* illustrations */].alternate5, className: 'alternate-4 display' })
                                 )
                             ),
                             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
@@ -23740,7 +23759,7 @@ class Illustrations extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Compon
                                             '005'
                                         )
                                     ),
-                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: __WEBPACK_IMPORTED_MODULE_2__detail_data__["e" /* illustrations */].alternate6, className: 'alternate-5 display' })
+                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: __WEBPACK_IMPORTED_MODULE_2__detail_data__["f" /* illustrations */].alternate6, className: 'alternate-5 display' })
                                 )
                             )
                         )
@@ -23784,7 +23803,7 @@ class Illustrations extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Compon
                                             '006'
                                         )
                                     ),
-                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: __WEBPACK_IMPORTED_MODULE_2__detail_data__["e" /* illustrations */].alternate1, className: 'alternate-6 display' })
+                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: __WEBPACK_IMPORTED_MODULE_2__detail_data__["f" /* illustrations */].alternate1, className: 'alternate-6 display' })
                                 )
                             ),
                             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
@@ -23802,7 +23821,7 @@ class Illustrations extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Compon
                                             '007'
                                         )
                                     ),
-                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: __WEBPACK_IMPORTED_MODULE_2__detail_data__["e" /* illustrations */].alternate2, className: 'alternate-7 display' })
+                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: __WEBPACK_IMPORTED_MODULE_2__detail_data__["f" /* illustrations */].alternate2, className: 'alternate-7 display' })
                                 )
                             )
                         )
@@ -23846,7 +23865,7 @@ class Illustrations extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Compon
                                             '008'
                                         )
                                     ),
-                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: __WEBPACK_IMPORTED_MODULE_2__detail_data__["e" /* illustrations */].alternate4, className: 'alternate-8 display' })
+                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: __WEBPACK_IMPORTED_MODULE_2__detail_data__["f" /* illustrations */].alternate4, className: 'alternate-8 display' })
                                 )
                             ),
                             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
@@ -23864,7 +23883,7 @@ class Illustrations extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Compon
                                             '009'
                                         )
                                     ),
-                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: __WEBPACK_IMPORTED_MODULE_2__detail_data__["e" /* illustrations */].alternate10, className: 'alternate-9 display' })
+                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: __WEBPACK_IMPORTED_MODULE_2__detail_data__["f" /* illustrations */].alternate10, className: 'alternate-9 display' })
                                 )
                             )
                         )
@@ -24473,6 +24492,10 @@ const routes = [{
     path: '/illustrations',
     component: __WEBPACK_IMPORTED_MODULE_7__detail__["e" /* Illustrations */],
     key: 5
+}, {
+    path: '/codesters',
+    component: __WEBPACK_IMPORTED_MODULE_7__detail__["f" /* Codesters */],
+    key: 6
 }];
 
 const routeComponents = routes.map(({ path, component, key }) => __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_react_router_dom__["a" /* Route */], { exact: true, path: path, component: component, key: key }));
@@ -42369,7 +42392,7 @@ module.exports = {
 			"work": "The Haywain Triptych, Hieronymus Bosch, 1516",
 			"style": "/img/bosch.png",
 			"desc": "logo and business card design",
-			"path": "/pear-tree"
+			"path": "pear-tree"
 		},
 		{
 			"id": 2,

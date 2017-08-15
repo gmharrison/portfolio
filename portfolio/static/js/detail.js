@@ -1,6 +1,6 @@
 import React from 'react';
 import {Squiggle, Square, SquareDots, Circle, Triangle} from './shapes'
-import {pear, ta, ri, cb, illustrations} from './detail_data'
+import {pear, ta, ri, cb, codesters, illustrations} from './detail_data'
 import {Slider} from './slider'
 let STATIC_URL = document.getElementById('static-url').value;
 import Appear from 'react-appear';
@@ -359,6 +359,16 @@ export class CB extends React.Component {
                         </Appear>
                     </div>
                 </div>
+            </div>
+        )
+    }
+}
+
+export class Codesters extends React.Component {
+    render () {
+        return (
+            <div id="codesters-detail-page" className="detail-page-container">
+                <Summary detail={codesters} />
             </div>
         )
     }

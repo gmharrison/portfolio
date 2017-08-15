@@ -1,1 +1,1 @@
-web: python manage.py collectstatic --noinput; gunicorn portfolio.wsgi --log-file -;
+NEW_RELIC_CONFIG_FILE=newrelic.ini newrelic-admin run-program web: python manage.py collectstatic --noinput; gunicorn portfolio.wsgi --log-file -;
