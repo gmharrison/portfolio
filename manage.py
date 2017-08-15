@@ -1,6 +1,4 @@
 #!/usr/bin/env python
-import newrelic.agent
-newrelic.agent.initialize('newrelic.ini')
 import os
 import sys
 
