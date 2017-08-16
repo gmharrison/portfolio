@@ -23,7 +23,7 @@ export function Summary(props) {
                     <div className="col-md-5 col-sm-6 col-xs-8">
                         <Appear className="custom-fade">
                             <div className="summary-container">
-                                <p>{props.detail.summary} <a href={props.detail.link}>{props.detail.link}</a></p>
+                                <p>{props.detail.summary} <a target="_blank" href={props.detail.href}>{props.detail.link}</a></p>
                             </div>
                         </Appear>
                     </div>

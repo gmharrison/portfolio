@@ -57,7 +57,9 @@ export const codesters = {
     header: "Codesters",
     summary: "Currently I am a graphic designer and developer at Codesters, Inc. Much of my work involves creating" +
     " designs for our website and implementing those designs in a way that allows them to interact with a Python backend." +
-    " "
+    " I'm also responsible for creating print and promotional designs, as well as the interactive graphics on the website. You can see some of my front-end development work in action at ",
+    link: "www.codesters.com",
+    href: "http://www.codesters.com"
 }
 
 export const cb = {
@@ -65,7 +67,8 @@ export const cb = {
     summary: "Code Brooklyn emerged as an initiative lead by Brooklyn Borough President, Eric Adams, to give every public school " +
     "student in Brooklyn the opportunity to learn how to code. I was approached by some of the organizers, who requested a logo and banner design " +
     "that could be used throughout Brooklyn public schools, on their website, and for any related PR materials. You can view my designs here as well as",
-    link: "www.codebrooklyn.com",
+    link: "www.codebrooklyn.org",
+    href: "http://www.codebrooklyn.org",
     alternate1: `${STATIC_URL}/img/detail/cb-alt-1.png`,
     alternate2: `${STATIC_URL}/img/detail/cb-alt-2.png`,
     alternate3: `${STATIC_URL}/img/detail/cb-alt-3.png`,
