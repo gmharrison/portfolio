@@ -165,7 +165,7 @@ export class TA extends React.Component {
                                             <div className="small-circle green" />
                                         </div>
                                         <div id="carousel-container">
-                                            <Slider />
+                                            <Slider detail={ta} />
                                         </div>
                                     </div>
                                 </div>
@@ -349,9 +349,6 @@ export class CB extends React.Component {
                                             <p>Print Design</p>
                                             <div className="vert-line" />
                                         </div>
-                                        <div className="block-title-container">
-                                            <p>001</p>
-                                        </div>
                                         <img src={cb.alternate4} className="alternate-4 display" />
                                     </div>
                                 </div>
@@ -444,7 +441,7 @@ export class Illustrations extends React.Component {
                                             <div className="vert-line" />
                                         </div>
                                         <div className="block-title-container">
-                                            <p>006</p>
+                                            <p>001</p>
                                         </div>
                                         <img src={illustrations.alternate1} className="alternate-6 display" />
                                     </div>
@@ -452,7 +449,7 @@ export class Illustrations extends React.Component {
                                 <div className="col-md-6 col-sm-6 col-xs-12">
                                     <div className="image-container">
                                         <div className="block-title-container">
-                                            <p>007</p>
+                                            <p>002</p>
                                         </div>
                                         <img src={illustrations.alternate2} className="alternate-7 display" />
                                     </div>
@@ -473,7 +470,7 @@ export class Illustrations extends React.Component {
                                 <div className="col-md-6 col-sm-6 col-xs-12">
                                     <div className="image-container">
                                         <div className="block-title-container">
-                                            <p>008</p>
+                                            <p>003</p>
                                         </div>
                                         <img src={illustrations.alternate4} className="alternate-8 display" />
                                     </div>
@@ -481,7 +478,7 @@ export class Illustrations extends React.Component {
                                 <div className="col-md-6 col-sm-6 col-xs-12">
                                     <div className="image-container">
                                         <div className="block-title-container">
-                                            <p>009</p>
+                                            <p>004</p>
                                         </div>
                                         <img src={illustrations.alternate10} className="alternate-9 display" />
                                     </div>

@@ -28,23 +28,23 @@ export class Slider extends React.Component {
     });
   }
 
-  render() {
+  render(props) {
     return (
       <Carousel className="slider" nextIcon={next} prevIcon={prev} indicators={false} activeIndex={this.state.index} direction={this.state.direction} onSelect={this.handleSelect}>
         <Carousel.Item>
-            <img src={ta.slideshow1} />
+            <img src={props.slideshow1} />
         </Carousel.Item>
         <Carousel.Item>
-            <img src={ta.slideshow2} />
+            <img src={props.slideshow2} />
         </Carousel.Item>
         <Carousel.Item>
-            <img src={ta.slideshow3} />
+            <img src={props.slideshow3} />
         </Carousel.Item>
         <Carousel.Item>
-            <img src={ta.slideshow4} />
+            <img src={props.detail.slideshow4} />
         </Carousel.Item>
         <Carousel.Item>
-            <img src={ta.slideshow5} />
+            <img src={props.detail.slideshow5} />
         </Carousel.Item>
       </Carousel>
         )

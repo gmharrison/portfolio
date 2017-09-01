@@ -63,7 +63,7 @@ export class PieceData extends React.Component {
     return (
       <div>
         <div className="roulette-button-container">
-            <button className="button" id="roulette-button" onClick={this.setNewTarget}>click for art</button>
+            <button className="button" id="roulette-button" onClick={this.setNewTarget}>click for some art</button>
         </div>
             {listItems}
       </div>

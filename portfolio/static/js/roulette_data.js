@@ -130,5 +130,60 @@ export const data = [{
     image: `${STATIC_URL}/img/roulette/gauguin.jpg`,
     source: "Metropolitan Museum of Art",
     link: "http://www.metmuseum.org/art/collection/search/337852"
-}
+    }, {
+    id: 9,
+    title: "Lidded Vessel",
+    date: "17th–18th century",
+    text: "This spectacular ivory vessel was once the treasured possession of an 'olowo,' the ruler of the Yoruba kingdom " +
+    "of Owo in present-day southern Nigeria. Owo rose to regional prominence in the eighteenth century through trade and conquest, " +
+    "and became one of the largest states in West Africa at that time. It had close political ties to the Benin kingdom some seventy miles " +
+    "to the southeast. Much of Owo's courtly culture, including titles, costumes, and prestige sculpture, reflect a close association between " +
+    "the two important political and cultural centers.",
+    image: `${STATIC_URL}/img/roulette/vessel_2.jpg`,
+    source: "Metropolitan Museum of Art",
+    link: "http://www.metmuseum.org/art/collection/search/316594"
+    }, {
+    id: 10,
+    title: "Mask",
+    date: "900–400 B.C.",
+    text: "Depicting a typical Olmec face with slanted, almond-shaped eyes and a toothless, slightly downturned mouth, " +
+    "this mask is rendered with simplicity and elegance. Its harmonious proportions are indicative of the sophistication " +
+    "attained by Olmec sculptors. The smooth, highly polished planes of cheek, forehead, and chin plus the almost fleshy " +
+    "quality of the nose and parted lips belie the incredible hardness of the jadeite cobble from which the mask was made. " +
+    "The face itself is neither human nor supernatural but, rather, an idealized type that incorporates otherworldly aspects—such " +
+    "as the mouth, with its reference to the so-called were-jaguar, a powerful mythic being with human and jaguar traits.",
+    image: `${STATIC_URL}/img/roulette/mask.jpg`,
+    source: "Metropolitan Museum of Art",
+    link: "http://www.metmuseum.org/art/collection/search/310279"
+    }, {
+    id: 11,
+    title: "Hanako",
+    artist: "Auguste Rodin",
+    date: "1907",
+    text: "The Japanese actress Ohta Hisa (1868–1945), known as Hanako, posed for a number of portrait studies, and Rodin " +
+    "portrayed her mobile face in various media. The pensive mood of the actress in this sketch is disturbed by the disquieting " +
+    "second image of her face as an enigmatic mask. Rodin apparently intended to use Hanako as a living model for a portrait of " +
+    "Beethoven, probably in much the same way that he had used a man of the city of Tours named Estager as the living model " +
+    "for the figure's head in the Monument to Balzac.",
+    image: `${STATIC_URL}/img/roulette/rodin.jpg`,
+    source: "Metropolitan Museum of Art",
+    link: "http://www.metmuseum.org/art/collection/search/339710"
+    }, {
+    id: 12,
+    title: "Self-portrait, Study of a Hand and a Pillow",
+    artist: "Albrecht Dürer",
+    date: "1493",
+    text: "In this extraordinary series of studies, Albrecht Durer has captured his own image and that of several pillows " +
+    "on the sheet’s front and back with incomparable brilliance, achieving at a tender age a calligraphic precision and " +
+    "expressiveness of line of unexcelled clarity. The self-portrait - of which the head was drawn using a mirror and the " +
+    "hand directly from the model - occupies an important place in the artist’s series of self-characterizations. It is " +
+    "generally agreed that it relates and perhaps was preparatory to a painted self-portrait of the same year, 1493, now " +
+    "in the Louvre in Paris. The painting probably served as an engagement or courting portrait for the young suitor. " +
+    "As an example of the young draftsman’s awakening sense of himself as an artist, and as a signal of his growing awareness" +
+    "of the interplay of subject and viewer - the sitter and creator as one - this drawing stands as one of the most important " +
+    "early visual documents of the modern era.",
+    image: `${STATIC_URL}/img/roulette/pillow.jpg`,
+    source: "Metropolitan Museum of Art",
+    link: "http://www.metmuseum.org/art/collection/search/459214"
+    }
 ]

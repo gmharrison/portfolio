@@ -16,8 +16,8 @@ export const pear = {
     alternate3: `${STATIC_URL}/img/detail/pear-alt-3.png`,
     alternate4: `${STATIC_URL}/img/detail/pear-alt-5.png`,
     alternate5: `${STATIC_URL}/img/detail/pear-alt-6.png`,
-    alternate6: `${STATIC_URL}/img/detail/bc-front.png`,
-    alternate7: `${STATIC_URL}/img/detail/bc-back.png`,
+    alternate6: `${STATIC_URL}/img/detail/bc-front-1.png`,
+    alternate7: `${STATIC_URL}/img/detail/bc-back-1.png`,
     title1: 'Business Card Front',
     title2: 'Business Card Back'
 }
