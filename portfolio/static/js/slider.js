@@ -1,6 +1,6 @@
 import React from 'react';
 import Carousel from 'react-bootstrap/lib/Carousel';
-import {ta} from './detail_data'
+import {ta} from './data/detail_data'
 
 const next = (
     <button className="button next-button">Next</button>
@@ -28,25 +28,26 @@ export class Slider extends React.Component {
     });
   }
 
-  render(props) {
+  render() {
     return (
       <Carousel className="slider" nextIcon={next} prevIcon={prev} indicators={false} activeIndex={this.state.index} direction={this.state.direction} onSelect={this.handleSelect}>
         <Carousel.Item>
-            <img src={props.slideshow1} />
+            <img src={this.props.detail.slideshow1} />
         </Carousel.Item>
         <Carousel.Item>
-            <img src={props.slideshow2} />
+            <img src={this.props.detail.slideshow2} />
         </Carousel.Item>
         <Carousel.Item>
-            <img src={props.slideshow3} />
+            <img src={this.props.detail.slideshow3} />
         </Carousel.Item>
         <Carousel.Item>
-            <img src={props.detail.slideshow4} />
+            <img src={this.props.detail.slideshow4} />
         </Carousel.Item>
         <Carousel.Item>
-            <img src={props.detail.slideshow5} />
+            <img src={this.props.detail.slideshow5} />
         </Carousel.Item>
       </Carousel>
         )
     }
 }
+

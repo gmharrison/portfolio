@@ -149,7 +149,6 @@ body {
 .object-container {
   padding: 100px 30px;
   text-align: center;
-  font-family: 'Overpass';
   border: 1px solid darkblue;
   position: relative; }
   .object-container .squiggle-container {

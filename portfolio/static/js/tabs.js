@@ -4,7 +4,7 @@ import {EssayForm} from './forms'
 import Appear from 'react-appear'
 import {WindowResize} from './gallery'
 import {PieceData} from './roulette'
-import {data} from './roulette_data'
+import {data} from './data/roulette_data'
 import {SocialLinks} from './links'
 
 export class AboutContainer extends React.Component {

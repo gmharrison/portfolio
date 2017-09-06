@@ -18588,105 +18588,7 @@ module.exports = ReactNoopUpdateQueue;
 
 
 /***/ }),
-/* 103 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(3);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
-
-let STATIC_URL = document.getElementById('static-url').value;
-
-const pear = {
-    style: { backgroundImage: `url(${STATIC_URL}/img/detail/bosch-wide.png)` },
-    circle: `${STATIC_URL}/img/detail/pear-circle.png`,
-    header: "Pear Tree Studio",
-    summary: "Pear Tree Studio contacted me about creating a logo and design for their business cards, " + "providing me with two references for inspiration: old seed packets and socialist posters. " + "Here you'll find the final logo design, alternates, and the final business card design, which " + "attempt to synthesize these two styles.",
-    maindisplay: `${STATIC_URL}/img/detail/pear-tree-logo.png`,
-    subtitle: 'Pear Tree Studio 2017',
-    alternate1: `${STATIC_URL}/img/detail/pear-alt-1.png`,
-    alternate2: `${STATIC_URL}/img/detail/pear-alt-2.png`,
-    alternate3: `${STATIC_URL}/img/detail/pear-alt-3.png`,
-    alternate4: `${STATIC_URL}/img/detail/pear-alt-5.png`,
-    alternate5: `${STATIC_URL}/img/detail/pear-alt-6.png`,
-    alternate6: `${STATIC_URL}/img/detail/bc-front-1.png`,
-    alternate7: `${STATIC_URL}/img/detail/bc-back-1.png`,
-    title1: 'Business Card Front',
-    title2: 'Business Card Back'
-};
-/* harmony export (immutable) */ __webpack_exports__["a"] = pear;
-
-
-const ta = {
-    style: { backgroundImage: `url(${STATIC_URL}/img/detail/folio-wide.png)` },
-    header: "Tutor Associates",
-    summary: "I've been working with Tutor Associates consistently for a few years, designing print materials and " + "informational graphics. They have consistently emphasized their desire for personable, simple designs that communicate professionalism " + "and warmth. With that in mind, Tutor Associates requested logo designs and website mock ups to fit their new rebranding " + "plan. Here you'll find mock ups for an online onboarding survey for clients, as well as proposed logo designs.",
-    maindisplay: `${STATIC_URL}/img/detail/ta-alt-1.png`,
-    alternate1: `${STATIC_URL}/img/detail/ta-alt-2.png`,
-    alternate2: `${STATIC_URL}/img/detail/ta-alt-3.png`,
-    alternate3: `${STATIC_URL}/img/detail/ta-alt-4.png`,
-    slideshow1: `${STATIC_URL}/img/detail/ta-mockup-1.png`,
-    slideshow2: `${STATIC_URL}/img/detail/ta-mockup-2.png`,
-    slideshow3: `${STATIC_URL}/img/detail/ta-mockup-3.png`,
-    slideshow4: `${STATIC_URL}/img/detail/ta-mockup-4.png`,
-    slideshow5: `${STATIC_URL}/img/detail/ta-mockup-5.png`
-};
-/* harmony export (immutable) */ __webpack_exports__["b"] = ta;
-
-
-const ri = {
-    header: "Rhode Island Office of Innovation",
-    summary: "I had the opportunity to work with the Rhode Island Office of Innovation on a design for a 30-page " + "document promoting their Personalized Learning Initiative. This was a unique challenge for me, since I had not previously designed" + " for longer, large-format documents. Here you'll find some samples of my favorite pages.",
-    alternate1: `${STATIC_URL}/img/detail/ri-page-1.png`,
-    alternate2: `${STATIC_URL}/img/detail/ri-page-2.png`,
-    alternate3: `${STATIC_URL}/img/detail/ri-page-3.png`,
-    alternate4: `${STATIC_URL}/img/detail/ri-page-4.png`,
-    alternate5: `${STATIC_URL}/img/detail/ri-page-5.png`,
-    alternate6: `${STATIC_URL}/img/detail/ri-page-6.png`
-};
-/* harmony export (immutable) */ __webpack_exports__["c"] = ri;
-
-
-const codesters = {
-    header: "Codesters",
-    summary: "Currently I am a graphic designer and developer at Codesters, Inc. Much of my work involves creating" + " designs for our website and implementing those designs in a way that allows them to interact with a Python backend." + " I'm also responsible for creating print and promotional designs, as well as the interactive graphics on the website. You can see some of my front-end development work in action at ",
-    link: "www.codesters.com",
-    href: "http://www.codesters.com"
-};
-/* harmony export (immutable) */ __webpack_exports__["e"] = codesters;
-
-
-const cb = {
-    header: "Code Brooklyn",
-    summary: "Code Brooklyn emerged as an initiative lead by Brooklyn Borough President, Eric Adams, to give every public school " + "student in Brooklyn the opportunity to learn how to code. I was approached by some of the organizers, who requested a logo and banner design " + "that could be used throughout Brooklyn public schools, on their website, and for any related PR materials. You can view my designs here as well as",
-    link: "www.codebrooklyn.org",
-    href: "http://www.codebrooklyn.org",
-    alternate1: `${STATIC_URL}/img/detail/cb-alt-1.png`,
-    alternate2: `${STATIC_URL}/img/detail/cb-alt-2.png`,
-    alternate3: `${STATIC_URL}/img/detail/cb-alt-3.png`,
-    alternate4: `${STATIC_URL}/img/detail/cb-banner.png`
-};
-/* harmony export (immutable) */ __webpack_exports__["d"] = cb;
-
-
-const illustrations = {
-    header: "Drawings & Illustrations",
-    summary: "When I'm drawing or illustrating I get to flex creative muscles I don't typically use while coding. Pencil and paper" + " are challenging in an entirely different way, and I like to think that my artistic skills positively influence my ability to code. It's both" + " helpful and personally fulfilling to get back to the basics when I've had enough of the keyboard.",
-    alternate1: `${STATIC_URL}/img/detail/joe.png`,
-    alternate2: `${STATIC_URL}/img/detail/me.png`,
-    alternate3: `${STATIC_URL}/img/detail/drake.png`,
-    alternate4: `${STATIC_URL}/img/detail/drake-2.png`,
-    alternate5: `${STATIC_URL}/img/detail/finn.png`,
-    alternate6: `${STATIC_URL}/img/detail/finn-2.png`,
-    alternate7: `${STATIC_URL}/img/detail/chance-1.png`,
-    alternate8: `${STATIC_URL}/img/detail/chance-2.png`,
-    alternate9: `${STATIC_URL}/img/detail/chance-3.png`,
-    alternate10: `${STATIC_URL}/img/detail/drake-3.png`
-};
-/* harmony export (immutable) */ __webpack_exports__["f"] = illustrations;
-
-
-/***/ }),
+/* 103 */,
 /* 104 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -22930,7 +22832,7 @@ module.exports = function(module) {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(3);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__shapes__ = __webpack_require__(62);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__detail_data__ = __webpack_require__(103);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__data_detail_data__ = __webpack_require__(710);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__slider__ = __webpack_require__(168);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_react_appear__ = __webpack_require__(128);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_react_appear___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_react_appear__);
@@ -22938,7 +22840,6 @@ module.exports = function(module) {
 
 
 
-let STATIC_URL = document.getElementById('static-url').value;
 
 
 function Summary(props) {
@@ -23006,7 +22907,7 @@ class Pear extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
         return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
             'div',
             { id: 'pear-detail-page', className: 'detail-page-container' },
-            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(Summary, { detail: __WEBPACK_IMPORTED_MODULE_2__detail_data__["a" /* pear */] }),
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(Summary, { detail: __WEBPACK_IMPORTED_MODULE_2__data_detail_data__["a" /* pear */] }),
             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                 'div',
                 { className: 'detail-image-container' },
@@ -23044,7 +22945,7 @@ class Pear extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
                                             '001'
                                         )
                                     ),
-                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: __WEBPACK_IMPORTED_MODULE_2__detail_data__["a" /* pear */].maindisplay, className: 'alternate-1 display' })
+                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: __WEBPACK_IMPORTED_MODULE_2__data_detail_data__["a" /* pear */].maindisplay, className: 'alternate-1 display' })
                                 )
                             ),
                             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
@@ -23062,7 +22963,7 @@ class Pear extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
                                             '002'
                                         )
                                     ),
-                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: __WEBPACK_IMPORTED_MODULE_2__detail_data__["a" /* pear */].alternate1, className: 'alternate-1 display' })
+                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: __WEBPACK_IMPORTED_MODULE_2__data_detail_data__["a" /* pear */].alternate1, className: 'alternate-1 display' })
                                 )
                             ),
                             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
@@ -23080,7 +22981,7 @@ class Pear extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
                                             '003'
                                         )
                                     ),
-                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: __WEBPACK_IMPORTED_MODULE_2__detail_data__["a" /* pear */].alternate2, className: 'alternate-2 display' })
+                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: __WEBPACK_IMPORTED_MODULE_2__data_detail_data__["a" /* pear */].alternate2, className: 'alternate-2 display' })
                                 )
                             )
                         )
@@ -23120,7 +23021,7 @@ class Pear extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
                                             '004'
                                         )
                                     ),
-                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: __WEBPACK_IMPORTED_MODULE_2__detail_data__["a" /* pear */].alternate4, className: 'alternate-4 display' })
+                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: __WEBPACK_IMPORTED_MODULE_2__data_detail_data__["a" /* pear */].alternate4, className: 'alternate-4 display' })
                                 )
                             ),
                             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
@@ -23138,7 +23039,7 @@ class Pear extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
                                             '005'
                                         )
                                     ),
-                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: __WEBPACK_IMPORTED_MODULE_2__detail_data__["a" /* pear */].alternate5, className: 'alternate-5 display' })
+                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: __WEBPACK_IMPORTED_MODULE_2__data_detail_data__["a" /* pear */].alternate5, className: 'alternate-5 display' })
                                 )
                             )
                         )
@@ -23173,7 +23074,7 @@ class Pear extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
                                         ),
                                         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div', { className: 'vert-line' })
                                     ),
-                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: __WEBPACK_IMPORTED_MODULE_2__detail_data__["a" /* pear */].alternate6, className: 'alternate-6 display' })
+                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: __WEBPACK_IMPORTED_MODULE_2__data_detail_data__["a" /* pear */].alternate6, className: 'alternate-6 display' })
                                 )
                             ),
                             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
@@ -23182,7 +23083,7 @@ class Pear extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
                                 __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                                     'div',
                                     { className: 'image-container' },
-                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: __WEBPACK_IMPORTED_MODULE_2__detail_data__["a" /* pear */].alternate7, className: 'alternate-7 display' })
+                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: __WEBPACK_IMPORTED_MODULE_2__data_detail_data__["a" /* pear */].alternate7, className: 'alternate-7 display' })
                                 )
                             )
                         )
@@ -23200,7 +23101,7 @@ class TA extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
         return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
             'div',
             { id: 'ta-detail-page', className: 'detail-page-container' },
-            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(Summary, { detail: __WEBPACK_IMPORTED_MODULE_2__detail_data__["b" /* ta */] }),
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(Summary, { detail: __WEBPACK_IMPORTED_MODULE_2__data_detail_data__["b" /* ta */] }),
             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                 'div',
                 { className: 'detail-image-container' },
@@ -23239,7 +23140,7 @@ class TA extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
                                     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                                         'div',
                                         { id: 'carousel-container' },
-                                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_3__slider__["a" /* Slider */], { detail: __WEBPACK_IMPORTED_MODULE_2__detail_data__["b" /* ta */] })
+                                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_3__slider__["a" /* Slider */], { detail: __WEBPACK_IMPORTED_MODULE_2__data_detail_data__["b" /* ta */] })
                                     )
                                 )
                             )
@@ -23284,7 +23185,7 @@ class TA extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
                                             '001'
                                         )
                                     ),
-                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: __WEBPACK_IMPORTED_MODULE_2__detail_data__["b" /* ta */].maindisplay, className: 'alternate-1 display' })
+                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: __WEBPACK_IMPORTED_MODULE_2__data_detail_data__["b" /* ta */].maindisplay, className: 'alternate-1 display' })
                                 )
                             ),
                             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
@@ -23302,7 +23203,7 @@ class TA extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
                                             '002'
                                         )
                                     ),
-                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: __WEBPACK_IMPORTED_MODULE_2__detail_data__["b" /* ta */].alternate2, className: 'alternate-2 display' })
+                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: __WEBPACK_IMPORTED_MODULE_2__data_detail_data__["b" /* ta */].alternate2, className: 'alternate-2 display' })
                                 )
                             ),
                             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
@@ -23320,7 +23221,7 @@ class TA extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
                                             '003'
                                         )
                                     ),
-                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: __WEBPACK_IMPORTED_MODULE_2__detail_data__["b" /* ta */].alternate3, className: 'alternate-3 display' })
+                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: __WEBPACK_IMPORTED_MODULE_2__data_detail_data__["b" /* ta */].alternate3, className: 'alternate-3 display' })
                                 )
                             )
                         )
@@ -23338,7 +23239,7 @@ class RI extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
         return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
             'div',
             { id: 'ri-detail-page', className: 'detail-page-container' },
-            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(Summary, { detail: __WEBPACK_IMPORTED_MODULE_2__detail_data__["c" /* ri */] }),
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(Summary, { detail: __WEBPACK_IMPORTED_MODULE_2__data_detail_data__["c" /* ri */] }),
             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                 'div',
                 { className: 'detail-image-container' },
@@ -23376,7 +23277,7 @@ class RI extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
                                             '001'
                                         )
                                     ),
-                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: __WEBPACK_IMPORTED_MODULE_2__detail_data__["c" /* ri */].alternate1, className: 'alternate-1 display' })
+                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: __WEBPACK_IMPORTED_MODULE_2__data_detail_data__["c" /* ri */].alternate1, className: 'alternate-1 display' })
                                 )
                             ),
                             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
@@ -23394,7 +23295,7 @@ class RI extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
                                             '002'
                                         )
                                     ),
-                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: __WEBPACK_IMPORTED_MODULE_2__detail_data__["c" /* ri */].alternate2, className: 'alternate-1 display' })
+                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: __WEBPACK_IMPORTED_MODULE_2__data_detail_data__["c" /* ri */].alternate2, className: 'alternate-1 display' })
                                 )
                             )
                         )
@@ -23420,7 +23321,7 @@ class RI extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
                                             '003'
                                         )
                                     ),
-                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: __WEBPACK_IMPORTED_MODULE_2__detail_data__["c" /* ri */].alternate3, className: 'alternate-2 display' })
+                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: __WEBPACK_IMPORTED_MODULE_2__data_detail_data__["c" /* ri */].alternate3, className: 'alternate-2 display' })
                                 )
                             ),
                             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
@@ -23438,7 +23339,7 @@ class RI extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
                                             '004'
                                         )
                                     ),
-                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: __WEBPACK_IMPORTED_MODULE_2__detail_data__["c" /* ri */].alternate4, className: 'alternate-3 display' })
+                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: __WEBPACK_IMPORTED_MODULE_2__data_detail_data__["c" /* ri */].alternate4, className: 'alternate-3 display' })
                                 )
                             )
                         )
@@ -23464,7 +23365,7 @@ class RI extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
                                             '005'
                                         )
                                     ),
-                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: __WEBPACK_IMPORTED_MODULE_2__detail_data__["c" /* ri */].alternate5, className: 'alternate-2 display' })
+                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: __WEBPACK_IMPORTED_MODULE_2__data_detail_data__["c" /* ri */].alternate5, className: 'alternate-2 display' })
                                 )
                             ),
                             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
@@ -23482,7 +23383,7 @@ class RI extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
                                             '006'
                                         )
                                     ),
-                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: __WEBPACK_IMPORTED_MODULE_2__detail_data__["c" /* ri */].alternate6, className: 'alternate-3 display' })
+                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: __WEBPACK_IMPORTED_MODULE_2__data_detail_data__["c" /* ri */].alternate6, className: 'alternate-3 display' })
                                 )
                             )
                         )
@@ -23500,7 +23401,7 @@ class CB extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
         return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
             'div',
             { id: 'cb-detail-page', className: 'detail-page-container' },
-            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(Summary, { detail: __WEBPACK_IMPORTED_MODULE_2__detail_data__["d" /* cb */] }),
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(Summary, { detail: __WEBPACK_IMPORTED_MODULE_2__data_detail_data__["d" /* cb */] }),
             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                 'div',
                 { className: 'detail-image-container' },
@@ -23538,7 +23439,7 @@ class CB extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
                                             '001'
                                         )
                                     ),
-                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: __WEBPACK_IMPORTED_MODULE_2__detail_data__["d" /* cb */].alternate1, className: 'alternate-1 display' })
+                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: __WEBPACK_IMPORTED_MODULE_2__data_detail_data__["d" /* cb */].alternate1, className: 'alternate-1 display' })
                                 )
                             ),
                             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
@@ -23556,7 +23457,7 @@ class CB extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
                                             '002'
                                         )
                                     ),
-                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: __WEBPACK_IMPORTED_MODULE_2__detail_data__["d" /* cb */].alternate2, className: 'alternate-2 display' })
+                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: __WEBPACK_IMPORTED_MODULE_2__data_detail_data__["d" /* cb */].alternate2, className: 'alternate-2 display' })
                                 )
                             ),
                             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
@@ -23574,7 +23475,7 @@ class CB extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
                                             '003'
                                         )
                                     ),
-                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: __WEBPACK_IMPORTED_MODULE_2__detail_data__["d" /* cb */].alternate3, className: 'alternate-3 display' })
+                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: __WEBPACK_IMPORTED_MODULE_2__data_detail_data__["d" /* cb */].alternate3, className: 'alternate-3 display' })
                                 )
                             )
                         )
@@ -23609,7 +23510,7 @@ class CB extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
                                         ),
                                         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div', { className: 'vert-line' })
                                     ),
-                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: __WEBPACK_IMPORTED_MODULE_2__detail_data__["d" /* cb */].alternate4, className: 'alternate-4 display' })
+                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: __WEBPACK_IMPORTED_MODULE_2__data_detail_data__["d" /* cb */].alternate4, className: 'alternate-4 display' })
                                 )
                             )
                         )
@@ -23627,7 +23528,7 @@ class Codesters extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component 
         return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
             'div',
             { id: 'codesters-detail-page', className: 'detail-page-container' },
-            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(Summary, { detail: __WEBPACK_IMPORTED_MODULE_2__detail_data__["e" /* codesters */] })
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(Summary, { detail: __WEBPACK_IMPORTED_MODULE_2__data_detail_data__["e" /* codesters */] })
         );
     }
 }
@@ -23639,7 +23540,7 @@ class Illustrations extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Compon
         return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
             'div',
             { id: 'illustrations-detail-page', className: 'detail-page-container' },
-            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(Summary, { detail: __WEBPACK_IMPORTED_MODULE_2__detail_data__["f" /* illustrations */] }),
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(Summary, { detail: __WEBPACK_IMPORTED_MODULE_2__data_detail_data__["f" /* illustrations */] }),
             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                 'div',
                 { className: 'detail-image-container' },
@@ -23677,7 +23578,7 @@ class Illustrations extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Compon
                                             '001'
                                         )
                                     ),
-                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: __WEBPACK_IMPORTED_MODULE_2__detail_data__["f" /* illustrations */].alternate7, className: 'alternate-1 display' })
+                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: __WEBPACK_IMPORTED_MODULE_2__data_detail_data__["f" /* illustrations */].alternate7, className: 'alternate-1 display' })
                                 ),
                                 __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                                     'div',
@@ -23691,7 +23592,7 @@ class Illustrations extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Compon
                                             '002'
                                         )
                                     ),
-                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: __WEBPACK_IMPORTED_MODULE_2__detail_data__["f" /* illustrations */].alternate8, className: 'alternate-2 display' })
+                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: __WEBPACK_IMPORTED_MODULE_2__data_detail_data__["f" /* illustrations */].alternate8, className: 'alternate-2 display' })
                                 )
                             ),
                             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
@@ -23709,7 +23610,7 @@ class Illustrations extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Compon
                                             '003'
                                         )
                                     ),
-                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: __WEBPACK_IMPORTED_MODULE_2__detail_data__["f" /* illustrations */].alternate9, className: 'alternate-3 display' })
+                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: __WEBPACK_IMPORTED_MODULE_2__data_detail_data__["f" /* illustrations */].alternate9, className: 'alternate-3 display' })
                                 )
                             )
                         )
@@ -23735,7 +23636,7 @@ class Illustrations extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Compon
                                             '004'
                                         )
                                     ),
-                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: __WEBPACK_IMPORTED_MODULE_2__detail_data__["f" /* illustrations */].alternate5, className: 'alternate-4 display' })
+                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: __WEBPACK_IMPORTED_MODULE_2__data_detail_data__["f" /* illustrations */].alternate5, className: 'alternate-4 display' })
                                 )
                             ),
                             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
@@ -23753,7 +23654,7 @@ class Illustrations extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Compon
                                             '005'
                                         )
                                     ),
-                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: __WEBPACK_IMPORTED_MODULE_2__detail_data__["f" /* illustrations */].alternate6, className: 'alternate-5 display' })
+                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: __WEBPACK_IMPORTED_MODULE_2__data_detail_data__["f" /* illustrations */].alternate6, className: 'alternate-5 display' })
                                 )
                             )
                         )
@@ -23797,7 +23698,7 @@ class Illustrations extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Compon
                                             '001'
                                         )
                                     ),
-                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: __WEBPACK_IMPORTED_MODULE_2__detail_data__["f" /* illustrations */].alternate1, className: 'alternate-6 display' })
+                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: __WEBPACK_IMPORTED_MODULE_2__data_detail_data__["f" /* illustrations */].alternate1, className: 'alternate-6 display' })
                                 )
                             ),
                             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
@@ -23815,7 +23716,7 @@ class Illustrations extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Compon
                                             '002'
                                         )
                                     ),
-                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: __WEBPACK_IMPORTED_MODULE_2__detail_data__["f" /* illustrations */].alternate2, className: 'alternate-7 display' })
+                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: __WEBPACK_IMPORTED_MODULE_2__data_detail_data__["f" /* illustrations */].alternate2, className: 'alternate-7 display' })
                                 )
                             )
                         )
@@ -23859,7 +23760,7 @@ class Illustrations extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Compon
                                             '003'
                                         )
                                     ),
-                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: __WEBPACK_IMPORTED_MODULE_2__detail_data__["f" /* illustrations */].alternate4, className: 'alternate-8 display' })
+                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: __WEBPACK_IMPORTED_MODULE_2__data_detail_data__["f" /* illustrations */].alternate4, className: 'alternate-8 display' })
                                 )
                             ),
                             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
@@ -23877,7 +23778,7 @@ class Illustrations extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Compon
                                             '004'
                                         )
                                     ),
-                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: __WEBPACK_IMPORTED_MODULE_2__detail_data__["f" /* illustrations */].alternate10, className: 'alternate-9 display' })
+                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: __WEBPACK_IMPORTED_MODULE_2__data_detail_data__["f" /* illustrations */].alternate10, className: 'alternate-9 display' })
                                 )
                             )
                         )
@@ -23903,7 +23804,7 @@ class Illustrations extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Compon
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_react_appear___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_react_appear__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__gallery__ = __webpack_require__(165);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__roulette__ = __webpack_require__(381);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__roulette_data__ = __webpack_require__(382);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__data_roulette_data__ = __webpack_require__(711);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__links__ = __webpack_require__(419);
 
 
@@ -24008,7 +23909,7 @@ class RouletteContainer extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Co
                     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                         'div',
                         { id: 'content', className: 'col-md-8 col-md-offset-2' },
-                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_5__roulette__["a" /* PieceData */], { data: __WEBPACK_IMPORTED_MODULE_6__roulette_data__["a" /* data */] })
+                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_5__roulette__["a" /* PieceData */], { data: __WEBPACK_IMPORTED_MODULE_6__data_roulette_data__["a" /* data */] })
                     )
                 )
             )
@@ -24211,8 +24112,8 @@ class EssayForm extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component 
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react_dom___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_react_dom__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__shapes_js__ = __webpack_require__(62);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_react_router_dom__ = __webpack_require__(102);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__js_pieces_json__ = __webpack_require__(376);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__js_pieces_json___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4__js_pieces_json__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__data_pieces_json__ = __webpack_require__(712);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__data_pieces_json___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4__data_pieces_json__);
 
 
 
@@ -24259,7 +24160,7 @@ class WindowResize extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Compone
         return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
             'div',
             null,
-            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(Gallery, { itemsPerRow: this.state.Num, pieces: __WEBPACK_IMPORTED_MODULE_4__js_pieces_json___default.a.pieces, key: __WEBPACK_IMPORTED_MODULE_4__js_pieces_json___default.a.pieces.id })
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(Gallery, { itemsPerRow: this.state.Num, pieces: __WEBPACK_IMPORTED_MODULE_4__data_pieces_json___default.a.pieces, key: __WEBPACK_IMPORTED_MODULE_4__data_pieces_json___default.a.pieces.id })
         );
     }
 }
@@ -24561,7 +24462,7 @@ __WEBPACK_IMPORTED_MODULE_1_react_dom___default.a.render(__WEBPACK_IMPORTED_MODU
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react_bootstrap_lib_Carousel__ = __webpack_require__(262);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react_bootstrap_lib_Carousel___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_react_bootstrap_lib_Carousel__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__detail_data__ = __webpack_require__(103);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__data_detail_data__ = __webpack_require__(710);
 
 
 
@@ -24596,34 +24497,34 @@ class Slider extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
         });
     }
 
-    render(props) {
+    render() {
         return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
             __WEBPACK_IMPORTED_MODULE_1_react_bootstrap_lib_Carousel___default.a,
             { className: 'slider', nextIcon: next, prevIcon: prev, indicators: false, activeIndex: this.state.index, direction: this.state.direction, onSelect: this.handleSelect },
             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                 __WEBPACK_IMPORTED_MODULE_1_react_bootstrap_lib_Carousel___default.a.Item,
                 null,
-                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: props.slideshow1 })
+                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: this.props.detail.slideshow1 })
             ),
             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                 __WEBPACK_IMPORTED_MODULE_1_react_bootstrap_lib_Carousel___default.a.Item,
                 null,
-                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: props.slideshow2 })
+                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: this.props.detail.slideshow2 })
             ),
             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                 __WEBPACK_IMPORTED_MODULE_1_react_bootstrap_lib_Carousel___default.a.Item,
                 null,
-                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: props.slideshow3 })
+                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: this.props.detail.slideshow3 })
             ),
             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                 __WEBPACK_IMPORTED_MODULE_1_react_bootstrap_lib_Carousel___default.a.Item,
                 null,
-                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: props.detail.slideshow4 })
+                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: this.props.detail.slideshow4 })
             ),
             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                 __WEBPACK_IMPORTED_MODULE_1_react_bootstrap_lib_Carousel___default.a.Item,
                 null,
-                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: props.detail.slideshow5 })
+                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: this.props.detail.slideshow5 })
             )
         );
     }
@@ -42375,63 +42276,7 @@ var valueEqual = function valueEqual(a, b) {
 exports.default = valueEqual;
 
 /***/ }),
-/* 376 */
-/***/ (function(module, exports) {
-
-module.exports = {
-	"pieces": [
-		{
-			"id": 1,
-			"title": "Pear Tree Studio",
-			"work": "The Haywain Triptych, Hieronymus Bosch, 1516",
-			"style": "/img/bosch.png",
-			"desc": "logo and business card design",
-			"path": "pear-tree"
-		},
-		{
-			"id": 2,
-			"title": "Tutor Associates",
-			"work": "Masnavi of Jalal-al Din Rumi, 1488-89",
-			"style": "/img/folio.png",
-			"desc": "logo and web design",
-			"path": "tutor-associates"
-		},
-		{
-			"id": 3,
-			"title": "Rhode Island Office of Innovation",
-			"work": "Annunciation and Visitation, Melchior Broederlam, 1398-99",
-			"style": "/img/annunciation.png",
-			"desc": "print design",
-			"path": "rhode-island"
-		},
-		{
-			"id": 4,
-			"title": "Code Brooklyn",
-			"work": "A Thousand Li of Rivers and Mountains, Wang Ximeng, 1113",
-			"style": "/img/scroll.png",
-			"desc": "logo design",
-			"path": "code-brooklyn"
-		},
-		{
-			"id": 5,
-			"title": "Codesters",
-			"work": "Medusa, Caravaggio, 1509",
-			"style": "/img/medusa.png",
-			"desc": "web development and graphic design",
-			"path": "codesters"
-		},
-		{
-			"id": 6,
-			"title": "Illustrations",
-			"work": "Wilton Diptych, 1395–1399",
-			"style": "/img/wilton.png",
-			"desc": "drawings and digital illustrations",
-			"path": "illustrations"
-		}
-	]
-};
-
-/***/ }),
+/* 376 */,
 /* 377 */,
 /* 378 */,
 /* 379 */,
@@ -42579,126 +42424,7 @@ class PieceData extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component 
 
 
 /***/ }),
-/* 382 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(3);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
-let STATIC_URL = document.getElementById('static-url').value;
-
-
-const data = [{
-    id: 1,
-    title: "Table of the Seven Deadly Sins",
-    artist: "Hieronymus Bosch",
-    date: "1505 - 1510",
-    text: "Bosch represents the message in five circles. At the centre of the largest, " + "central circle, which resembles a huge eye or a concave mirror, Christ is shown rising " + "from his tomb as the Man of Sorrows, displaying the wound in his side. A similar image is " + "to be found in The Mass of Saint Gregory on the closed shutters of the Prado Adoration of " + "the Magi (P02048). It is an appeal to the faithful, urging them to follow the path that " + "Jesus has shown them and to meditate on his death on the cross for the forgiveness of man’s " + "sins. This innermost circle or pupil is surrounded by gilded rays stretching to the outer ring, " + "which is divided into seven segments of varying size, each depicting one of the seven Deadly Sins, " + "identified by an inscription. Bosch conveyed this moral teaching through everyday situations " + "involving people from different social classes, observed by the all-seeing eye of God. Yet, " + "regardless of the message, some of the scenes -particularly Gluttony- mark him out as a pioneer " + "in genre painting, which was later to acquire such importance.",
-    image: `${STATIC_URL}/img/roulette/seven_sins.jpg`,
-    source: 'Museo del Prado',
-    link: 'https://www.museodelprado.es/en/the-collection/art-work/table-of-the-seven-deadly-sins/3fc0a84e-d77d-4217-b960-8a34b8873b70'
-}, {
-    id: 2,
-    title: "Album of Calligraphies Including Poetry and Prophetic Traditions (Hadith)",
-    artist: "Shaikh Hamdullah ibn Mustafa Ded",
-    date: "ca. 1500",
-    text: "This album contains samples written by Shaykh Hamdullah, the most famous Ottoman " + "calligrapher. The text comes from the Hadith, the compilation of the Prophet Muhammad's " + "words and deeds that is an important source for moral and legal guidance in the Islamic " + "tradition. On each page, several lines of a small script (naskh) are framed by one or two " + "lines in a larger script (thuluth or muhaqqaq) and then pasted onto sheets of marbleized paper, " + "each with a different pattern.",
-    image: `${STATIC_URL}/img/roulette/poetry.jpg`,
-    source: "Metropolitan Museum of Art",
-    link: 'http://www.metmuseum.org/art/collection/search/453166'
-}, {
-    id: 3,
-    title: "Outing to Zhang Gong's Grotto",
-    artist: "Shitao (Zhu Ruoji)",
-    date: "ca. 1700",
-    text: "Zhang Gong's grotto, a famous scenic spot and once the abode of Zhang Daoling (Zhang Gong; 2nd century A.D.), " + "a patriarch of the Daoist church, is located near Lake Tai in Jiangsu Province, not far from the pottery center of Yixing. " + "According to Daoist beliefs, such grottoes are wellsprings of nature's creative force and offer the potential for " + "rejuvenation and renewal. Shitao's painting of the grotto, done at the peak of his artistic powers, about 1700, is " + "one of his most sumptuous masterpieces. Following an earlier composition by Shen Zhou (1427–1509), Shitao painted as if he " + "were reenacting the cosmic process of creation: by building up layers of energized brushwork in flowery hues of sky blue, " + "pale green, orange, and fuchsia, he transformed Shen Zhou's topographical likeness into a glowing image redolent of nature's " + "procreative power. In a long poem at the end of the scroll, Shitao acknowledges the mystical Daoist attributes of the cave and playfully " + "suggests that through his art he has captured both the cave and its creative force.",
-    image: `${STATIC_URL}/img/roulette/grotto.jpg`,
-    source: "Metropolitan Museum of Art",
-    link: 'http://www.metmuseum.org/art/collection/search/49177'
-}, {
-    id: 4,
-    title: "Page of Calligraphy. Folio from the Shah Jahan Album",
-    artist: "Painting: Bishan Das, Calligraphy: Mir 'Ali Haravi",
-    date: "ca. 1640",
-    text: "This panel of calligraphy conforms closely to the type probably established by the celebrated " + "calligrapher Sultan 'Ali about forty or fifty years earlier. The border illumination is signed by the artist Daulat, " + "who executed paintings and marginalia for three generations of Mughal emperors, from Akbar to Shah Jahan. Mir 'Ali was " + "both the calligrapher and author of the lines written here:",
-    additional: `One with the eye of gazelles / ` + `hunted the bird of my heart, / ` + `Robbed me of steadfastness, / ` + `robbed me, poor lover, of rest. / ` + `Counsel and good advice / ` + `is no longer of use– / ` + `There is no use anymore, /` + `friends, in counseling me! /` + `The poor 'Ali.`,
-    image: `${STATIC_URL}/img/roulette/verso.jpg`,
-    source: "Metropolitan Museum of Art",
-    link: 'http://www.metmuseum.org/art/collection/search/454620'
-}, {
-    id: 5,
-    title: "St. Sebastian Thrown into the Cloaca Maxima",
-    artist: "Lodovico Carracci",
-    date: "1612",
-    text: "Against the dark of night, brutish soldiers lift and tug the dead saint's body. Ludovico contrasted the tensile strength of their straining bodies " + "with the slackness of the saint's limbs, head, and facial muscles as he falls into the sewer's depths. The night atmosphere " + "is dark and thick: figures seem to emerge from the blackness. Light glints dully off helmets and armor, but the soldiers' " + "faces are unreadable. A bright light suffuses the body of Saint Sebastian, making him the focal point of the composition. " + "In 1612 Cardinal Maffeo Barberini commissioned this painting from Ludovico for his family's chapel in the Church of San Andrea " + "della Valle in Rome. The chapel commemorated the site where Saint Sebastian's body was recovered from the sewer, called the Cloaca " + "Maxima. Barberini decided to keep the painting in his private collection, believing that an image of the recovery of Sebastian's body" + " by Christians was more appropriate for the church.",
-    image: `${STATIC_URL}/img/roulette/sebastian.jpg`,
-    source: "the J. Paul Getty Museum",
-    link: "http://www.getty.edu/art/collection/objects/617/lodovico-carracci-st-sebastian-thrown-into-the-cloaca-maxima-italian-1612/"
-}, {
-    id: 6,
-    title: "The Penitence of Saint Jerome",
-    artist: "Joachim Patinir",
-    date: "ca. 1512–15",
-    text: "Acknowledging Patinir’s leading role in a new genre, Albrecht Dürer referred to the artist in 1521 as the 'good landscape painter.'" + " This intact altarpiece was probably a German commission, since its exterior wings show Sebald, patron saint of Nuremberg, and " + "Saint Anne with the Virgin and Child. Following Netherlandish tradition, large-scale sacred figures dominate the foreground of " + "the interior: Saint John baptizing Christ, Saint Jerome, and Saint Anthony the Hermit with the monsters that assailed him. " + "The picture’s true subject, however, is the magnificent panoramic landscape, which the viewer is encouraged to travel through visually " + "in the manner of a pilgrimage.",
-    image: `${STATIC_URL}/img/roulette/jerome.jpg`,
-    source: "Metropolitan Museum of Art",
-    link: "http://www.metmuseum.org/art/collection/search/437261"
-}, {
-    id: 7,
-    title: "Vessel, Mythological Scene",
-    date: "7th–8th century",
-    text: "The scene here is not fully understood, but represents one variation of a theme depicted on several other codex-style " + "vessels in public and private collections. Sometimes the rain god is shown with a human face, sometimes the death god has " + "the distended belly of a corpse, and sometimes the anthropomorphic jaguar is shown as an infant on its back, such as in the " + "Metropolitan Museum’s 'Baby Jaguar' vessel (1978.412.206). In other scenes the protagonists are accompanied by creatures of the night, " + "such as fireflies, toads, dogs, or other deities. The artists painting these vases might be showing different scenes in a larger narrative, " + "or the same scene depicted in very different ways.",
-    image: `${STATIC_URL}/img/roulette/vessel.jpg`,
-    source: "Metropolitan Museum of Art",
-    link: "http://www.metmuseum.org/art/collection/search/314217"
-}, {
-    id: 8,
-    title: "Delightful Land",
-    artist: "Paul Gauguin",
-    date: "1893–94",
-    text: "Gauguin spent much of his time in Paris in 1893–94 working on the text and illustrations for Noa Noa (Fragrance). " + "The project began as a narrative to guide an uncomprehending public through Gauguin's personal and artistic perceptions " + "of Tahiti, but ultimately became more complex and mysterious than anything he had produced in the South Seas. The " + "remarkable series of ten woodblock prints that Gauguin designed as illustrations bear little relationship to his " + "romanticized autobiographical text. Nor do they seem to follow any particular sequence. However, the imagery and " + "themes of the prints—love and fear, creation and death, day and night—relate closely to those of Gauguin's Tahitian paintings.",
-    image: `${STATIC_URL}/img/roulette/gauguin.jpg`,
-    source: "Metropolitan Museum of Art",
-    link: "http://www.metmuseum.org/art/collection/search/337852"
-}, {
-    id: 9,
-    title: "Lidded Vessel",
-    date: "17th–18th century",
-    text: "This spectacular ivory vessel was once the treasured possession of an 'olowo,' the ruler of the Yoruba kingdom " + "of Owo in present-day southern Nigeria. Owo rose to regional prominence in the eighteenth century through trade and conquest, " + "and became one of the largest states in West Africa at that time. It had close political ties to the Benin kingdom some seventy miles " + "to the southeast. Much of Owo's courtly culture, including titles, costumes, and prestige sculpture, reflect a close association between " + "the two important political and cultural centers.",
-    image: `${STATIC_URL}/img/roulette/vessel_2.jpg`,
-    source: "Metropolitan Museum of Art",
-    link: "http://www.metmuseum.org/art/collection/search/316594"
-}, {
-    id: 10,
-    title: "Mask",
-    date: "900–400 B.C.",
-    text: "Depicting a typical Olmec face with slanted, almond-shaped eyes and a toothless, slightly downturned mouth, " + "this mask is rendered with simplicity and elegance. Its harmonious proportions are indicative of the sophistication " + "attained by Olmec sculptors. The smooth, highly polished planes of cheek, forehead, and chin plus the almost fleshy " + "quality of the nose and parted lips belie the incredible hardness of the jadeite cobble from which the mask was made. " + "The face itself is neither human nor supernatural but, rather, an idealized type that incorporates otherworldly aspects—such " + "as the mouth, with its reference to the so-called were-jaguar, a powerful mythic being with human and jaguar traits.",
-    image: `${STATIC_URL}/img/roulette/mask.jpg`,
-    source: "Metropolitan Museum of Art",
-    link: "http://www.metmuseum.org/art/collection/search/310279"
-}, {
-    id: 11,
-    title: "Hanako",
-    artist: "Auguste Rodin",
-    date: "1907",
-    text: "The Japanese actress Ohta Hisa (1868–1945), known as Hanako, posed for a number of portrait studies, and Rodin " + "portrayed her mobile face in various media. The pensive mood of the actress in this sketch is disturbed by the disquieting " + "second image of her face as an enigmatic mask. Rodin apparently intended to use Hanako as a living model for a portrait of " + "Beethoven, probably in much the same way that he had used a man of the city of Tours named Estager as the living model " + "for the figure's head in the Monument to Balzac.",
-    image: `${STATIC_URL}/img/roulette/rodin.jpg`,
-    source: "Metropolitan Museum of Art",
-    link: "http://www.metmuseum.org/art/collection/search/339710"
-}, {
-    id: 12,
-    title: "Self-portrait, Study of a Hand and a Pillow",
-    artist: "Albrecht Dürer",
-    date: "1493",
-    text: "In this extraordinary series of studies, Albrecht Durer has captured his own image and that of several pillows " + "on the sheet’s front and back with incomparable brilliance, achieving at a tender age a calligraphic precision and " + "expressiveness of line of unexcelled clarity. The self-portrait - of which the head was drawn using a mirror and the " + "hand directly from the model - occupies an important place in the artist’s series of self-characterizations. It is " + "generally agreed that it relates and perhaps was preparatory to a painted self-portrait of the same year, 1493, now " + "in the Louvre in Paris. The painting probably served as an engagement or courting portrait for the young suitor. " + "As an example of the young draftsman’s awakening sense of himself as an artist, and as a signal of his growing awareness" + "of the interplay of subject and viewer - the sitter and creator as one - this drawing stands as one of the most important " + "early visual documents of the modern era.",
-    image: `${STATIC_URL}/img/roulette/pillow.jpg`,
-    source: "Metropolitan Museum of Art",
-    link: "http://www.metmuseum.org/art/collection/search/459214"
-}];
-/* harmony export (immutable) */ __webpack_exports__["a"] = data;
-
-
-/***/ }),
+/* 382 */,
 /* 383 */,
 /* 384 */,
 /* 385 */,
@@ -44368,6 +44094,561 @@ function toTitleCase(s) {
 
 module.exports = toTitleCase;
 
+
+/***/ }),
+/* 431 */,
+/* 432 */,
+/* 433 */,
+/* 434 */,
+/* 435 */,
+/* 436 */,
+/* 437 */,
+/* 438 */,
+/* 439 */,
+/* 440 */,
+/* 441 */,
+/* 442 */,
+/* 443 */,
+/* 444 */,
+/* 445 */,
+/* 446 */,
+/* 447 */,
+/* 448 */,
+/* 449 */,
+/* 450 */,
+/* 451 */,
+/* 452 */,
+/* 453 */,
+/* 454 */,
+/* 455 */,
+/* 456 */,
+/* 457 */,
+/* 458 */,
+/* 459 */,
+/* 460 */,
+/* 461 */,
+/* 462 */,
+/* 463 */,
+/* 464 */,
+/* 465 */,
+/* 466 */,
+/* 467 */,
+/* 468 */,
+/* 469 */,
+/* 470 */,
+/* 471 */,
+/* 472 */,
+/* 473 */,
+/* 474 */,
+/* 475 */,
+/* 476 */,
+/* 477 */,
+/* 478 */,
+/* 479 */,
+/* 480 */,
+/* 481 */,
+/* 482 */,
+/* 483 */,
+/* 484 */,
+/* 485 */,
+/* 486 */,
+/* 487 */,
+/* 488 */,
+/* 489 */,
+/* 490 */,
+/* 491 */,
+/* 492 */,
+/* 493 */,
+/* 494 */,
+/* 495 */,
+/* 496 */,
+/* 497 */,
+/* 498 */,
+/* 499 */,
+/* 500 */,
+/* 501 */,
+/* 502 */,
+/* 503 */,
+/* 504 */,
+/* 505 */,
+/* 506 */,
+/* 507 */,
+/* 508 */,
+/* 509 */,
+/* 510 */,
+/* 511 */,
+/* 512 */,
+/* 513 */,
+/* 514 */,
+/* 515 */,
+/* 516 */,
+/* 517 */,
+/* 518 */,
+/* 519 */,
+/* 520 */,
+/* 521 */,
+/* 522 */,
+/* 523 */,
+/* 524 */,
+/* 525 */,
+/* 526 */,
+/* 527 */,
+/* 528 */,
+/* 529 */,
+/* 530 */,
+/* 531 */,
+/* 532 */,
+/* 533 */,
+/* 534 */,
+/* 535 */,
+/* 536 */,
+/* 537 */,
+/* 538 */,
+/* 539 */,
+/* 540 */,
+/* 541 */,
+/* 542 */,
+/* 543 */,
+/* 544 */,
+/* 545 */,
+/* 546 */,
+/* 547 */,
+/* 548 */,
+/* 549 */,
+/* 550 */,
+/* 551 */,
+/* 552 */,
+/* 553 */,
+/* 554 */,
+/* 555 */,
+/* 556 */,
+/* 557 */,
+/* 558 */,
+/* 559 */,
+/* 560 */,
+/* 561 */,
+/* 562 */,
+/* 563 */,
+/* 564 */,
+/* 565 */,
+/* 566 */,
+/* 567 */,
+/* 568 */,
+/* 569 */,
+/* 570 */,
+/* 571 */,
+/* 572 */,
+/* 573 */,
+/* 574 */,
+/* 575 */,
+/* 576 */,
+/* 577 */,
+/* 578 */,
+/* 579 */,
+/* 580 */,
+/* 581 */,
+/* 582 */,
+/* 583 */,
+/* 584 */,
+/* 585 */,
+/* 586 */,
+/* 587 */,
+/* 588 */,
+/* 589 */,
+/* 590 */,
+/* 591 */,
+/* 592 */,
+/* 593 */,
+/* 594 */,
+/* 595 */,
+/* 596 */,
+/* 597 */,
+/* 598 */,
+/* 599 */,
+/* 600 */,
+/* 601 */,
+/* 602 */,
+/* 603 */,
+/* 604 */,
+/* 605 */,
+/* 606 */,
+/* 607 */,
+/* 608 */,
+/* 609 */,
+/* 610 */,
+/* 611 */,
+/* 612 */,
+/* 613 */,
+/* 614 */,
+/* 615 */,
+/* 616 */,
+/* 617 */,
+/* 618 */,
+/* 619 */,
+/* 620 */,
+/* 621 */,
+/* 622 */,
+/* 623 */,
+/* 624 */,
+/* 625 */,
+/* 626 */,
+/* 627 */,
+/* 628 */,
+/* 629 */,
+/* 630 */,
+/* 631 */,
+/* 632 */,
+/* 633 */,
+/* 634 */,
+/* 635 */,
+/* 636 */,
+/* 637 */,
+/* 638 */,
+/* 639 */,
+/* 640 */,
+/* 641 */,
+/* 642 */,
+/* 643 */,
+/* 644 */,
+/* 645 */,
+/* 646 */,
+/* 647 */,
+/* 648 */,
+/* 649 */,
+/* 650 */,
+/* 651 */,
+/* 652 */,
+/* 653 */,
+/* 654 */,
+/* 655 */,
+/* 656 */,
+/* 657 */,
+/* 658 */,
+/* 659 */,
+/* 660 */,
+/* 661 */,
+/* 662 */,
+/* 663 */,
+/* 664 */,
+/* 665 */,
+/* 666 */,
+/* 667 */,
+/* 668 */,
+/* 669 */,
+/* 670 */,
+/* 671 */,
+/* 672 */,
+/* 673 */,
+/* 674 */,
+/* 675 */,
+/* 676 */,
+/* 677 */,
+/* 678 */,
+/* 679 */,
+/* 680 */,
+/* 681 */,
+/* 682 */,
+/* 683 */,
+/* 684 */,
+/* 685 */,
+/* 686 */,
+/* 687 */,
+/* 688 */,
+/* 689 */,
+/* 690 */,
+/* 691 */,
+/* 692 */,
+/* 693 */,
+/* 694 */,
+/* 695 */,
+/* 696 */,
+/* 697 */,
+/* 698 */,
+/* 699 */,
+/* 700 */,
+/* 701 */,
+/* 702 */,
+/* 703 */,
+/* 704 */,
+/* 705 */,
+/* 706 */,
+/* 707 */,
+/* 708 */,
+/* 709 */,
+/* 710 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
+
+let STATIC_URL = document.getElementById('static-url').value;
+
+const pear = {
+    style: { backgroundImage: `url(${STATIC_URL}/img/detail/bosch-wide.png)` },
+    circle: `${STATIC_URL}/img/detail/pear-circle.png`,
+    header: "Pear Tree Studio",
+    summary: "Pear Tree Studio contacted me about creating a logo and design for their business cards, " + "providing me with two references for inspiration: old seed packets and socialist posters. " + "Here you'll find the final logo design, alternates, and the final business card design, which " + "attempt to synthesize these two styles.",
+    maindisplay: `${STATIC_URL}/img/detail/pear-tree-logo.png`,
+    subtitle: 'Pear Tree Studio 2017',
+    alternate1: `${STATIC_URL}/img/detail/pear-alt-1.png`,
+    alternate2: `${STATIC_URL}/img/detail/pear-alt-2.png`,
+    alternate3: `${STATIC_URL}/img/detail/pear-alt-3.png`,
+    alternate4: `${STATIC_URL}/img/detail/pear-alt-5.png`,
+    alternate5: `${STATIC_URL}/img/detail/pear-alt-6.png`,
+    alternate6: `${STATIC_URL}/img/detail/bc-front-1.png`,
+    alternate7: `${STATIC_URL}/img/detail/bc-back-1.png`,
+    title1: 'Business Card Front',
+    title2: 'Business Card Back'
+};
+/* harmony export (immutable) */ __webpack_exports__["a"] = pear;
+
+
+const ta = {
+    style: { backgroundImage: `url(${STATIC_URL}/img/detail/folio-wide.png)` },
+    header: "Tutor Associates",
+    summary: "I've been working with Tutor Associates consistently for a few years, designing print materials and " + "informational graphics. They have consistently emphasized their desire for personable, simple designs that communicate professionalism " + "and warmth. With that in mind, Tutor Associates requested logo designs and website mock ups to fit their new rebranding " + "plan. Here you'll find mock ups for an online onboarding survey for clients, as well as proposed logo designs.",
+    maindisplay: `${STATIC_URL}/img/detail/ta-alt-1.png`,
+    alternate1: `${STATIC_URL}/img/detail/ta-alt-2.png`,
+    alternate2: `${STATIC_URL}/img/detail/ta-alt-3.png`,
+    alternate3: `${STATIC_URL}/img/detail/ta-alt-4.png`,
+    slideshow1: `${STATIC_URL}/img/detail/ta-mockup-1.png`,
+    slideshow2: `${STATIC_URL}/img/detail/ta-mockup-2.png`,
+    slideshow3: `${STATIC_URL}/img/detail/ta-mockup-3.png`,
+    slideshow4: `${STATIC_URL}/img/detail/ta-mockup-4.png`,
+    slideshow5: `${STATIC_URL}/img/detail/ta-mockup-5.png`
+};
+/* harmony export (immutable) */ __webpack_exports__["b"] = ta;
+
+
+const ri = {
+    header: "Rhode Island Office of Innovation",
+    summary: "I had the opportunity to work with the Rhode Island Office of Innovation on a design for a 30-page " + "document promoting their Personalized Learning Initiative. This was a unique challenge for me, since I had not previously designed" + " for longer, large-format documents. Here you'll find some samples of my favorite pages.",
+    alternate1: `${STATIC_URL}/img/detail/ri-page-1.png`,
+    alternate2: `${STATIC_URL}/img/detail/ri-page-2.png`,
+    alternate3: `${STATIC_URL}/img/detail/ri-page-3.png`,
+    alternate4: `${STATIC_URL}/img/detail/ri-page-4.png`,
+    alternate5: `${STATIC_URL}/img/detail/ri-page-5.png`,
+    alternate6: `${STATIC_URL}/img/detail/ri-page-6.png`
+};
+/* harmony export (immutable) */ __webpack_exports__["c"] = ri;
+
+
+const codesters = {
+    header: "Codesters",
+    summary: "Currently I am a graphic designer and developer at Codesters, Inc. Much of my work involves creating" + " designs for our website and implementing those designs in a way that allows them to interact with a Python backend." + " I'm also responsible for creating print and promotional designs, as well as the interactive graphics on the website. You can see some of my front-end development work in action at ",
+    link: "www.codesters.com",
+    href: "http://www.codesters.com"
+};
+/* harmony export (immutable) */ __webpack_exports__["e"] = codesters;
+
+
+const cb = {
+    header: "Code Brooklyn",
+    summary: "Code Brooklyn emerged as an initiative lead by Brooklyn Borough President, Eric Adams, to give every public school " + "student in Brooklyn the opportunity to learn how to code. I was approached by some of the organizers, who requested a logo and banner design " + "that could be used throughout Brooklyn public schools, on their website, and for any related PR materials. You can view my designs here as well as",
+    link: "www.codebrooklyn.org",
+    href: "http://www.codebrooklyn.org",
+    alternate1: `${STATIC_URL}/img/detail/cb-alt-1.png`,
+    alternate2: `${STATIC_URL}/img/detail/cb-alt-2.png`,
+    alternate3: `${STATIC_URL}/img/detail/cb-alt-3.png`,
+    alternate4: `${STATIC_URL}/img/detail/cb-banner.png`
+};
+/* harmony export (immutable) */ __webpack_exports__["d"] = cb;
+
+
+const illustrations = {
+    header: "Drawings & Illustrations",
+    summary: "When I'm drawing or illustrating I get to flex creative muscles I don't typically use while coding. Pencil and paper" + " are challenging in an entirely different way, and I like to think that my artistic skills positively influence my ability to code. It's both" + " helpful and personally fulfilling to get back to the basics when I've had enough of the keyboard.",
+    alternate1: `${STATIC_URL}/img/detail/joe.png`,
+    alternate2: `${STATIC_URL}/img/detail/me.png`,
+    alternate3: `${STATIC_URL}/img/detail/drake.png`,
+    alternate4: `${STATIC_URL}/img/detail/drake-2.png`,
+    alternate5: `${STATIC_URL}/img/detail/finn.png`,
+    alternate6: `${STATIC_URL}/img/detail/finn-2.png`,
+    alternate7: `${STATIC_URL}/img/detail/chance-1.png`,
+    alternate8: `${STATIC_URL}/img/detail/chance-2.png`,
+    alternate9: `${STATIC_URL}/img/detail/chance-3.png`,
+    alternate10: `${STATIC_URL}/img/detail/drake-3.png`
+};
+/* harmony export (immutable) */ __webpack_exports__["f"] = illustrations;
+
+
+/***/ }),
+/* 711 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
+let STATIC_URL = document.getElementById('static-url').value;
+
+
+const data = [{
+    id: 1,
+    title: "Table of the Seven Deadly Sins",
+    artist: "Hieronymus Bosch",
+    date: "1505 - 1510",
+    text: "Bosch represents the message in five circles. At the centre of the largest, " + "central circle, which resembles a huge eye or a concave mirror, Christ is shown rising " + "from his tomb as the Man of Sorrows, displaying the wound in his side. A similar image is " + "to be found in The Mass of Saint Gregory on the closed shutters of the Prado Adoration of " + "the Magi (P02048). It is an appeal to the faithful, urging them to follow the path that " + "Jesus has shown them and to meditate on his death on the cross for the forgiveness of man’s " + "sins. This innermost circle or pupil is surrounded by gilded rays stretching to the outer ring, " + "which is divided into seven segments of varying size, each depicting one of the seven Deadly Sins, " + "identified by an inscription. Bosch conveyed this moral teaching through everyday situations " + "involving people from different social classes, observed by the all-seeing eye of God. Yet, " + "regardless of the message, some of the scenes -particularly Gluttony- mark him out as a pioneer " + "in genre painting, which was later to acquire such importance.",
+    image: `${STATIC_URL}/img/roulette/seven_sins.jpg`,
+    source: 'Museo del Prado',
+    link: 'https://www.museodelprado.es/en/the-collection/art-work/table-of-the-seven-deadly-sins/3fc0a84e-d77d-4217-b960-8a34b8873b70'
+}, {
+    id: 2,
+    title: "Album of Calligraphies Including Poetry and Prophetic Traditions (Hadith)",
+    artist: "Shaikh Hamdullah ibn Mustafa Ded",
+    date: "ca. 1500",
+    text: "This album contains samples written by Shaykh Hamdullah, the most famous Ottoman " + "calligrapher. The text comes from the Hadith, the compilation of the Prophet Muhammad's " + "words and deeds that is an important source for moral and legal guidance in the Islamic " + "tradition. On each page, several lines of a small script (naskh) are framed by one or two " + "lines in a larger script (thuluth or muhaqqaq) and then pasted onto sheets of marbleized paper, " + "each with a different pattern.",
+    image: `${STATIC_URL}/img/roulette/poetry.jpg`,
+    source: "Metropolitan Museum of Art",
+    link: 'http://www.metmuseum.org/art/collection/search/453166'
+}, {
+    id: 3,
+    title: "Outing to Zhang Gong's Grotto",
+    artist: "Shitao (Zhu Ruoji)",
+    date: "ca. 1700",
+    text: "Zhang Gong's grotto, a famous scenic spot and once the abode of Zhang Daoling (Zhang Gong; 2nd century A.D.), " + "a patriarch of the Daoist church, is located near Lake Tai in Jiangsu Province, not far from the pottery center of Yixing. " + "According to Daoist beliefs, such grottoes are wellsprings of nature's creative force and offer the potential for " + "rejuvenation and renewal. Shitao's painting of the grotto, done at the peak of his artistic powers, about 1700, is " + "one of his most sumptuous masterpieces. Following an earlier composition by Shen Zhou (1427–1509), Shitao painted as if he " + "were reenacting the cosmic process of creation: by building up layers of energized brushwork in flowery hues of sky blue, " + "pale green, orange, and fuchsia, he transformed Shen Zhou's topographical likeness into a glowing image redolent of nature's " + "procreative power. In a long poem at the end of the scroll, Shitao acknowledges the mystical Daoist attributes of the cave and playfully " + "suggests that through his art he has captured both the cave and its creative force.",
+    image: `${STATIC_URL}/img/roulette/grotto.jpg`,
+    source: "Metropolitan Museum of Art",
+    link: 'http://www.metmuseum.org/art/collection/search/49177'
+}, {
+    id: 4,
+    title: "Page of Calligraphy. Folio from the Shah Jahan Album",
+    artist: "Painting: Bishan Das, Calligraphy: Mir 'Ali Haravi",
+    date: "ca. 1640",
+    text: "This panel of calligraphy conforms closely to the type probably established by the celebrated " + "calligrapher Sultan 'Ali about forty or fifty years earlier. The border illumination is signed by the artist Daulat, " + "who executed paintings and marginalia for three generations of Mughal emperors, from Akbar to Shah Jahan. Mir 'Ali was " + "both the calligrapher and author of the lines written here:",
+    additional: `One with the eye of gazelles / ` + `hunted the bird of my heart, / ` + `Robbed me of steadfastness, / ` + `robbed me, poor lover, of rest. / ` + `Counsel and good advice / ` + `is no longer of use– / ` + `There is no use anymore, /` + `friends, in counseling me! /` + `The poor 'Ali.`,
+    image: `${STATIC_URL}/img/roulette/verso.jpg`,
+    source: "Metropolitan Museum of Art",
+    link: 'http://www.metmuseum.org/art/collection/search/454620'
+}, {
+    id: 5,
+    title: "St. Sebastian Thrown into the Cloaca Maxima",
+    artist: "Lodovico Carracci",
+    date: "1612",
+    text: "Against the dark of night, brutish soldiers lift and tug the dead saint's body. Ludovico contrasted the tensile strength of their straining bodies " + "with the slackness of the saint's limbs, head, and facial muscles as he falls into the sewer's depths. The night atmosphere " + "is dark and thick: figures seem to emerge from the blackness. Light glints dully off helmets and armor, but the soldiers' " + "faces are unreadable. A bright light suffuses the body of Saint Sebastian, making him the focal point of the composition. " + "In 1612 Cardinal Maffeo Barberini commissioned this painting from Ludovico for his family's chapel in the Church of San Andrea " + "della Valle in Rome. The chapel commemorated the site where Saint Sebastian's body was recovered from the sewer, called the Cloaca " + "Maxima. Barberini decided to keep the painting in his private collection, believing that an image of the recovery of Sebastian's body" + " by Christians was more appropriate for the church.",
+    image: `${STATIC_URL}/img/roulette/sebastian.jpg`,
+    source: "the J. Paul Getty Museum",
+    link: "http://www.getty.edu/art/collection/objects/617/lodovico-carracci-st-sebastian-thrown-into-the-cloaca-maxima-italian-1612/"
+}, {
+    id: 6,
+    title: "The Penitence of Saint Jerome",
+    artist: "Joachim Patinir",
+    date: "ca. 1512–15",
+    text: "Acknowledging Patinir’s leading role in a new genre, Albrecht Dürer referred to the artist in 1521 as the 'good landscape painter.'" + " This intact altarpiece was probably a German commission, since its exterior wings show Sebald, patron saint of Nuremberg, and " + "Saint Anne with the Virgin and Child. Following Netherlandish tradition, large-scale sacred figures dominate the foreground of " + "the interior: Saint John baptizing Christ, Saint Jerome, and Saint Anthony the Hermit with the monsters that assailed him. " + "The picture’s true subject, however, is the magnificent panoramic landscape, which the viewer is encouraged to travel through visually " + "in the manner of a pilgrimage.",
+    image: `${STATIC_URL}/img/roulette/jerome.jpg`,
+    source: "Metropolitan Museum of Art",
+    link: "http://www.metmuseum.org/art/collection/search/437261"
+}, {
+    id: 7,
+    title: "Vessel, Mythological Scene",
+    date: "7th–8th century",
+    text: "The scene here is not fully understood, but represents one variation of a theme depicted on several other codex-style " + "vessels in public and private collections. Sometimes the rain god is shown with a human face, sometimes the death god has " + "the distended belly of a corpse, and sometimes the anthropomorphic jaguar is shown as an infant on its back, such as in the " + "Metropolitan Museum’s 'Baby Jaguar' vessel (1978.412.206). In other scenes the protagonists are accompanied by creatures of the night, " + "such as fireflies, toads, dogs, or other deities. The artists painting these vases might be showing different scenes in a larger narrative, " + "or the same scene depicted in very different ways.",
+    image: `${STATIC_URL}/img/roulette/vessel.jpg`,
+    source: "Metropolitan Museum of Art",
+    link: "http://www.metmuseum.org/art/collection/search/314217"
+}, {
+    id: 8,
+    title: "Delightful Land",
+    artist: "Paul Gauguin",
+    date: "1893–94",
+    text: "Gauguin spent much of his time in Paris in 1893–94 working on the text and illustrations for Noa Noa (Fragrance). " + "The project began as a narrative to guide an uncomprehending public through Gauguin's personal and artistic perceptions " + "of Tahiti, but ultimately became more complex and mysterious than anything he had produced in the South Seas. The " + "remarkable series of ten woodblock prints that Gauguin designed as illustrations bear little relationship to his " + "romanticized autobiographical text. Nor do they seem to follow any particular sequence. However, the imagery and " + "themes of the prints—love and fear, creation and death, day and night—relate closely to those of Gauguin's Tahitian paintings.",
+    image: `${STATIC_URL}/img/roulette/gauguin.jpg`,
+    source: "Metropolitan Museum of Art",
+    link: "http://www.metmuseum.org/art/collection/search/337852"
+}, {
+    id: 9,
+    title: "Lidded Vessel",
+    date: "17th–18th century",
+    text: "This spectacular ivory vessel was once the treasured possession of an 'olowo,' the ruler of the Yoruba kingdom " + "of Owo in present-day southern Nigeria. Owo rose to regional prominence in the eighteenth century through trade and conquest, " + "and became one of the largest states in West Africa at that time. It had close political ties to the Benin kingdom some seventy miles " + "to the southeast. Much of Owo's courtly culture, including titles, costumes, and prestige sculpture, reflect a close association between " + "the two important political and cultural centers.",
+    image: `${STATIC_URL}/img/roulette/vessel_2.jpg`,
+    source: "Metropolitan Museum of Art",
+    link: "http://www.metmuseum.org/art/collection/search/316594"
+}, {
+    id: 10,
+    title: "Mask",
+    date: "900–400 B.C.",
+    text: "Depicting a typical Olmec face with slanted, almond-shaped eyes and a toothless, slightly downturned mouth, " + "this mask is rendered with simplicity and elegance. Its harmonious proportions are indicative of the sophistication " + "attained by Olmec sculptors. The smooth, highly polished planes of cheek, forehead, and chin plus the almost fleshy " + "quality of the nose and parted lips belie the incredible hardness of the jadeite cobble from which the mask was made. " + "The face itself is neither human nor supernatural but, rather, an idealized type that incorporates otherworldly aspects—such " + "as the mouth, with its reference to the so-called were-jaguar, a powerful mythic being with human and jaguar traits.",
+    image: `${STATIC_URL}/img/roulette/mask.jpg`,
+    source: "Metropolitan Museum of Art",
+    link: "http://www.metmuseum.org/art/collection/search/310279"
+}, {
+    id: 11,
+    title: "Hanako",
+    artist: "Auguste Rodin",
+    date: "1907",
+    text: "The Japanese actress Ohta Hisa (1868–1945), known as Hanako, posed for a number of portrait studies, and Rodin " + "portrayed her mobile face in various media. The pensive mood of the actress in this sketch is disturbed by the disquieting " + "second image of her face as an enigmatic mask. Rodin apparently intended to use Hanako as a living model for a portrait of " + "Beethoven, probably in much the same way that he had used a man of the city of Tours named Estager as the living model " + "for the figure's head in the Monument to Balzac.",
+    image: `${STATIC_URL}/img/roulette/rodin.jpg`,
+    source: "Metropolitan Museum of Art",
+    link: "http://www.metmuseum.org/art/collection/search/339710"
+}, {
+    id: 12,
+    title: "Self-portrait, Study of a Hand and a Pillow",
+    artist: "Albrecht Dürer",
+    date: "1493",
+    text: "In this extraordinary series of studies, Albrecht Durer has captured his own image and that of several pillows " + "on the sheet’s front and back with incomparable brilliance, achieving at a tender age a calligraphic precision and " + "expressiveness of line of unexcelled clarity. The self-portrait - of which the head was drawn using a mirror and the " + "hand directly from the model - occupies an important place in the artist’s series of self-characterizations. It is " + "generally agreed that it relates and perhaps was preparatory to a painted self-portrait of the same year, 1493, now " + "in the Louvre in Paris. The painting probably served as an engagement or courting portrait for the young suitor. " + "As an example of the young draftsman’s awakening sense of himself as an artist, and as a signal of his growing awareness" + "of the interplay of subject and viewer - the sitter and creator as one - this drawing stands as one of the most important " + "early visual documents of the modern era.",
+    image: `${STATIC_URL}/img/roulette/pillow.jpg`,
+    source: "Metropolitan Museum of Art",
+    link: "http://www.metmuseum.org/art/collection/search/459214"
+}];
+/* harmony export (immutable) */ __webpack_exports__["a"] = data;
+
+
+/***/ }),
+/* 712 */
+/***/ (function(module, exports) {
+
+module.exports = {
+	"pieces": [
+		{
+			"id": 1,
+			"title": "Pear Tree Studio",
+			"work": "The Haywain Triptych, Hieronymus Bosch, 1516",
+			"style": "/img/bosch.png",
+			"desc": "logo and business card design",
+			"path": "pear-tree"
+		},
+		{
+			"id": 2,
+			"title": "Tutor Associates",
+			"work": "Masnavi of Jalal-al Din Rumi, 1488-89",
+			"style": "/img/folio.png",
+			"desc": "logo and web design",
+			"path": "tutor-associates"
+		},
+		{
+			"id": 3,
+			"title": "Rhode Island Office of Innovation",
+			"work": "Annunciation and Visitation, Melchior Broederlam, 1398-99",
+			"style": "/img/annunciation.png",
+			"desc": "print design",
+			"path": "rhode-island"
+		},
+		{
+			"id": 4,
+			"title": "Code Brooklyn",
+			"work": "A Thousand Li of Rivers and Mountains, Wang Ximeng, 1113",
+			"style": "/img/scroll.png",
+			"desc": "logo design",
+			"path": "code-brooklyn"
+		},
+		{
+			"id": 5,
+			"title": "Codesters",
+			"work": "Medusa, Caravaggio, 1509",
+			"style": "/img/medusa.png",
+			"desc": "web development and graphic design",
+			"path": "codesters"
+		},
+		{
+			"id": 6,
+			"title": "Illustrations",
+			"work": "Wilton Diptych, 1395–1399",
+			"style": "/img/wilton.png",
+			"desc": "drawings and digital illustrations",
+			"path": "illustrations"
+		}
+	]
+};
 
 /***/ })
 /******/ ]);

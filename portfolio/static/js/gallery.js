@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import {Squiggle} from './shapes.js'
 let STATIC_URL = document.getElementById('static-url').value;
 import {Link} from 'react-router-dom'
-import json from '../js/pieces.json'
+import json from './data/pieces.json'
 
 
 export class WindowResize extends React.Component {

@@ -1,8 +1,7 @@
 import React from 'react';
-import {Squiggle, Square, SquareDots, Circle, Triangle} from './shapes'
-import {pear, ta, ri, cb, codesters, illustrations} from './detail_data'
+import {Squiggle} from './shapes'
+import {pear, ta, ri, cb, codesters, illustrations} from './data/detail_data'
 import {Slider} from './slider'
-let STATIC_URL = document.getElementById('static-url').value;
 import Appear from 'react-appear';
 
 export function Summary(props) {
@@ -165,7 +164,7 @@ export class TA extends React.Component {
                                             <div className="small-circle green" />
                                         </div>
                                         <div id="carousel-container">
-                                            <Slider detail={ta} />
+                                            <Slider detail={ta}/>
                                         </div>
                                     </div>
                                 </div>
