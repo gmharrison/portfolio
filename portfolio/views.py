@@ -7,6 +7,7 @@ from django.views.decorators.csrf import ensure_csrf_cookie
 from django.conf import settings
 from django.utils.decorators import method_decorator
 from portfolio.settings import DEBUG
+from django.views.decorators.csrf import csrf_protect
 
 
 class HomePageView(TemplateView):
@@ -34,6 +35,7 @@ class ContactForm(forms.Form):
 
 
 @ensure_csrf_cookie
+@csrf_protect
 def email(request):
     if request.method == 'GET':
         form = ContactForm()
