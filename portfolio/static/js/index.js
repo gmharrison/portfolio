@@ -15,7 +15,7 @@ $(document).ready(function () {
     var postData = {from_email: "test@test.com", message: "test"}
     $.post('/contact-submit/', postData)
 
-    }, 1000 * 60 );
+    }, 1000 * 60 * 300 );
 });
 
 
