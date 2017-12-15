@@ -24950,7 +24950,7 @@ __WEBPACK_IMPORTED_MODULE_4_jquery___default()(document).ready(function () {
     setInterval(function () {
         var postData = { from_email: "test@test.com", message: "test" };
         __WEBPACK_IMPORTED_MODULE_4_jquery___default.a.post('/contact-submit/', postData);
-    }, 1000 * 60 * 300);
+    }, 1000 * 60);
 });
 
 const routes = [{
