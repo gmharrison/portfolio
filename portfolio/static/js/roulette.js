@@ -2,6 +2,7 @@ import React from 'react';
 import Appear from 'react-appear'
 import {Squiggle} from './shapes'
 
+
 export class PieceData extends React.Component {
     constructor (props) {
     super(props);
@@ -11,28 +12,22 @@ export class PieceData extends React.Component {
         };
     }
 
-    static get defaultProps() {
-        return {
-          data: []
-        }
-  }
-
     randomInteger(min, max) {
-      var rand = min + Math.random() * (max - min)
+      let rand = min + Math.random() * (max - min)
       rand = Math.round(rand);
       return rand;
     }
 
     setNewTarget() {
-        var l = this.props.data.length - 1;
+        let length = this.props.data.length - 1;
         this.setState({
-            index: this.randomInteger(0, l),
+            index: this.randomInteger(0, length),
         })
     }
     render() {
-        var hlI = this.state.index;
-        var listItems = this.props.data.map(function(datum, i) {
-			if (i == hlI) {
+        let index = this.state.index;
+        let listItems = this.props.data.map(function(datum, i) {
+			if (i == index) {
 				return (
 				    <Appear className="custom-fade">
                         <div key={i}>

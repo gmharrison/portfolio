@@ -185,5 +185,28 @@ export const data = [{
     image: `${STATIC_URL}/img/roulette/pillow.jpg`,
     source: "Metropolitan Museum of Art",
     link: "http://www.metmuseum.org/art/collection/search/459214"
+    }, {
+    id: 13,
+    title: "Glass Mosaic Face Bead",
+    date: "1st century B.C.–1st century A.D.",
+    text: "Translucent deep blue green ground, with details in opaque white, red, and grayish green, and translucent purple, appearing black." +
+    "Section of an irregular oval mosaic composite bar; flat with rough edges; hole diagonally through bead." +
+    "Circular face, with variations on either side; hair rendered as alternating vertical black and white stripes on forehead; almond-shaped " +
+    "eyes, eyebrows, nose, and slit mouth in black; green stripe around chin with traces of red; circular frame in white.",
+    image: `${STATIC_URL}/img/roulette/bead.jpg`,
+    source: "Metropolitan Museum of Art",
+    link: "https://www.metmuseum.org/art/collection/search/254703"
+    }, {
+    id: 14,
+    title: "Textile with Animals, Birds, and Flowers",
+    date: "late 12th–14th century",
+    text: "This textile demonstrates the longevity of motifs in eastern Central Asia. The placement of animals—a spotted " +
+    "horse, a rabbit, and two deer (or antelope)—at its cardinal points is a compositional device that began to appear in " +
+    "the region during the Han dynasty. The birds on the piece, especially the parrot, entered the Central Asian repertoire " +
+    "during a second period of strong Chinese influence, the Tang dynasty. The floral background's central motif of lotus blossoms, " +
+    "a lotus leaf, and a trefoil leaf was seen in Central Asia and North China but became widespread during the Yuan dynasty.",
+    image: `${STATIC_URL}/img/roulette/animal_textile.jpg`,
+    source: "Metropolitan Museum of Art",
+    link: "https://www.metmuseum.org/art/collection/search/39737"
     }
 ]

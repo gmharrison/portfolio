@@ -11,6 +11,11 @@ import {Pear, TA, RI, CB, Codesters, Illustrations} from './detail'
 $(document).ready(function () {
     console.log('jquery ready');
     setupAjax();
+    setInterval(function() {
+    var postData = {from_email: "test@test.com", message: "test"}
+    $.post('/contact-submit/', postData)
+
+    }, 1000 * 60 * 300);
 });
 
 
