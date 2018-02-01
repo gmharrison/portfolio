@@ -6,7 +6,7 @@ import $ from 'jquery';
 import '../css/portfolio.scss'
 import {setupAjax} from './token'
 
-import {Pear, TA, RI, CB, Codesters, Illustrations} from './detail'
+import {Pear, TA, RI, CB, Codesters, Illustrations, Kruis} from './detail'
 
 $(document).ready(function () {
     console.log('jquery ready');
@@ -42,7 +42,11 @@ const routes = [{
 }, {
     path: '/codesters',
     component: Codesters,
-    key: 6,
+    key: 6
+}, {
+    path: '/kruis',
+    component: Kruis,
+    key: 7
 }];
 
 const routeComponents = routes.map(({path, component, key}) => <Route exact path={path} component={component} key={key} />);

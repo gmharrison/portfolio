@@ -47,6 +47,13 @@
       "style": "/img/wilton.png",
       "desc": "drawings and digital illustrations",
       "path": "illustrations"
+    }, {
+      "id": 7,
+      "title": "KruisCX",
+      "work": "A Heroine and Her Lover in a Pavilion, 1660-1680",
+      "style": "/img/heroine.png",
+      "desc": "web development and design",
+      "path": "kruis"
     }
   ]
 }

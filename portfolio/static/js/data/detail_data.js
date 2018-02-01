@@ -91,3 +91,13 @@ export const illustrations = {
     alternate9: `${STATIC_URL}/img/detail/chance-3.png`,
     alternate10: `${STATIC_URL}/img/detail/drake-3.png`,
 }
+
+export const kruis = {
+    header: "KruisCX Website",
+    summary: "Recently I had the opportunity to design and develop a website for a local cycling team. KruisCX's mission is simple: " +
+    "to have fun with friends on bikes. I wanted to convey their approach to cycling by creating a friendly, personalized " +
+    "design for their website. In the future I'd like to set up a custom CMS for blog entries and race updates, but for now this " +
+    "single page site was developed using Node and React. Take a look: ",
+    link: "www.kruiscx.com",
+    href: "http://www.kruiscx.com/"
+}
