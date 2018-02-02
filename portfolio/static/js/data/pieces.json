@@ -7,53 +7,55 @@
       "style": "/img/bosch.png",
       "desc": "logo and business card design",
       "path": "pear-tree"
-    },
-    {
+    }, {
       "id": 2,
-      "title": "Tutor Associates",
-      "work": "Masnavi of Jalal-al Din Rumi, 1488-89",
-      "style": "/img/folio.png",
-      "desc": "logo and web design",
-      "path": "tutor-associates"
-    },
-    {
+      "title": "KruisCX",
+      "work": "A Heroine and Her Lover in a Pavilion, 1660-1680",
+      "style": "/img/heroine.png",
+      "desc": "web development and design",
+      "path": "kruis"
+    }, {
       "id": 3,
       "title": "Rhode Island Office of Innovation",
       "work": "Annunciation and Visitation, Melchior Broederlam, 1398-99",
       "style": "/img/annunciation.png",
       "desc": "print design",
       "path": "rhode-island"
-    },
-    {
+    }, {
       "id": 4,
       "title": "Code Brooklyn",
       "work": "A Thousand Li of Rivers and Mountains, Wang Ximeng, 1113",
       "style": "/img/scroll.png",
       "desc": "logo design",
       "path": "code-brooklyn"
-    },
-    {
+    }, {
       "id": 5,
       "title": "Codesters",
       "work": "Medusa, Caravaggio, 1509",
       "style": "/img/medusa.png",
       "desc": "web development and graphic design",
       "path": "codesters"
-    },
-    {
+    }, {
       "id": 6,
+      "title": "Current",
+      "work": "The Blue Egyptian Water Lily, Joseph Stadler, 1804",
+      "style": "/img/flower.png",
+      "desc": "web development and design",
+      "path": "current"
+    }, {
+      "id": 7,
       "title": "Illustrations",
       "work": "Wilton Diptych, 1395–1399",
       "style": "/img/wilton.png",
       "desc": "drawings and digital illustrations",
       "path": "illustrations"
     }, {
-      "id": 7,
-      "title": "KruisCX",
-      "work": "A Heroine and Her Lover in a Pavilion, 1660-1680",
-      "style": "/img/heroine.png",
-      "desc": "web development and design",
-      "path": "kruis"
+      "id": 8,
+      "title": "Tutor Associates",
+      "work": "Masnavi of Jalal-al Din Rumi, 1488-89",
+      "style": "/img/folio.png",
+      "desc": "logo and web design",
+      "path": "tutor-associates"
     }
   ]
 }

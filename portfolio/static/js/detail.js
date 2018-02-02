@@ -1,6 +1,6 @@
 import React from 'react';
 import {Squiggle} from './shapes'
-import {pear, ta, ri, cb, codesters, illustrations, kruis} from './data/detail_data'
+import {pear, ta, ri, cb, codesters, illustrations, kruis, current} from './data/detail_data'
 import {Slider} from './slider'
 import Appear from 'react-appear';
 
@@ -496,6 +496,16 @@ export class Kruis extends React.Component {
         return (
             <div id="kruis-detail-page" className="detail-page-container">
                 <Summary detail={kruis} />
+            </div>
+        )
+    }
+}
+
+export class Current extends React.Component {
+    render () {
+        return (
+            <div id="current-detail-page" className="detail-page-container">
+                <Summary detail={current} />
             </div>
         )
     }

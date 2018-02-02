@@ -18767,6 +18767,15 @@ const kruis = {
 /* harmony export (immutable) */ __webpack_exports__["g"] = kruis;
 
 
+const current = {
+    header: "Current Strategy Website",
+    summary: "I created a website and series of visual assets for a client who needed an efficient, accessible way to " + "display their product proposal. Aside from web design and development, I created the charts, graphs, and illustrations. " + "Eventually I'd like to use D3 to make the charts more variable and dynamic. You can check out the site here: ",
+    link: "www.currentstrategy.herokuapp.com",
+    href: "https://currentstrategy.herokuapp.com/"
+};
+/* harmony export (immutable) */ __webpack_exports__["h"] = current;
+
+
 /***/ }),
 /* 105 */
 /***/ (function(module, exports, __webpack_require__) {
@@ -24207,6 +24216,18 @@ class Kruis extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
 /* harmony export (immutable) */ __webpack_exports__["g"] = Kruis;
 
 
+class Current extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
+    render() {
+        return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+            'div',
+            { id: 'current-detail-page', className: 'detail-page-container' },
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(Summary, { detail: __WEBPACK_IMPORTED_MODULE_2__data_detail_data__["h" /* current */] })
+        );
+    }
+}
+/* harmony export (immutable) */ __webpack_exports__["h"] = Current;
+
+
 /***/ }),
 /* 158 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
@@ -24917,6 +24938,10 @@ const routes = [{
     path: '/kruis',
     component: __WEBPACK_IMPORTED_MODULE_7__detail__["g" /* Kruis */],
     key: 7
+}, {
+    path: '/current',
+    component: __WEBPACK_IMPORTED_MODULE_7__detail__["h" /* Current */],
+    key: 8
 }];
 
 const routeComponents = routes.map(({ path, component, key }) => __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_react_router_dom__["a" /* Route */], { exact: true, path: path, component: component, key: key }));
@@ -42844,7 +42869,7 @@ module.exports = g;
 /* 349 */
 /***/ (function(module, exports) {
 
-module.exports = {"pieces":[{"id":1,"title":"Pear Tree Studio","work":"The Haywain Triptych, Hieronymus Bosch, 1516","style":"/img/bosch.png","desc":"logo and business card design","path":"pear-tree"},{"id":2,"title":"Tutor Associates","work":"Masnavi of Jalal-al Din Rumi, 1488-89","style":"/img/folio.png","desc":"logo and web design","path":"tutor-associates"},{"id":3,"title":"Rhode Island Office of Innovation","work":"Annunciation and Visitation, Melchior Broederlam, 1398-99","style":"/img/annunciation.png","desc":"print design","path":"rhode-island"},{"id":4,"title":"Code Brooklyn","work":"A Thousand Li of Rivers and Mountains, Wang Ximeng, 1113","style":"/img/scroll.png","desc":"logo design","path":"code-brooklyn"},{"id":5,"title":"Codesters","work":"Medusa, Caravaggio, 1509","style":"/img/medusa.png","desc":"web development and graphic design","path":"codesters"},{"id":6,"title":"Illustrations","work":"Wilton Diptych, 1395–1399","style":"/img/wilton.png","desc":"drawings and digital illustrations","path":"illustrations"},{"id":7,"title":"KruisCX","work":"A Heroine and Her Lover in a Pavilion, 1660-1680","style":"/img/heroine.png","desc":"web development and design","path":"kruis"}]}
+module.exports = {"pieces":[{"id":1,"title":"Pear Tree Studio","work":"The Haywain Triptych, Hieronymus Bosch, 1516","style":"/img/bosch.png","desc":"logo and business card design","path":"pear-tree"},{"id":2,"title":"KruisCX","work":"A Heroine and Her Lover in a Pavilion, 1660-1680","style":"/img/heroine.png","desc":"web development and design","path":"kruis"},{"id":3,"title":"Rhode Island Office of Innovation","work":"Annunciation and Visitation, Melchior Broederlam, 1398-99","style":"/img/annunciation.png","desc":"print design","path":"rhode-island"},{"id":4,"title":"Code Brooklyn","work":"A Thousand Li of Rivers and Mountains, Wang Ximeng, 1113","style":"/img/scroll.png","desc":"logo design","path":"code-brooklyn"},{"id":5,"title":"Codesters","work":"Medusa, Caravaggio, 1509","style":"/img/medusa.png","desc":"web development and graphic design","path":"codesters"},{"id":6,"title":"Current","work":"The Blue Egyptian Water Lily, Joseph Stadler, 1804","style":"/img/flower.png","desc":"web development and design","path":"current"},{"id":7,"title":"Illustrations","work":"Wilton Diptych, 1395–1399","style":"/img/wilton.png","desc":"drawings and digital illustrations","path":"illustrations"},{"id":8,"title":"Tutor Associates","work":"Masnavi of Jalal-al Din Rumi, 1488-89","style":"/img/folio.png","desc":"logo and web design","path":"tutor-associates"}]}
 
 /***/ })
 /******/ ]);

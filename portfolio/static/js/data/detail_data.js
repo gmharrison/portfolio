@@ -101,3 +101,12 @@ export const kruis = {
     link: "www.kruiscx.com",
     href: "http://www.kruiscx.com/"
 }
+
+export const current = {
+    header: "Current Strategy Website",
+    summary: "I created a website and series of visual assets for a client who needed an efficient, accessible way to " +
+    "display their product proposal. Aside from web design and development, I created the charts, graphs, and illustrations. " +
+    "Eventually I'd like to use D3 to make the charts more variable and dynamic. You can check out the site here: ",
+    link: "www.currentstrategy.herokuapp.com",
+    href: "https://currentstrategy.herokuapp.com/"
+}
