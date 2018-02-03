@@ -1,13 +1,10 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 import $ from 'jquery';
 window.jQuery = $;
 
 
-// export var csrftoken = getCookie('csrftoken');
-
+// Export var csrftoken = getCookie('csrftoken');
 export function setupAjax(){
-
     function getCookie(name) {
         var cookieValue = null;
         if (document.cookie && document.cookie !== '') {

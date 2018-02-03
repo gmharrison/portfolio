@@ -1,34 +1,34 @@
 import React from 'react';
 const HorzSquiggle = require('-!babel-loader!svg-react-loader!../img/squiggle.svg?name=Squiggle');
-// import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 import $ from 'jquery';
 window.jQuery = $;
 
-export function Squiggle() {
+// Many of these shapes are not used, but might be incorporated later
+export const Squiggle = () => {
 	return (
 		<HorzSquiggle className='squiggle' />
 	)
 }
 
-export function Square() {
+export const Square = () => {
 	return (
 		<div className="rotate" />
 	)
 }
 
-export function SquareDots() {
+export const SquareDots = () => {
 	return (
 		<div className="rotate dots" />
 	)
 }
 
-export function Circle() {
+export const Circle = () => {
     return (
 		<div className="circle" />
     )
 }
 
-export function Triangle() {
+export const Triangle = () => {
     return (
 		<div className="triangle rotate" />
     )
@@ -36,11 +36,10 @@ export function Triangle() {
 
 let sdegree = 0;
 
+// On scroll rotate shape
 $(window).scroll(function() {
-
     sdegree ++ ;
     sdegree = sdegree + 2 ;
     var srotate = "rotate(" + sdegree + "deg)";
     $(".rotate").css({"-moz-transform" : srotate, "-webkit-transform" : srotate});
-
 });

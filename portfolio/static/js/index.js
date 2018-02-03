@@ -1,11 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import {HashRouter, Route, Link, BrowserRouter as Router} from 'react-router-dom'
-import {AboutContainer, GalleryContainer, ContactContainer, RouletteContainer} from './tabs'
 import $ from 'jquery';
 import '../css/portfolio.scss'
 import {setupAjax} from './token'
-
+import {AboutContainer, GalleryContainer, ContactContainer, RouletteContainer} from './containers'
 import {Pear, TA, RI, CB, Codesters, Illustrations, Kruis, Current} from './detail'
 
 $(document).ready(function () {
@@ -52,6 +51,7 @@ const routes = [{
     key: 8,
 }];
 
+// Used to create a router for each gallery component
 const routeComponents = routes.map(({path, component, key}) => <Route exact path={path} component={component} key={key} />);
 
 ReactDOM.render(
@@ -87,4 +87,5 @@ ReactDOM.render(
             <div>{routeComponents}</div>
         </div>
 
-    </HashRouter>, document.getElementById('container'));
+    </HashRouter>, document.getElementById('container')
+);
